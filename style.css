@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+:root{
+    --tipografia-body:'Cormorant Garamond', serif;
+    --primary-color:#093931;
+    --secundary-color: white;
+    --third-color:#F5D38E;
+}
+
+
+*{
+    margin: 0;
+}
+
+.encabezado {
+    background-color: var(--primary-color);
+    color: var(--secundary-color);
+    width:  1440px;
+    height: 62px; 
+
+}
+
+.encabezado_principal{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    
+
+    position: absolute;
+    text-align: center;
+    width: 431px;
+    height: 43px;
+    left: 796px;
+    top: 17px;
+}
+.contenedor-flex section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Espaciado entre elementos */
+  }
+.encabezado section{
+    font-size: 14px;
+    position: relative;
+    text-align: center;
+    height: 30px;
+    border-radius:4px;
+    line-height: 22px;
+    width: 71.26px;
+
+    /*width: 40px;
+    height: 22px;
+    top: 10.5px;
+    left: 18.63px;
+    */
+}
+
+.encabezado h4{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 46px;
+    position:relative;
+    Left: 132px;
+    Width:95px;
+    Height:46px;
+    Top:7px;
+    color : var(--third-color);
+}
+
+.menu-desplegable:hover{
+    cursor: pointer;
+    font-weight: 800;
+    color: var(--third-color);
+    display:block;
+    display: inline-block; /* Cambiado a inline-block para que funcione el border-bottom */
+    border-bottom: 2px solid var(--third-color);
+    
+
+}
