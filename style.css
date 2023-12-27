@@ -11,14 +11,14 @@
 
 *{
     margin: 0;
+    padding:0;
 }
 
 .encabezado {
     background-color: var(--primary-color);
     color: var(--secundary-color);
-    width:  1440px;
     height: 62px; 
-
+    width:  1440px;
 }
 
 .encabezado_principal{
@@ -27,21 +27,16 @@
     color: white;
     display: flex;
     flex-direction: row;
-    
+    align-items: center;
 
     position: absolute;
-    text-align: center;
     width: 431px;
     height: 43px;
-    left: 796px;
+    left: 880px;
     top: 17px;
 }
-.contenedor-flex section{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; /* Espaciado entre elementos */
-  }
-.encabezado section{
+
+.encabezado div section{
     font-size: 14px;
     position: relative;
     text-align: center;
@@ -80,3 +75,4 @@
     
 
 }
+
