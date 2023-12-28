@@ -17,39 +17,33 @@
 .encabezado {
     background-color: var(--primary-color);
     color: var(--secundary-color);
-    height: 62px; 
     width:  1440px;
+    height: 821px; 
 }
-
-.encabezado_principal{
-    font-family: 'Manrope', sans-serif;
-    font-weight: 400;
+.encabezado div{
+    background-color: var(--primary-color);
     color: white;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-
+    flex-direction: row; 
     position: absolute;
+    text-align: center;
     width: 431px;
     height: 43px;
-    left: 880px;
+    left: 796px;
     top: 17px;
 }
 
-.encabezado div section{
+.menu-desplegable{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
     font-size: 14px;
-    position: relative;
+    
     text-align: center;
     height: 30px;
     border-radius:4px;
     line-height: 22px;
     width: 71.26px;
 
-    /*width: 40px;
-    height: 22px;
-    top: 10.5px;
-    left: 18.63px;
-    */
 }
 
 .encabezado h4{
@@ -73,6 +67,25 @@
     display: inline-block; /* Cambiado a inline-block para que funcione el border-bottom */
     border-bottom: 2px solid var(--third-color);
     
+
+}
+
+
+
+.section-secundary {
+    color: var(--third-color);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 94px;
+    text-align: left;
+    position:relative;
+    width: 537px;
+    height: 282px;
+    top: 232px;
+    Left: 132px;
+ 
+ 
 
 }
 
