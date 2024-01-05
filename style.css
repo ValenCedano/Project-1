@@ -1,6 +1,16 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+html,body{
+    width: 1440px;
+    height: auto;
+    overflow-x: hidden;
+    max-width: 100%; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
 
 :root{
     --tipografia-body:'Cormorant Garamond', serif;
@@ -9,83 +19,128 @@
     --third-color:#F5D38E;
 }
 
-
-*{
-    margin: 0;
-    padding:0;
+.encabezado{
+    background-color: var(--primary-color);
+    height:62px;
 }
 
-.encabezado {
-    background-color: var(--primary-color);
+.encabezado nav{
     color: var(--secundary-color);
-    width:  1440px;
-    height: 821px; 
-}
-.encabezado div{
-    background-color: var(--primary-color);
-    color: white;
     display: flex;
-    flex-direction: row; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.encabezado ul{
+    display: flex;
+    flex-direction: row;
     position: absolute;
     text-align: center;
     width: 431px;
     height: 43px;
-    left: 796px;
+    left: 670px;
     top: 17px;
 }
 
-.menu-desplegable{
-    font-family: 'Manrope', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    
-    text-align: center;
-    height: 30px;
-    border-radius:4px;
-    line-height: 22px;
-    width: 71.26px;
 
-}
 
-.encabezado h4{
+.encabezado h4 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 30px;
     font-weight: 400;
     line-height: 46px;
-    position:relative;
+    position: absolute;
     Left: 132px;
-    Width:95px;
-    Height:46px;
-    Top:7px;
+    Width: 95px;
+    Height: 46px;
+    Top: 7px;
     color : var(--third-color);
 }
+.menu-desplegable a{
+    width: 111.26px;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;   
+    font-size: 14px;
+    text-align: center;
+    height: 30px;
+    border-radius: 4px;
+    line-height: 22px;
+    text-decoration: none;
+}
 
-.menu-desplegable:hover{
+.menu-desplegable a img{
+    width: 20px;
+    height: 20px;
+}
+
+.menu-desplegable a:hover {
     cursor: pointer;
     font-weight: 800;
     color: var(--third-color);
-    display:block;
     display: inline-block; /* Cambiado a inline-block para que funcione el border-bottom */
     border-bottom: 2px solid var(--third-color);
-    
-
 }
 
+.encabezado-secundario {
+    height: 680px;
+    background-color: var(--primary-color);
+  }
 
-
-.section-secundary {
+.encabezado-secundario h1{
     color: var(--third-color);
     font-family: 'Cormorant Garamond', serif;
-    font-size: 72px;
+    font-size: 59px;
     font-weight: 400;
     line-height: 94px;
     text-align: left;
-    position:relative;
+    position:absolute;
     width: 537px;
     height: 282px;
-    top: 232px;
+    top: 202px;
     Left: 132px;
- 
+}
+
+.encabezado-secundario .imagen{
+    width:403px;
+    height:490px;
+    position: absolute;
+    top: 100px;
+    Left: 601px;
+    border-radius: 8px;
+}
+.imagen2{
+    width:241px;
+    height:321px;
+    position: absolute;
+    top: 198px;
+    Left: 900px;
+    
+}
+.imagen3{
+    image-rendering:-moz-crisp-edges;
+    width:52px;
+    height:52px;
+    position: absolute;
+    top: 330px;
+    Left: 1000px;
+    
+}
+.button1{
+    font-family: 'Manrope';
+    font-weight: 400;   
+    font-size: 18px;
+    line-height: 28px;
+    background-color: var(--primary-color);
+    position: absolute;
+    width: 170px;
+    height: 52px;
+    top:500px;
+    left:132px;
+    color: white; 
+    border: 1px solid white;
+    border-radius: 25px;
 
 }
 .container{
@@ -138,22 +193,22 @@
     margin-top: 10px;
   }
   .image-section {
-            display: flex;
-            flex-wrap:wrap;
-            justify-content: center;
-            align-items: center;
-            height: 50vh; 
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; 
            
-        }
+   }
       
 
-        .image-container {
+   .image-container {
             width: 30%; 
             margin: 10px;
             overflow: hidden;
-        }
+   }
 
-        .image-container img {
+   .image-container img {
             width: 100%;
             height: auto;
             display: block;
