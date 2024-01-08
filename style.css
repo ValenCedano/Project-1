@@ -143,6 +143,12 @@ html,body{
     border-radius: 25px;
 
 }
+
+
+.button1:hover{
+  cursor: pointer;
+  background-color: #f3f3fa4f;
+}
 .container{
     display: flex;
     justify-content:space-evenly;
@@ -252,6 +258,7 @@ html,body{
     margin-top: 20px; 
     margin-right: 25px;
     margin-top: 30px;
+
 }
 
   .additional-content p {
@@ -345,4 +352,352 @@ html,body{
     text-align: center;
     margin-top: 10px;
   }
+
+.Video{
+  background-color: white;
+  height: 490px;
+}
+.Video h4{
+  color:#0D554A;
+  font-family: 'Cormorant Garamond';
+  font-weight: 600px;
+  font-size: 40px;
+  text-align: center;
+  line-height: 56px;
+  margin: 25px 25px 10px 25px;
+}
+
+.Video-image{
+  image-rendering:optimizeQuality;
+  width: 1000px;
+  height:368px;
+  border-radius:8px;
+  margin:0px 70px 0px 110px;
+}
+
+.Video-boton{
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  position: relative;
+  top:-220px;
+  left:578px;
+
+}
+
+
+.footer-encabezado{
+  font-family: 'Manrope',serif;
+  font-weight: 400;   
+  color:white;
+  background-color: var(--primary-color);
+  height: 522px;
+}
+
+
+.footer-encabezado h1{
+  font-family: 'Cormorant Garamond';
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 68px;
+  width: 311px;
+  height: 68px;
+  position: relative;
+  top:-270px;
+  left:122px;
+}
+
+.footer-encabezado p{
+  width: 264px;
+  height: 104px;
+  text-align:inherit;
+  font-size: 16px;
+  line-height: 26px;
+  position: relative;
+  top:-260px;
+  left: 122px;
+}
+
+.box{
+  position: relative;
+  top:70px;
+  left:470px;
+  width:672px;
+  height:375px;
+  border-radius:8px;
+  background-color:#08312a;
+  margin: 5px 5px 5px 5px;
+}
+
+.box img{
+  width:300px;
+  height:375px;
+  image-rendering:crisp-edges;
+  border-radius: 8px;
+  position: relative;
+  top:0px;
+  
+}
+
+.box p{
+  width: 324px;
+  height: 182px;
+  position: absolute;
+  left: 336px;
+  top: 60px;
+}
+
+
+.name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  width: 156px;
+  height: 30px;
+  position: absolute;
+  top: 198px;
+
+}
+
+.nacionality{
+  position: absolute;
+  top: 232px;
+}
+.icono-izq , .icono-der{
+  width: 52px;
+  height: 52px;
+  background: transparent;
+  image-rendering:optimizeQuality;
+  border-color: none;
+  color:white;
+  border-style: none;
+}
+.icono-der{
+  position: relative;
+  left:1060px;
+  top:39px;
+}
+.icono-izq{
+  position: relative;
+  left:935px;
+  top:39px;
+}
+.icono-izq:hover , .icono-der:hover{
+  cursor:pointer;
+  border-radius: 50%;
+  background-color: #f3f3fa4f;
+}
+
+.footer-encabezado2 h4{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 46px;
+  position: relative;
+  Left: 122px;
+  Width: 95px;
+  Height: 46px;
+  Top: 7px;
+  color : var(--third-color);
+}
+
+.Line{
+  color: white;
+  font-family: 'Manrope', serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  position: relative;
+  left:760px;
+  top:-130px;
+}
+.footer-encabezado2{
+  height: 240px;
+  background-color: var(--primary-color);
+}
+.footer-encabezado2 h5{
+  color: white;
+  font-family: 'Cormorant Garamond';
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+  left:760px;
+  top:-140px;
+}
+.menu-footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
+  position: relative;
+  left:400px;
+  top:-25px;
+
+}
+
+.menu-footer a {
+  color:white;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;   
+  font-size: 14px;
+  line-height: 22px;
+  text-decoration: none;
+  flex-basis: 50%; 
+  margin-bottom: 15px;  
+  text-align:left; 
+}
+
+.footer-encabezado2 h6{
+  color:white;
+  top: 187px;
+  left: 132px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;   
+  position: relative;
+  Left: 122px;
+  top:5px;
+}
+
+form{
+  position:relative;
+  left:760px;
+  top:-126px;
+}
+
+form button{
+  width: 114px;
+  height: 37px;
+  background-color:#F2C66D;
+  border: none;
+  align-self: center;
+  border-radius: 0px 18px 18px 0px;
+  color:#6B4A09;
+  margin-left: -5px;
+  cursor: pointer;
+}
+.email-input{
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;   
+  font-size: 14px;
+  line-height: 22px;
+  background: none;
+  width: 269px;
+  height: 35px;
+  border:1px solid white;
+  padding-left: 35px;
+  border-radius: 18px 0px 0px 18px;
+}
+.email-input::placeholder {
+  color: white;
+}
+.boton-input{
+  image-rendering:optimizeSpeed;
+  position: absolute;
+  left: 10px;
+  top:10px;
+  
+}
+.Logos-redes{
+  position: relative;
+  left:1048px;
+  top:-55px;
+  display:flex;
+  flex-direction: row;
+  
+  gap:13px;
+}
+
+  .additional-content p {
+    margin-bottom: 10px;
+  }
+
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f3f3fa;
+    color: rgb(48, 60, 142);
+    border: none;
+    border-radius: 15px;
+    border-color: #0e0a7f;
+    cursor: pointer;
+  }
+.image-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    
+  }
+
+  .image-section figure {
+    margin-right: 20px; 
+  }
+
+  .image-section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .image-section figcaption {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .center-button{
+   
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f3f3fa;
+    color: rgb(48, 60, 142);
+    border: none;
+    border-radius: 15px;
+    border-color: #0e0a7f;
+    cursor: pointer;
+    margin-left: 95vh;
+    margin-bottom: 10vh;
+   
+  }
+  .additional-content2 {
+    text-align: center;
+    margin-top: 20px; 
+    margin-right: 25px;
+    margin-top: 10px;
+}
+
+  .additional-content2 p {
+    margin-bottom: 10px;
+  }
+
+  .button2 {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f3f3fa;
+    color: rgb(48, 60, 142);
+    border: none;
+    border-radius: 15px;
+    border-color: #0e0a7f;
+    cursor: pointer;
+  }
+.image-section4 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    
+  }
+
+  .image-section4 figure {
+    margin-right: 20px; 
+  }
+
+  .image-section4 img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .image-section4 figcaption {
+    text-align: center;
+    margin-top: 10px;
+  }
+
 
