@@ -523,7 +523,7 @@ html,body{
   border-color: none;
   color:white;
   border-style: none;
-  margin-top: 56vh;
+  margin-top: 67vh;
   margin-inline-start:-10%;
   
 }
@@ -741,7 +741,7 @@ html,body{
   .box figure{
     width: 100%;
     max-width: 100%;
-    height: 50vh;
+    height: 60vh;
   } 
   
   .text{
@@ -780,9 +780,20 @@ html,body{
     width: 40% !important;
   }
   .text p{
-
     padding-top: 7vh;
   }
+  .box p {
+    font-size: small;
+  }
+  .name , .nacionality{
+    font-size: medium;
+  }
+  .menu-footer{
+    margin-left: 60%;
+    gap:5%
+  }
+  
+
 }
 
 @media screen and (max-width:500px){
