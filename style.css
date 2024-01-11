@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 html,body{
-    width: 1440px;
     height: auto;
-    overflow-x: hidden;
     width: 100%;
     max-width: 100%; 
 }
@@ -14,57 +12,53 @@ html,body{
 }
 
 :root{
-    --tipografia-body:'Cormorant Garamond', serif;
-    --primary-color:#093931;
-    --secundary-color: white;
-    --third-color:#F5D38E;
+  --bg-image-banner:url("./assets/Image\ 1.png");
+  --tipografia-body:'Cormorant Garamond', serif;
+  --primary-color:#093931;
+  --secundary-color: white;
+  --third-color:#F5D38E;
+  
 }
 
 .encabezado{
-    background-color: var(--primary-color);
-    height:62px;
+  height: 10vh;
+  background-color: var(--primary-color);
+  padding-top: 8px;
+}
+.encabezado-nav ul{
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  gap:10px;
+  list-style: none;
+  margin-right: 100px;
+}
+.encabezado-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
-.encabezado nav{
-    color: var(--secundary-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.encabezado ul{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    text-align: center;
-    width: 431px;
-    height: 43px;
-    left: 670px;
-    top: 17px;
-}
-
-
-
-.encabezado h4 {
+.encabezado-nav h4 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 30px;
     font-weight: 400;
     line-height: 46px;
-    position: absolute;
-    Left: 132px;
     Width: 95px;
     Height: 46px;
-    Top: 7px;
     color : var(--third-color);
+    margin-left:132px;
 }
+
 .menu-desplegable a{
-    width: 111.26px;
     color: white;
+    padding-bottom: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
     font-family: 'Manrope', sans-serif;
     font-weight: 400;   
     font-size: 14px;
-    text-align: center;
     height: 30px;
     border-radius: 4px;
     line-height: 22px;
@@ -84,65 +78,108 @@ html,body{
     border-bottom: 2px solid var(--third-color);
 }
 
+.header_mobilenav{
+  margin-right: 2px;
+  display: none;
+}
+
+
 .encabezado-secundario {
-    height: 680px;
-    background-color: var(--primary-color);
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--primary-color);
+  width: 100%;
+  overflow-wrap: break-word;
+  height:760px;
   }
+
+  encabezado-izquierdo{
+    margin:-10px;
+  }
+
+.encabezado-secundario .encabezado-izquierdo {
+
+  width: 40%;
+  margin: 12% 5% 10% 10%;
+}
+
+
+.encabezado-secundario .encabezado-derecho {
+  width: 40%;
+
+}
+
+
+
 
 .encabezado-secundario h1{
     color: var(--third-color);
     font-family: 'Cormorant Garamond', serif;
-    font-size: 59px;
+    font-size: 55px;
     font-weight: 400;
     line-height: 94px;
     text-align: left;
-    position:absolute;
-    width: 537px;
-    height: 282px;
-    top: 202px;
-    Left: 132px;
+
+    width: 100%;
+    
+}
+.encabezado-derecho .imagen{
+  width: 89%;
+  height:60%;
+  margin-top:10%;
+  border-radius: 8px;
 }
 
-.encabezado-secundario .imagen{
-    width:403px;
-    height:490px;
-    position: absolute;
-    top: 100px;
-    Left: 601px;
-    border-radius: 8px;
+.encabezado-derecho .imagen2{
+  width:53%;
+  height:50vh;
+  position: relative;
+  top:-43%;
+  left:56%;
 }
-.imagen2{
-    width:241px;
-    height:321px;
-    position: absolute;
-    top: 198px;
-    Left: 900px;
+.encabezado-derecho .imagen3{
+  image-rendering:-moz-crisp-edges;
+  width:13%;
+  height:7%;
+  position: relative;
+
+  left:23%;
+  top:-26%;
+}
+
+
+.encabezado-derecho div{
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.encabezado-izquierdo div{
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+.background-lines {
+  position: absolute;
+  width: 100%;
     
 }
-.imagen3{
-    image-rendering:-moz-crisp-edges;
-    width:52px;
-    height:52px;
-    position: absolute;
-    top: 330px;
-    Left: 1000px;
-    
-}
+
 .button1{
     font-family: 'Manrope';
     font-weight: 400;   
     font-size: 18px;
     line-height: 28px;
     background-color: var(--primary-color);
-    position: absolute;
     width: 170px;
     height: 52px;
-    top:500px;
-    left:132px;
     color: white; 
     border: 1px solid white;
     border-radius: 25px;
-
+    
+    
 }
 
 
@@ -157,15 +194,17 @@ html,body{
     padding: 10px;
     margin-right:15px ;
 }    
-.additional-content {
+.additional-content1 {
     text-align: center;
     margin-top: 20px; 
     margin-right: 25px;
     margin-top: 30px;
+    
 }
 
-  .additional-content p {
+  .additional-content1 p {
     margin-bottom: 10px;
+    color: #0D554A;
   }
 
   .button {
@@ -223,7 +262,7 @@ html,body{
         /* //colección de imagenes */
         .ourcollections{
           text-align: center;
-          color: #9996f5;
+          color: #0D554A;
         }
       .image-section2 {
           display: flex;
@@ -254,7 +293,7 @@ html,body{
           display: block;
       }
 
-.additional-content {
+.additional-content2 {
     text-align: center;
     margin-top: 20px; 
     margin-right: 25px;
@@ -262,8 +301,9 @@ html,body{
 
 }
 
-  .additional-content p {
+  .additional-content2 h4, p {
     margin-bottom: 10px;
+    
   }
 
   .button {
@@ -307,8 +347,8 @@ html,body{
     border-radius: 15px;
     border-color: #0e0a7f;
     cursor: pointer;
-    margin-left: 95vh;
-    margin-bottom: 10vh;
+    margin-left: 95px;
+    margin-bottom: 10px;
    
   }
   .additional-content2 {
@@ -357,6 +397,7 @@ html,body{
 .Video{
   background-color: white;
   height: 490px;
+  padding: 5% 8% 5% 8%;
 }
 .Video h4{
   color:#0D554A;
@@ -370,10 +411,10 @@ html,body{
 
 .Video-image{
   image-rendering:optimizeQuality;
-  width: 1000px;
+  width: 100%;
   height:368px;
   border-radius:8px;
-  margin:0px 70px 0px 110px;
+  
 }
 
 .Video-boton{
@@ -383,8 +424,9 @@ html,body{
   border-radius: 25px;
   cursor: pointer;
   position: relative;
-  top:-220px;
-  left:578px;
+  top:-40%;
+  left:46%;
+  /*left:578px;*/
 
 }
 
@@ -407,7 +449,7 @@ html,body{
   height: 68px;
   position: relative;
   top:-270px;
-  left:122px;
+  /*left:122px;*/
 }
 
 .footer-encabezado p{
@@ -418,14 +460,14 @@ html,body{
   line-height: 26px;
   position: relative;
   top:-260px;
-  left: 122px;
+  /*left: 122px;*/
 }
 
 .box{
   position: relative;
   top:70px;
-  left:470px;
-  width:672px;
+  /*left:470px;*/
+  width:100%;
   height:375px;
   border-radius:8px;
   background-color:#08312a;
@@ -445,8 +487,8 @@ html,body{
 .box p{
   width: 324px;
   height: 182px;
-  position: absolute;
-  left: 336px;
+  /*position: absolute;*/
+  /*left: 336px;*/
   top: 60px;
 }
 
@@ -457,7 +499,7 @@ html,body{
   line-height: 30px;
   width: 156px;
   height: 30px;
-  position: absolute;
+  /*position: absolute;*/
   top: 198px;
 
 }
@@ -477,12 +519,12 @@ html,body{
 }
 .icono-der{
   position: relative;
-  left:1060px;
+  /*left:1060px;*/
   top:39px;
 }
 .icono-izq{
   position: relative;
-  left:935px;
+  /*left:935px;*/
   top:39px;
 }
 .icono-izq:hover , .icono-der:hover{
@@ -497,7 +539,7 @@ html,body{
   font-weight: 400;
   line-height: 46px;
   position: relative;
-  Left: 122px;
+  /*Left: 122px;*/
   Width: 95px;
   Height: 46px;
   Top: 7px;
@@ -511,7 +553,7 @@ html,body{
   font-weight: 400;
   line-height: 20px;
   position: relative;
-  left:760px;
+  /*left:760px;*/
   top:-130px;
 }
 .footer-encabezado2{
@@ -524,7 +566,7 @@ html,body{
   font-size: 20px;
   font-weight: 400;
   position: relative;
-  left:760px;
+  /*left:760px;*/
   top:-140px;
 }
 .menu-footer {
@@ -532,7 +574,7 @@ html,body{
   flex-wrap: wrap;
   width: 350px;
   position: relative;
-  left:400px;
+  /*left:400px;*/
   top:-25px;
 
 }
@@ -552,17 +594,17 @@ html,body{
 .footer-encabezado2 h6{
   color:white;
   top: 187px;
-  left: 132px;
+  /*left: 132px;*/
   font-family: 'Manrope', sans-serif;
   font-weight: 400;   
   position: relative;
-  Left: 122px;
+  /*Left: 122px;*/
   top:5px;
 }
 
 form{
   position:relative;
-  left:760px;
+  /*left:760px;*/
   top:-126px;
 }
 
@@ -595,13 +637,13 @@ form button{
 .boton-input{
   image-rendering:optimizeSpeed;
   position: absolute;
-  left: 10px;
+  /*left: 10px;*/
   top:10px;
   
 }
 .Logos-redes{
   position: relative;
-  left:1048px;
+  /*left:1048px;*/
   top:-55px;
   display:flex;
   flex-direction: row;
@@ -609,4 +651,57 @@ form button{
   gap:13px;
 }
 
+
+@media screen and (max-width:987px){
+  
+  .encabezado-nav h4{
+    margin-left:1%;
+  }
+  .encabezado-nav ul{
+      display:none;
+  }
+  .header_mobilenav {
+      display: block;
+  }
+  .encabezado-derecho{
+    display:flex;
+    flex-wrap: wrap;
+  }
+  .encabezado-derecho div{
+    flex-wrap: wrap;
+  }
+  .encabezado-izquierdo {
+    width: 40% !important;
+  }
+  .encabezado-izquierdo div{
+    display:flex;
+
+  }
+}
+
+@media screen and (min-width:980px){
+  
+  .encabezado-nav ul{
+      display:flex;
+  }
+  .header_mobilenav {
+      display: none;
+  }
+
+  .encabezado-derecho{
+    display:flex;
+  }
+  .encabezado-derecho .imagen2{
+    width:57%;
+    height:40%;
+  }
+
+  .encabezado-derecho div{
+    display:flex;
+    flex-direction: wrap;
+  }
+  .encabezado-izquierdo {
+    width: 40% !important;
+  }
+}
 
