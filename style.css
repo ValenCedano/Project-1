@@ -479,10 +479,12 @@ text-align: center;
   line-height: 68px;
   width: 70%;
   height: 10%;
+  margin-left: 6%;
 
 }
 
 .text p{
+  color:white;
   text-align:left;
   width: 50%;
   font-size: 16px;
@@ -515,6 +517,7 @@ text-align: center;
   color:white;
   font-size: 16px;
   line-height: 26px;
+  text-align: left;
 
 
 }
@@ -797,8 +800,9 @@ text-align: center;
   .text p{
     padding-top: 7vh;
     color:white;
+
   }
-  .box p {
+  .box p{
     font-size: medium;
   }
   .name , .nacionality{
