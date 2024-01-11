@@ -795,9 +795,20 @@ text-align: center;
     width: 40% !important;
   }
   .text p{
-
     padding-top: 7vh;
   }
+  .box p {
+    font-size: small;
+  }
+  .name , .nacionality{
+    font-size: medium;
+  }
+  .menu-footer{
+    margin-left: 60%;
+    gap:5%
+  }
+  
+
 }
 
 @media screen and (max-width:500px){
