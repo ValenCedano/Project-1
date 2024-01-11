@@ -640,12 +640,14 @@ text-align: center;
 
 .foot-der2 p{
   color: white;
+  width: max-content;
   font-family: 'Manrope', serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 20px;
   margin-left: 20%;
   margin-top: 1vh;
+  margin-bottom: 1vh;
   
 }
 
