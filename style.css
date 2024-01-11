@@ -651,6 +651,7 @@ form button{
   gap:13px;
 }
 
+
 @media screen and (max-width:987px){
   
   .encabezado-nav h4{
@@ -703,3 +704,4 @@ form button{
     width: 40% !important;
   }
 }
+
