@@ -582,7 +582,7 @@ text-align: center;
   justify-content:space-between;
   padding: 0%;
   margin: 0%;
-  top:94%;
+  top:92%;
   right: 10% ;
   height: 52px;
 
@@ -749,7 +749,7 @@ text-align: center;
 
 
 /*Pantala de 980 en adelante*/
-@media screen and (max-width:1000px){
+@media screen and (min-width:1000px){
   .encabezado-nav ul{
     display:flex;
   }
@@ -784,7 +784,7 @@ text-align: center;
     gap:5%
   }
   .box section{
-    top:92%;
+    top:94%;
   }
 
  
