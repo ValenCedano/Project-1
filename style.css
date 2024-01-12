@@ -767,7 +767,18 @@ text-align: center;
   .encabezado-izquierdo {
     width: 40% !important;
   }
-
+  .footer-encabezado{
+    width: 100%;
+    height: 80vh;
+  }
+  .footer-encabezado2{
+    width: 100%;
+    height: 27vh;
+  }
+  .Logos-redes{
+    width: 100%;
+    height: 10vh;
+  }
   .menu-footer{
     margin-left: 60%;
     gap:5%
