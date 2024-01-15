@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bg-image-banner:url("./assets/Image\ 1.png");
+    --tipografia-body:'Cormorant Garamond', serif;
+    --primary-color:#093931;
+    --secundary-color: white;
+    --third-color:#F5D38E;
+    
+}
+
+.encabezado-principal{
+    height: 62px;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+}
+.menu-desplegable {
+    display: none;
+}
+
+
+.encabezado-principal h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.775em;
+    font-weight: 400;
+    line-height: 46px;
+    Width: 5.9375em;
+    Height: 2.875em;
+    color : var(--third-color);
+    margin-top: 2px;
+    margin-left:11px;
+  
+}
+.header_mobilenav{
+    margin-top: 19px;
+    height: min-content;
+    margin-right: 5px;
+    justify-content:left;
+
+}
+.menu-chiquito{
+    display: flex;
+    flex-direction: row;
+    height: 7vh;
+    text-align: left;
+    justify-content: left;
+    margin-bottom: 5%;
+       
+}
+
+.menu-chiquito a{
+    color: var(--primary-color);
+    font-family: 'Cormorant Garamond', serif;
+    text-decoration: none;
+    font-weight:400;
+    font-size: 0.875em;
+    line-height: 1.375em;
+    margin-left: 3vw;
+    margin-right: 2%;
+    margin-top: auto;
+    
+}
+.flecha{
+    color:rgb(1,1, 1,0.6);
+    margin-inline-start:0.93em;
+    font-size: 1.6875em;
+    font-weight: bolder;
+}
+
+/* Section de producto*/
+.imagenes-secundarias img{
+    width: 64px;
+    height: 82px;
+    border-radius: 4px;
+}
+.imagenes-secundarias{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:3%;
+    
+}
+.imagen-principal{
+    max-width: 100%;
+    margin: 2% 3%;
+
+}
+.imagen-principal img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.5em;
+}
+
+
+
