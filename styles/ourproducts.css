@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+html,body{
+    height: auto;
+    width: 100%;
+    max-width: 100%; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+  --bg-image-banner:url("./assets/Image\ 1.png");
+  --tipografia-body:'Cormorant Garamond', serif;
+  --primary-color:#093931;
+  --secundary-color: white;
+  --third-color:#F5D38E;
+  
+}
+
+.encabezado{
+  height: 10vh;
+  background-color: var(--primary-color);
+  padding-top: 8px;
+}
+.encabezado-nav ul{
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  gap:10px;
+  list-style: none;
+  margin-right: 100px;
+}
+.encabezado-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.encabezado-nav h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 46px;
+    Width: 95px;
+    Height: 46px;
+    color : var(--third-color);
+    margin-left:132px;
+}
+
+.menu-desplegable a{
+    color: white;
+    padding-bottom: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;   
+    font-size: 14px;
+    height: 30px;
+    border-radius: 4px;
+    line-height: 22px;
+    text-decoration: none;
+}
+
+.menu-desplegable a img{
+    width: 20px;
+    height: 20px;
+}
+
+.menu-desplegable a:hover {
+    cursor: pointer;
+    font-weight: 800;
+    color: var(--third-color);
+    display: inline-block; /* Cambiado a inline-block para que funcione el border-bottom */
+    border-bottom: 2px solid var(--third-color);
+}
+
+.header_mobilenav{
+  margin-right: 2px;
+  display: none;
+}
+
+
+.encabezado-secundario {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--primary-color);
+  width: 100%;
+  overflow-wrap: break-word;
+  height:760px;
+  }
+
+  encabezado-izquierdo{
+    margin:-10px;
+  }
+
+.encabezado-secundario .encabezado-izquierdo {
+
+  width: 40%;
+  margin: 12% 5% 10% 10%;
+}
+
+
+.encabezado-secundario .encabezado-derecho {
+  width: 40%;
+
+}
+
+
+
+
+.encabezado-secundario h1{
+    color: var(--third-color);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 94px;
+    text-align: left;
+
+    width: 100%;
+    
+}
+.encabezado-derecho .imagen{
+  width: 89%;
+  height:60%;
+  margin-top:10%;
+  border-radius: 8px;
+}
+
+.encabezado-derecho .imagen2{
+  width:53%;
+  height:50vh;
+  position: relative;
+  top:-43%;
+  left:56%;
+}
+.encabezado-derecho .imagen3{
+  image-rendering:-moz-crisp-edges;
+  width:13%;
+  height:7%;
+  position: relative;
+
+  left:23%;
+  top:-26%;
+}
+
+
+.encabezado-derecho div{
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.encabezado-izquierdo div{
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+.background-lines {
+  position: absolute;
+  width: 100%;
+    
+}
+
+.button1{
+    font-family: 'Manrope';
+    font-weight: 400;   
+    font-size: 18px;
+    line-height: 28px;
+    background-color: var(--primary-color);
+    width: 170px;
+    height: 52px;
+    color: white; 
+    border: 1px solid white;
+    border-radius: 25px;
+    
+    
+}
+
+
+.button1:hover{
+  cursor: pointer;
+  background-color: #f3f3fa4f;
+}
