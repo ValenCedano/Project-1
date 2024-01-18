@@ -3,7 +3,7 @@
 html,body{
     height: auto;
     width: 100%;
-    max-width: 100%; 
+    max-width: 100%;
 }
 
 *{
@@ -17,26 +17,29 @@ html,body{
   --primary-color:#093931;
   --secundary-color: white;
   --third-color:#F5D38E;
-  
+
 }
 
 .encabezado{
   height: 10vh;
   background-color: var(--primary-color);
   padding-top: 8px;
+
 }
 .encabezado-nav ul{
   display: flex;
-  text-align: center;
+  text-align: end;
   flex-direction: row;
   gap:10px;
   list-style: none;
   margin-right: 100px;
+  justify-content: flex-end;
 }
 .encabezado-nav{
-  display: flex;
+  display:flex;
   justify-content: space-between;
-  align-items: center;
+
+
 
 }
 
@@ -49,7 +52,9 @@ html,body{
     Height: 46px;
     color : var(--third-color);
     margin-left:132px;
+
 }
+
 
 .menu-desplegable a{
     color: white;
@@ -57,12 +62,13 @@ html,body{
     padding-left: 15px;
     padding-right: 15px;
     font-family: 'Manrope', sans-serif;
-    font-weight: 400;   
+    font-weight: 400;
     font-size: 14px;
     height: 30px;
     border-radius: 4px;
     line-height: 22px;
     text-decoration: none;
+
 }
 
 .menu-desplegable a img{
@@ -77,113 +83,138 @@ html,body{
     display: inline-block; /* Cambiado a inline-block para que funcione el border-bottom */
     border-bottom: 2px solid var(--third-color);
 }
-
-.header_mobilenav{
-  margin-right: 2px;
-  display: none;
-}
-
-
-.encabezado-secundario {
+/* input and search*/
+.container{
   display: flex;
   flex-wrap: wrap;
   background-color: var(--primary-color);
   width: 100%;
-  overflow-wrap: break-word;
-  height:760px;
-  }
+  overflow-wrap:normal;
+  height: 300px;
 
-  encabezado-izquierdo{
-    margin:-10px;
-  }
-
-.encabezado-secundario .encabezado-izquierdo {
-
-  width: 40%;
-  margin: 12% 5% 10% 10%;
-}
-
-
-.encabezado-secundario .encabezado-derecho {
-  width: 40%;
 
 }
+.container h1{
+  color: var(--third-color);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 45px;
+  font-weight: 200;
+  line-height: 94px;
+  text-align: end;
 
 
 
-
-.encabezado-secundario h1{
-    color: var(--third-color);
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 55px;
-    font-weight: 400;
-    line-height: 94px;
-    text-align: left;
-
-    width: 100%;
-    
 }
-.encabezado-derecho .imagen{
-  width: 89%;
-  height:60%;
-  margin-top:10%;
-  border-radius: 8px;
-}
-
-.encabezado-derecho .imagen2{
-  width:53%;
-  height:50vh;
+.search-section {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
   position: relative;
-  top:-43%;
-  left:56%;
-}
-.encabezado-derecho .imagen3{
-  image-rendering:-moz-crisp-edges;
-  width:13%;
-  height:7%;
-  position: relative;
+  margin-left: 33%;
+  /* margin-left: -20px;
+  padding: 10px;
+  margin-top: 8%;
+   */
 
-  left:23%;
-  top:-26%;
 }
 
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  margin-right: 2px;
+  height: 1px;
+  width: 350px; /* Espacio entre el input y el botón */
+}
 
-.encabezado-derecho div{
+.search-button {
+  padding: 10px;
+  background-color: #fff; /* Color de fondo del botón (puedes cambiarlo según tus preferencias) */
+  color: #fff; /* Color del texto del botón */
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
 
+.search-button img {
+  width: 20px; /* Tamaño del icono de búsqueda (puedes ajustarlo según tus necesidades) */
+}
+
+.container-box {
+  display: flex;
+  max-width: 100%;
+  margin-top: 294px;
+  flex-direction: column;
+
+}
+
+.container-box .horizontal-menu {
+  background-color: #faf8f8;
+  color: var(--primary-color);
+  display: flex;
+  gap: 2.25rem;
+  left: 10rem;
+
+}
+
+.horizontal-menu ul {
+  list-style: none;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-}
-.encabezado-izquierdo div{
+  margin-left: 1em;
+  
 
+}
+
+.horizontal-menu li {
+  margin-right: 20px;
+  color: #000;
+
+}
+
+.horizontal-menu a hover {
+
+    cursor: pointer;
+    font-weight: 800;
+    color: var(--third-color);
+    display: inline-block; /* Cambiado a inline-block para que funcione el border-bottom */
+    border-bottom: 2px solid var(--third-color);
+
+}
+
+.image-collection {
+  text-align: center;
+  padding: 20px;
+}
+
+.image-row {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
-
-.background-lines {
-  position: absolute;
-  width: 100%;
-    
+.image-collection .image-row figure {
+  margin-right: 10px;
 }
 
-.button1{
-    font-family: 'Manrope';
-    font-weight: 400;   
-    font-size: 18px;
-    line-height: 28px;
-    background-color: var(--primary-color);
-    width: 170px;
-    height: 52px;
-    color: white; 
-    border: 1px solid white;
-    border-radius: 25px;
-    
-    
+.image-collection .image-row img {
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+
 }
 
-
-.button1:hover{
-  cursor: pointer;
-  background-color: #f3f3fa4f;
+figcaption {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #777;
 }
+ .image-collection .image-row{
+  padding-left: 8.25rem;
+  padding-right: 8.25rem;
+
+ }
