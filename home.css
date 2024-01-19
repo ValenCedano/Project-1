@@ -569,12 +569,12 @@ text-align: center;
 
 
 }
-
 .name {
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
 }
+
 .box section{
   position: absolute;
   display: inline-flex;
@@ -587,7 +587,7 @@ text-align: center;
   height: 52px;
 
 }
-.icono-izq , .icono-der{
+.box p{
   background:transparent;
   image-rendering:optimizeQuality;
   border-color: none;
@@ -705,7 +705,6 @@ text-align: center;
   border-radius: 0px 18px 18px 0px;
   color:#6B4A09;
   margin-left: -1%;
-  
   cursor: pointer;
 }
 .foot-der2 .email-input{
@@ -790,6 +789,7 @@ text-align: center;
     width: 100%;
     height: 10vh;
   }
+
   .menu-footer{
     margin-left: 60%;
     gap:5%
