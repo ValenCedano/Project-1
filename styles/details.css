@@ -128,7 +128,7 @@
 }
 .imagen-principal{
     max-width: 100%;
-    margin: 2% 3%;
+    margin: 12px 2px;
 
 }
 .imagen-principal img{
@@ -355,12 +355,12 @@
     font-weight: 600;
     font-size: 1.1em;
     line-height: 1em;
-    margin-bottom: 7vh;
+    margin-bottom: 9px;
+    
 }
 
 .container div{
     width: 292px;
-    height: 31vh;
     max-width:100%;
     
 }
@@ -395,7 +395,7 @@
     display:flex;
     flex-direction: row;
     overflow-x:scroll;
-    margin-top: 5%;
+    margin-top: 15px;
 
     max-width: 100%;
     
@@ -615,40 +615,55 @@ footer{
 
 
 .box{
-    margin: 0% 2%;
-    max-width:696px;
-    height: 68vh;
+    margin: 0 72px;
+    width: 696px;
+    height: 375px;
+    /* max-width:696px; */    
+    /* height: 68vh; */
     display: flex;
     flex-direction: row-reverse;
     background-color: rgb(8, 31, 27);
+    border-radius: 8px;
+    position: relative;
     
 }
+.box figure{
+    width: 40%;
+    height: 100%;
+}
 .imagen-persona{
-    height: 68vh; 
+    height: 100%; 
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px;
 }
 .box p{
+    
     display: flex;
     flex-direction: column;
     text-align: left;
-    justify-content: center;
+    justify-content: center; 
     font-family: 'Manrope',serif;
     
     font-weight: 400;
     font-size: 1em;
     line-height: 1.625em;
-    margin-left:5%;
+    margin: 16px 42px 2px 33px;
+    /* position: relative; */
+    /* margin-left:5%;
     margin-right: 2.4%;
     margin-top: 14%;
-    max-width: 600px;
+    max-width: 600px; */
    
 }
 
 .caja-parrafo{
     display: flex;
+    width: 60%;
     flex-direction: column;
-    justify-content:flex-end;
-    position: relative;
-    height: max-content;
+    justify-content:center;
+    /* position: relative; */
+    /* height: max-content; */
 }
 
 .botones-foot{
@@ -656,9 +671,10 @@ footer{
     justify-content: space-between;
     width: 120px;
     position: absolute;
-    top:62.7vh;
-    align-self: flex-end;
-    right: 9%;
+    bottom: -30px;    
+    right: 50px;
+    /* align-self: flex-end; */
+    z-index: 1000;
     
 }
 
@@ -757,6 +773,10 @@ footer{
     }
     .text{
         text-align: center;
+        font-size: larger;
+    }
+    .caja-parrafo {
+        font-size: large;
     }
     
     
@@ -789,11 +809,11 @@ footer{
         flex-direction:column;
         align-self: self-start;
         overflow-x: hidden;
-        margin-top: 2%;
+        margin-top: 12px;
         
-        width: 18%;
-        gap:3%;
-        height: 67vh;
+        width: 25%;
+        gap:14px;
+        height: 100%;
         max-width: 100%;
        
     }
@@ -806,6 +826,7 @@ footer{
     .botones-informacion{
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
     }
     .botones-informacion div{
         display: inline-block;
@@ -845,6 +866,7 @@ footer{
 
     .also-like{
         margin: 1% 3%;
+        max-width: 100%;
     }
     .footer-encabezado{
         display: flex;
@@ -867,22 +889,30 @@ footer{
         margin-right: 0%;
     }
     .part_derfoot1{
-        margin-top: 4.4%;
-        margin-right: 2%;
+        width: 60%;
+        height: 100%;
+        max-width: 100%;
+     
 
     }
 
     .part_izqfoot1{
-        width: 400px;
+        width: 40%;
         max-width: 100%;
-        margin-top: -4%;
-        margin-left: 5%;
+        font-size: medium;
+        
+      
+
     }
+    .box{
+        margin:0;
+        align-self: center;
+    }
+        
+    
     .text{
+        padding-right:26px;
         text-align: left;
-    }
-    .text h1{
-        font-size: 3em;
     }
 
 
