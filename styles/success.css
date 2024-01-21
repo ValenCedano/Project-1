@@ -242,6 +242,7 @@
 }
 
 .botonShop{
+    
     margin:10px 25px;
     border-radius: 22px;
     border-color: #0D554A;
@@ -255,6 +256,10 @@
     line-height: 1.625em;
     text-align: center;
     align-self: center;
+
+}
+.botonShop:hover{
+    cursor: pointer;
 }
 
 /*Footer*/
@@ -349,7 +354,7 @@ footer{
     height: 16px;
     image-rendering:optimizeSpeed;
     position: absolute;
-    top:53px;
+    top:55px;
     left: 2%;
   }
 
@@ -385,6 +390,7 @@ footer{
   }
   
   .Logos-redes div{
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     gap:8px;
@@ -457,7 +463,7 @@ footer{
         margin-left: 30px;
     }
     .foot-der2 img{
-        top:60px;
+        top:55px;
     }
     .foot-izq2 h4{
         margin-left: 20px;
@@ -542,6 +548,9 @@ footer{
     .Logos-redes div{
         margin-right: 5em;
     }
-}
+
+    .foot-der2 img{
+        margin-top: 1px;
+    }
 
 
