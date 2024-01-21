@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 
@@ -555,3 +556,560 @@ footer{
 
 
 }
+=======
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bg-image-banner:url("./assets/Image\ 1.png");
+    --tipografia-body:'Cormorant Garamond', serif;
+    --primary-color:#093931;
+    --secundary-color: white;
+    --third-color:#F5D38E;
+    
+}
+
+.encabezado-principal{
+    height: 62px;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+}
+.menu-desplegable {
+    gap: 1.3em;
+    display:none;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 10vw;
+    
+}
+
+
+.encabezado-principal h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.775em;
+    font-weight: 400;
+    line-height: 46px;
+    Width: 5.9375em;
+    Height: 2.875em;
+    color : var(--third-color);
+    margin-top: 2px;
+    margin-left: 10px;
+    /*margin-left:132px;*/
+  
+}
+.menu-desplegable a{
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;   
+    font-size: 0.875em;
+    line-height: 1.375em;
+    text-decoration: none;
+    padding-bottom: 2%;
+}
+.menu-desplegable a:hover {
+    cursor: pointer;
+    font-weight: 800;
+    color: var(--third-color);
+    display: inline-block; /* Cambiado a inline-block para que funcione el border-bottom */
+    border-bottom: 3px solid var(--third-color);    
+    border-radius: 2px 2px;
+}
+.header_mobilenav{
+    display:flex;
+    margin-top: 19px;
+    height: min-content;
+    margin-right: 5px;
+    justify-content:left;
+
+}
+.detallesCompra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:3em 0.1875em;
+    
+
+}
+.compraExitosa{
+    width:560px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    border: 2px solid #efebebe7;
+}
+.agradecimiento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 20px 20px 20px;
+    justify-content: space-evenly;
+}
+
+.agradecimiento figure{
+    display: flex;
+    flex-direction: column;
+    width: 295px;
+}
+
+.agradecimiento h2{
+    font-family: 'Cormorant Garamond',serif;
+    font-size: 1.6em;
+    font-weight: 700;
+    line-height: 2.3em;
+    text-align: center;
+}
+
+.agradecimiento p{
+    font-family: 'Manrope', serif;
+    font-size: 0.8em;
+    font-weight: 400;
+    line-height: 1.3em;
+    color: #9095A0;
+    text-align: center;
+
+}
+.datosPago{
+    display: flex;
+    flex-direction: column;
+    margin: 8px 24px;
+    border-bottom: 2px solid #DEE1E6;
+}
+.numeroPedido{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 24px;
+    border-bottom: 2px solid #DEE1E6;
+}
+.datos1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 1.5em;
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-top: 3px;
+}
+.formato{
+    font-family: 'Manrope';
+    font-size: 1em;
+    line-height: 1.6em;
+    color:#9095A0;
+}
+.formato2{
+    font-family: 'Manrope';
+    font-size: 0.8em;
+    line-height: 1.3em;
+    color: #171A1F;
+
+}
+.datos1 div{display: inline-flex;}
+.imagen{image-rendering: optimizeSpeed; margin-right: 12px;width: 24px;height: 24px;}
+.persona{
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.6em;
+}
+
+.registroUnidad{
+    display: flex;
+    flex-direction: column;
+    margin: 8px 24px;
+    height: 251px;
+    overflow-y: scroll;
+}
+.registroUnidad h5{
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.875em;
+    font-weight: 400;
+    line-height: 1.375em;
+    text-align: left;
+    margin: 10px 0px;
+    
+}
+
+.producto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.producIzq{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    
+}
+
+.producIzq img{
+    display: block;
+    object-fit: cover;
+    height: 94px;
+    border-radius: 6px;
+    image-rendering:optimizeSpeed;
+}
+
+.derecho{
+    font-family: 'Manrope';
+    font-size: 0.875em;
+    font-weight: 600;
+    line-height: 1.375em;
+    text-align: right;
+
+}
+
+.caja-info{
+    margin-left: 11px;
+}
+.caja-info h4{
+    font-family: 'Cormorant Garamond';
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.625em;
+    color:#323842;
+
+}
+
+.caja-info p{
+    font-family: 'Manrope';
+    font-size: 0.6875em;
+    font-weight: 400;
+    line-height: 1.125em;
+    color:#9095A0;
+    margin-bottom: 2px;
+}
+.caja-info .circulox1{
+    width: 15%;
+    height: 17px;
+    color:black;
+    border-radius:47%;
+    background-color:#a09b9b25;
+    border: 1px solid #a09b9b25;
+    text-align: left;
+    font-size: 0.75em;
+    padding: 3px 2px 4px 7px;
+}
+
+.botonShop{
+    
+    margin:10px 25px;
+    border-radius: 22px;
+    border-color: #0D554A;
+    background-color: #0D554A;
+    color: white;
+    width: 173px;
+    height: 44px;
+    font-family: 'Manrope';
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.625em;
+    text-align: center;
+    align-self: center;
+
+}
+.botonShop:hover{
+    cursor: pointer;
+}
+
+/*Footer*/
+footer{
+    background-color: var(--primary-color);
+    width: 100%;
+}
+.foot-izq2{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    max-width: 100%;
+    margin: 6% 2%;
+}
+.footer-encabezado2{
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.menu-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60%;
+    align-items: center;
+    margin-left: 15vw;
+    margin-top: 1vh;
+   
+}
+.menu-footer div{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    
+}
+
+.foot-izq2 h4{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 46px;
+    height: 10%;
+    width: 66px;
+    color : var(--third-color);
+    
+  }
+  
+.menu-footer a{
+  color:white;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;   
+  font-size: 0.875em;
+  line-height: 1.375em;
+  text-decoration: none;
+  margin-bottom: 0.5em;  
+  margin-right: 0.5em;
+  text-align:left;
+}
+
+.foot-der2{
+    display: flex;
+    flex-direction: column;
+    margin:5% 2.5%;
+    max-width: 100%;
+    justify-content: flex-start;
+    position: relative;
+  }
+.foot-der2 h5{
+    color: white;
+    font-family: 'Cormorant Garamond';
+    font-size: 1.25em;
+    font-weight: 400;
+    
+  
+  }
+  .foot-der2 p{
+    color: white;
+    width: max-content;
+    font-family: 'Manrope', serif;
+    font-size: 0.75em;
+    font-weight: 400;
+    line-height: 1.25em;
+    margin-bottom: 1vh;
+  
+  }
+
+  .foot-der2 img{
+    display: block;
+    width: 16px;
+    height: 16px;
+    image-rendering:optimizeSpeed;
+    position: absolute;
+    top:55px;
+    left: 2%;
+  }
+
+
+.foot-der2 form button{
+    width: 114px;
+    height: 37px;
+    background-color:#F2C66D;
+    border: none;
+    align-self: center;
+    border-radius: 0px 18px 18px 0px;
+    color:#6B4A09;
+    margin-left: -1%;
+    cursor: pointer;
+  }
+  .foot-der2 .email-input{
+    width: 269px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;   
+    font-size: 0.875em;
+    line-height: 1.35em;
+   
+    background: none;
+    
+    height: 34px;
+    border:1px solid white;
+    
+    border-radius: 18px 0px 0px 18px;
+    padding-left: 7%;
+  }
+  .email-input::placeholder {
+    color: white;
+  }
+  
+  .Logos-redes div{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap:8px;
+    
+  }
+  
+  .Logos-redes{
+    background-color: var(--primary-color);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0% 2.6%;
+  }
+  
+  .Logos-redes h6{
+    color: white;
+    font-size: 0.75em;
+    font-family: 'Manrope', serif;
+    font-weight: 400;
+    margin-left: 2%;
+    
+  }
+
+/* Media Query*/
+@media screen and (max-width: 465px){
+    .footer-encabezado2 .foot-der2{
+        display:none;
+    }
+}
+
+
+@media screen and (max-width: 790px)
+{
+    .foot-der2{
+        display:flex;
+        flex-direction: column;
+        margin-left: 9%;
+        margin-top: 0px;
+    }
+    .compraExitosa{
+        border:none;
+    }
+
+    .foot-izq2{
+        margin: 6% 9%;
+        font-size: medium;
+    }
+    .encabezado-principal h4{
+        margin-left: 9%;
+    }
+    .Logos-redes{
+        margin:0% 7.6%;
+    }
+
+}
+
+
+
+@media screen and (min-width: 800px){
+    .encabezado-principal{
+        font-size: medium;
+    }
+    .menu-desplegable{
+        display: flex;
+        flex-direction: row;
+        margin-top:1px;
+    
+    }
+    .encabezado-principal h4{
+        margin-left: 30px;
+    }
+    .foot-der2 img{
+        top:55px;
+    }
+    .foot-izq2 h4{
+        margin-left: 20px;
+    }
+    .header_mobilenav{
+        display: none;
+    }
+    .compraExitosa{
+        width: 560px;
+        justify-content: center;
+        font-size: larger;
+    }
+    .compraExitosa button{
+        font-size: medium;
+    }
+
+    .footer-encabezado2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+    .foot-izq2{
+        width: 40%;
+        
+    }
+    
+    .menu-footer{
+        height: 57px;
+        margin-left: 9vw;
+    }
+    .foot-der2{
+        font-size: medium;
+        width: 60%;
+        margin-top: 3.45em;
+        margin-left: 5vw;
+        margin-right: 0%;
+    }
+
+}
+
+
+@media screen and (min-width: 1000px){
+    .encabezado-principal{
+        font-size: large;
+    }
+    .agradecimiento{
+        font-size: larger;
+    }
+    .encabezado-principal h4{
+        margin-left: 132px;
+    }
+    .footer-encabezado2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: center;
+        font-size: large;
+    }
+    .foot-izq2{
+        width: 50%;
+        margin-top: auto;
+    }
+    .foot-izq2 h4{
+        margin-left: 2.5em;
+    }
+    
+    .menu-footer{
+        height: 56px;
+        margin-left: 9vw;
+    }
+    .foot-der2{
+        font-size: medium;
+        width: 50%;
+        margin-top: 4.1em;
+        margin-left: 10vw;
+        margin-right: 0%;
+    }
+    .Logos-redes h6{
+        margin-left: 5em;
+    }
+    .Logos-redes div{
+        margin-right: 5em;
+    }
+
+    .foot-der2 img{
+        margin-top: 1px;
+    }
+}
+

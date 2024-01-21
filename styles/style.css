@@ -259,13 +259,7 @@ text-align: center;
 
 
 }
-/*
-  .additional-content1 h2, p {
-    margin-bottom: 10px;
-    color: #0D554A;
-    margin-left: 40px;
-  }
-*/
+
   .button1:hover {
     padding: 10px 20px;
     font-size: 16px;
@@ -304,7 +298,69 @@ text-align: center;
             height: auto;
             display: block;
         }
-        /* //colección de imagenes */
+
+/* //colección de imagenes */
+
+  /* Our collections */
+/*
+  .collections {
+    text-align: center;
+    padding: 20px;
+}
+
+.collections-title {
+    font-size: 24px;
+    color: var(--primary-color);
+}
+
+.collections-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.figure {
+    margin: 0 10px 20px;
+}
+
+.figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    
+}
+
+figcaption {
+    margin-top: -30px;
+    margin-left: 26px;
+    font-size: 16px;
+    color:var(--secundary-color);
+    position: absolute;
+}
+
+.external-button {
+  display: block;
+  margin: 0 auto; 
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color:#f3f3fa;
+  color: var(--primary-color);
+  border: var(--primary-color);
+  border-radius: 15px;
+  border-color: var(--primary-color);
+  cursor: pointer;
+*/
+
+   
         .ourcollections{
           text-align: center;
           color: #0D554A;
@@ -336,7 +392,7 @@ text-align: center;
           width: 100%;
           height: auto;
           display: block;
-      }
+
 
 .additional-content2 {
     text-align: center;
@@ -475,11 +531,11 @@ text-align: center;
   position: relative;
   top:-40%;
   left:46%;
-  /*left:578px;*/
+  
 
 }
 
-/*Seccion del Footer: Section 1"*/
+
 
 .footer-encabezado{
   background-color: var(--primary-color);
@@ -569,6 +625,7 @@ text-align: center;
 
 
 }
+
 .name {
   font-weight: 700;
   font-size: 20px;
@@ -587,7 +644,8 @@ text-align: center;
   height: 52px;
 
 }
-.box p{
+
+.icono-izq , .icono-der{
   background:transparent;
   image-rendering:optimizeQuality;
   border-color: none;
@@ -705,6 +763,7 @@ text-align: center;
   border-radius: 0px 18px 18px 0px;
   color:#6B4A09;
   margin-left: -1%;
+
   cursor: pointer;
 }
 .foot-der2 .email-input{
