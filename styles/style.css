@@ -299,8 +299,10 @@ text-align: center;
             display: block;
         }
 
-  /* Our collections */
+/* //colección de imagenes */
 
+  /* Our collections */
+/*
   .collections {
     text-align: center;
     padding: 20px;
@@ -347,7 +349,7 @@ figcaption {
 
 .external-button {
   display: block;
-  margin: 0 auto; /* Margen automático a la izquierda y derecha para centrar */
+  margin: 0 auto; 
   padding: 10px 20px;
   font-size: 16px;
   background-color:#f3f3fa;
@@ -356,9 +358,9 @@ figcaption {
   border-radius: 15px;
   border-color: var(--primary-color);
   cursor: pointer;
-}
+*/
 
-        /* //colección de imagenes
+   
         .ourcollections{
           text-align: center;
           color: #0D554A;
@@ -390,7 +392,7 @@ figcaption {
           width: 100%;
           height: auto;
           display: block;
-      } */
+
 
 .additional-content2 {
     text-align: center;
@@ -529,11 +531,11 @@ figcaption {
   position: relative;
   top:-40%;
   left:46%;
-  /*left:578px;*/
+  
 
 }
 
-/*Seccion del Footer: Section 1"*/
+
 
 .footer-encabezado{
   background-color: var(--primary-color);
@@ -629,6 +631,7 @@ figcaption {
   font-size: 20px;
   line-height: 30px;
 }
+
 .box section{
   position: absolute;
   display: inline-flex;
@@ -641,6 +644,7 @@ figcaption {
   height: 52px;
 
 }
+
 .icono-izq , .icono-der{
   background:transparent;
   image-rendering:optimizeQuality;
@@ -759,7 +763,7 @@ figcaption {
   border-radius: 0px 18px 18px 0px;
   color:#6B4A09;
   margin-left: -1%;
-  
+
   cursor: pointer;
 }
 .foot-der2 .email-input{
@@ -844,6 +848,7 @@ figcaption {
     width: 100%;
     height: 10vh;
   }
+
   .menu-footer{
     margin-left: 60%;
     gap:5%
