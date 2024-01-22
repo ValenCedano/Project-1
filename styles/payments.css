@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bg-image-banner:url("../assets/Image\ 1.png");
+    --tipografia-body:'Cormorant Garamond', serif;
+    --primary-color:#093931;
+    --secundary-color: white;
+    --third-color:#F5D38E;
+    
+}
+
+footer{
+    background-color: var(--primary-color);
+    width: 100%;
+}
+.foot-izq2{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    max-width: 100%;
+    margin: 6% 2%;
+}
+.footer-encabezado2{
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.menu-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60%;
+    align-items: center;
+    margin-left: 15vw;
+    margin-top: 1vh;
+   
+}
+.menu-footer div{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    
+}
+
+.foot-izq2 h4{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 46px;
+    height: 10%;
+    width: 66px;
+    color : var(--third-color);
+    
+  }
+  
+.menu-footer a{
+  color:white;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;   
+  font-size: 0.875em;
+  line-height: 1.375em;
+  text-decoration: none;
+  margin-bottom: 0.5em;  
+  margin-right: 0.5em;
+  text-align:left;
+}
+
+.foot-der2{
+    display: flex;
+    flex-direction: column;
+    margin:5% 2.5%;
+    max-width: 100%;
+    justify-content: flex-start;
+    position: relative;
+  }
+.foot-der2 h5{
+    color: white;
+    font-family: 'Cormorant Garamond';
+    font-size: 1.25em;
+    font-weight: 400;
+    
+  
+  }
+  .foot-der2 p{
+    color: white;
+    width: max-content;
+    font-family: 'Manrope', serif;
+    font-size: 0.75em;
+    font-weight: 400;
+    line-height: 1.25em;
+    margin-bottom: 1vh;
+  
+  }
+
+  .foot-der2 img{
+    display: block;
+    width: 16px;
+    height: 16px;
+    image-rendering:optimizeSpeed;
+    position: absolute;
+    top:55px;
+    left: 2%;
+  }
+
+
+.foot-der2 form button{
+    width: 114px;
+    height: 37px;
+    background-color:#F2C66D;
+    border: none;
+    align-self: center;
+    border-radius: 0px 18px 18px 0px;
+    color:#6B4A09;
+    margin-left: -1%;
+    cursor: pointer;
+  }
+  .foot-der2 .email-input{
+    width: 269px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;   
+    font-size: 0.875em;
+    line-height: 1.35em;
+   
+    background: none;
+    
+    height: 34px;
+    border:1px solid white;
+    
+    border-radius: 18px 0px 0px 18px;
+    padding-left: 7%;
+  }
+  .email-input::placeholder {
+    color: white;
+  }
+  
+  .Logos-redes div{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap:8px;
+    
+  }
+  
+  .Logos-redes{
+    background-color: var(--primary-color);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0% 2.6%;
+  }
+  
+  .Logos-redes h6{
+    color: white;
+    font-size: 0.75em;
+    font-family: 'Manrope', serif;
+    font-weight: 400;
+    margin-left: 2%;
+    
+  }
+
+@media screen and (max-width: 465px){
+    .footer-encabezado2 .foot-der2{
+        display:none;
+    }
+}
+
+@media screen and (max-width: 790px)
+{
+    .foot-der2{
+        display:flex;
+        flex-direction: column;
+        margin-left: 9%;
+        margin-top: 0px;
+    }
+    .foot-izq2{
+        margin: 6% 9%;
+        font-size: medium;
+    }
+    .Logos-redes{
+        margin:0% 7.6%;
+    }
+
+}
+
+
+
+@media screen and (min-width: 800px){
+    .foot-der2 img{
+        top:55px;
+    }
+    .foot-izq2 h4{
+        margin-left: 20px;
+    }
+
+    .footer-encabezado2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+    .foot-izq2{
+        width: 40%;
+        
+    }
+    
+    .menu-footer{
+        height: 57px;
+        margin-left: 9vw;
+    }
+    .foot-der2{
+        font-size: medium;
+        width: 60%;
+        margin-top: 3.45em;
+        margin-left: 5vw;
+        margin-right: 0%;
+    }
+
+}
+
+
+@media screen and (min-width: 1000px){
+    .footer-encabezado2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: center;
+        font-size: large;
+    }
+    .foot-izq2{
+        width: 50%;
+        margin-top: auto;
+    }
+    .foot-izq2 h4{
+        margin-left: 2.5em;
+    }
+    
+    .menu-footer{
+        height: 56px;
+        margin-left: 9vw;
+    }
+    .foot-der2{
+        font-size: medium;
+        width: 50%;
+        margin-top: 4.1em;
+        margin-left: 10vw;
+        margin-right: 0%;
+    }
+    .Logos-redes h6{
+        margin-left: 5em;
+    }
+    .Logos-redes div{
+        margin-right: 5em;
+    }
+
+    .foot-der2 img{
+        margin-top: 1px;
+    }
+
+
+}
+
+
+
+
+
