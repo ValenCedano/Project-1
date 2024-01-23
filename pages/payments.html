@@ -3,11 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/payments.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="/styles/payments.css">
     <title>Darling</title>
 </head>
 <body>
-  <footer>
+    <header class="encabezado">
+        <nav class="encabezado-nav">
+            <h4> Darling.</h4>
+            <ul class="menu-desplegable">
+                <a href="/index.html">Home</a></li>
+                <a href="/pages/details.html">Shop</a></li>
+                <a href="/pages/products.html">Collections</a></li>
+                <a href="">About</a></li>
+                <a href="">Contact</a></li>
+        
+                    <a href="">
+                        <figure>
+                            <img  src="/assets/Profile 1.png" alt="logo_usuario">
+                        </figure> 
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <img src="/assets/Shopping cart 1.png" alt="carrito">
+                        </figure> 
+                    </a>
+            </ul>
+            <figure class="header_mobilenav">
+                <img src="./assets/icon-hamburger.svg" alt=""navBar Mobile>
+            </figure>
+            <br>
+           
+            
+        </nav>
+        <section class="cart-section">
+            <div class="cart-items">
+                
+                <article class="cart-item" data-price="29.99">
+                    <img src="/assets/payments/shoppingcart1.png" alt="Producto 1">
+                    <div class="item-details">
+                        <h3>Luxury Charms Ring</h3>
+                        <p>Code: 78205</p>
+                    </div>
+                    <div class="item-price">
+                        <p>$620.73</p>
+                    </div>
+                    <button class="remove-item" onclick="">
+                        <i class="fas fa-trash-alt"></i> <!-- Icono de bote de basura -->
+                    </button>
+                </article>
+                        
+                <article class="cart-item" data-price="29.99">
+                    <img src="/assets/payments/shoppingcart2.png" alt="Producto 1">
+                    <div class="item-details">
+                        <h3>Exquisite Earrings</h3>
+                        <p>Code: 92701</p>
+                    </div>
+                    <div class="item-price">
+                        <p>$125.28</p>
+                    </div>
+                    <button class="remove-item" onclick="removeItem(this)">
+                        <i class="fas fa-trash-alt"></i> <!-- Icono de bote de basura -->
+                    </button>
+                </article>
+
+                        
+                <article class="cart-item" data-price="29.99">
+                    <img src="/assets/payments/shoppingcart3.png" alt="Producto 1">
+                    <div class="item-details">
+                        <h3>Delights Earrings</h3>
+                        <p>Code: 78201</p>
+                    </div>
+                    <div class="item-price">
+                        <p>$327.71</p>
+                    </div>
+                    <button class="remove-item" onclick="removeItem(this)">
+                        <i class="fas fa-trash-alt"></i> <!-- Icono de bote de basura -->
+                    </button>
+                </article>
+            </div>
+    
+            <div class="payment-details">
+                <h2>Detalles de Pago</h2>
+                <div class="total-amount">Total: $0.00</div>
+                <button class="checkout-button">Proceder con el Pago</button>
+            </div>
+        </section>
+    
+    <footer>
         <section class="footer-encabezado2">
             <div class="foot-izq2">
                 <h4> Darling.</h4>

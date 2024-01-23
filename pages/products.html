@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/styles/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"> <!-- Importa Font Awesome -->
+    <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
 </head>
@@ -12,8 +14,8 @@
             <h4> Darling.</h4>
             <ul class="menu-desplegable">
                 <a href="/index.html">Home</a></li>
-                <a href="">Shop</a></li>
-                <a href="">Collections</a></li>
+                <a href="/pages/details.html">Shop</a></li>
+                <a href="/pages/products.html">Collections</a></li>
                 <a href="">About</a></li>
                 <a href="">Contact</a></li>
         
@@ -61,6 +63,16 @@
                     <li><a href="#">Brazalets</a></li>
                     <li><a href="#">Necklaces</a></li>
                     <li><a href="#">Earrings</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Sort by price</a>
+                        <img src="/assets/products/iconboton.png" alt="">
+                        <div class="dropdown-content">
+                            <a href="#">Opción 1</a>
+                            <a href="#">Opción 2</a>
+                            <a href="#">Opción 3</a>
+                        </div>
+                    </li>
                 </ul>
 
 
@@ -115,10 +127,111 @@
                 <!-- Puedes agregar más filas de imágenes según sea necesario -->
             </section>
         </section>
+        <section class="Collections-principal">
+            <figure>
+                <img class="principal" src="/assets/products/prin-collection1.txt" alt="Imagen 3">
+                <figcaption>Exquisite Earrings</figcaption>
+                <h6>$327.71</h6>
+            </figure>
+            <div class="Collections-row">
+                <figure>
+                    <img src="/assets/products/prin-collection2.txt" alt="Imagen 3">
+                    <figcaption>Exquisite Earrings</figcaption>
+                    <h6>$327.71</h6>
+                </figure>
+                <figure>
+                    <img src="/assets/products/prin-collection3.txt" alt="Imagen 3">
+                    <figcaption>Exquisite Earrings</figcaption>
+                    <h6>$327.71</h6>
+                </figure>
+                <figure>
+                    <img src="/assets/products/prin-collection5.txt"alt="Imagen 3">
+                    <figcaption>Exquisite Earrings</figcaption>
+                    <h6>$327.71</h6>
+                </figure>
+                <figure>
+                    <img src="/assets/products/prin-collection6.txt" alt="Imagen 3">
+                    <figcaption>Exquisite Earrings</figcaption>
+                    <h6>$327.71</h6>
+                </figure>
+
+            </div>
+        
+        </section>
+        <section class="container-navigation">
+            <section class="navigation-section">
+                <button class="navigation-button"><i class="fas fa-chevron-left"></i></button>
+                <button class="navigation-button">1</button>
+                <button class="navigation-button">2</button>
+                <button class="navigation-button">3</button>
+                <button class="navigation-button"><i class="fas fa-ellipsis-h"></i></button>
+                <button class="navigation-button">10</button>
+                <button class="navigation-button"><i class="fas fa-chevron-right"></i></button>
+            </section>
+        </section>
+
+        <section class="container-contact">
+            <div class="icon1">
+                <img src="/assets/Delivery time 1.svg" alt="Delivery">
+                <h4>Delivery</h4>
+                <p>Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d </p>
+            </div>
+            <div class="icon2">
+                <img src="/assets/Love message 1.svg" alt="Customer care">
+                <h4>Customer care</h4>
+                <p>Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d </p>
+            </div>
+            <div class="icon3">
+                <img src="/assets/Lock landscape 1.svg" alt="Payment security">
+                <h4>Payment security</h4>
+                <p>Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d </p>
+            </div>
+        
+         
+        </section>
     </main>
-    
+    <footer>
+        <section class="footer-encabezado2">
+            <div class="foot-izq2">
+                <h4> Darling.</h4>
+                <div class="menu-footer"> 
+                    <div>
+                        <a href="">Shop</a>
+                        <a href="">Collections</a>
+                        <a href="">About</a>
+                    </div>
+                    <div>
+                        <a href="">Contact</a>
+                        <a href="">Privacy</a>
+                        <a href="">Terms</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="foot-der2">
+                <h5> Subscribe to our newsletter </h5>
+                <p>For product announcements and exclusive insights</p>
+                <img class="boton-input" src="../assets/Mail.png" >
+                <form action="">
+                    <input type="text" placeholder="Input your email" class="email-input">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+ 
+        </section>
+        <section class="Logos-redes">
+            <h6>&copy; 2022 Brand, Inc.</h6>
+            <div>
+                <figure><img src="../assets/Logo twitter 1.png"></figure>
+                <figure><img src="../assets/Logo facebook 1.png"></figure>
+                <figure><img src="../assets/Logo linkedin 1.png"></figure>
+                <figure><img src="../assets/Logo youtube 1.png"></figure>
+            </div>
+            
+        </section>
+    </footer>
 
     
-    
+
 </body>
 </html>
