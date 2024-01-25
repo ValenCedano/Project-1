@@ -26,20 +26,17 @@ html,body{
   padding-top: 8px;
 
 }
-.encabezado-nav ul{
+.encabezado-nav .menu-desplegable{
   display: flex;
-  text-align: end;
   flex-direction: row;
-  gap:10px;
   list-style: none;
-  margin-right: 100px;
+  margin-left: 245px;
   justify-content: flex-end;
+  margin-top: 10px;
 }
 .encabezado-nav{
   display:flex;
   justify-content: space-between;
-
-
 
 }
 

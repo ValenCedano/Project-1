@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="/styles/payments.css">
-    <title>Darling</title>
+    <title>Payments</title>
 </head>
 <body>
     <header class="encabezado">
@@ -18,12 +18,12 @@
                 <a href="">About</a></li>
                 <a href="">Contact</a></li>
         
-                    <a href="">
+                    <a href="/pages/success.html">
                         <figure>
                             <img  src="/assets/Profile 1.png" alt="logo_usuario">
                         </figure> 
                     </a>
-                    <a href="#">
+                    <a href="/pages/payments.html">
                         <figure>
                             <img src="/assets/Shopping cart 1.png" alt="carrito">
                         </figure> 
@@ -36,6 +36,7 @@
            
             
         </nav>
+    </header>
         <section class="cart-section">
             <div class="cart-items">
                 
@@ -82,14 +83,106 @@
                     </button>
                 </article>
             </div>
-    
-            <div class="payment-details">
-                <h2>Detalles de Pago</h2>
-                <div class="total-amount">Total: $0.00</div>
-                <button class="checkout-button">Proceder con el Pago</button>
-            </div>
+            <section class="payment-container">
+                <h2>Payments Method</h2>
+                <div class="credit-card-input">
+                    <a href="">Change payment methods</a>
+                    <div class="credit-card-placeholder">
+                        <i class="fab fa-cc-mastercard"></i>
+                        <input type="text" id="credit-card" name="credit-card" placeholder="**** 5987">
+                    </div>
+                </div>
+                <div class="voucher">
+                    <h4>Voucher</h4>
+                    <input type="text" id="descuento" name="descuento" placeholder="  $15 OFF">
+                    <button>Apply</button>
+                    <button class="des">$15OFF</button>
+
+                </div>
+                <div class="sumary">
+                    <h4>Summary</h4>
+                    <div class="subtotal">
+                        <div class="sub">
+                          <H5>Subtotal</H5>
+                        </div>
+                        <div class="price">
+                          <p>$1073.72</p>
+                        </div>
+                    </div>
+                    <div class="descount">
+                        <div class="des">
+                          <H5>Discount</H5>
+                        </div>
+                        <div class="price">
+                          <p>-$15</p>
+                        </div>
+                    </div>
+                    <div class="fee">
+                        <div class="feee">
+                          <H5>Fee</H5>
+                        </div>
+                        <div class="price">
+                          <p>0</p>
+                        </div>
+                    </div>
+                    <div class="total-compra">
+                        <div class="total">
+                          <H5>Total</H5>
+                        </div>
+                        <div class="price">
+                          <p>$1058.72</p>
+                        </div>
+                    </div>
+                    
+                    <div class="buton-payment">
+                        <ion-button (click)="onClick()" expand="block" fill="clear" shape="round">
+                            Proceed to payment
+                        </ion-button>
+                    </div>
+                    
+
+                </div>
+            </section>
+            
+            
         </section>
     
+        <section class="collections-payment">
+          <div class="title-payment">
+            <h2>You may also like</h2>
+          </div>
+        <section class="collections-cards">
+          <figure>
+            <img src="/assets/payments/collpay1.png" alt="Imagen 1">
+            <figcaption>Shimmering Stones</figcaption>
+            <p>$168.76</p>
+          </figure>
+      
+          <figure>
+            <img src="/assets/payments/collpay2.png" alt="Imagen 2">
+            <figcaption>Exquisite Ornaments</figcaption>
+            <p>$125.28</p>
+          </figure>
+      
+          <figure>
+            <img src="/assets/payments/collpay3.png" alt="Imagen 3">
+            <figcaption>Elegance and Grace</figcaption>
+            <p>$ 620.75</p>
+          </figure>
+  
+          <figure>
+              <img src="/assets/payments/collpay4.png" alt="Imagen 3">
+              <figcaption>Luxury Charms</figcaption>
+              <p>$327.71</p>
+          </figure>
+
+          <figure>
+            <img src="/assets/payments/collpay5.png" alt="Imagen 3">
+            <figcaption>Blissful Bloo</figcaption>
+            <p>$ 327.71</p>
+          </figure>
+        </section>
+    </section>
     <footer>
         <section class="footer-encabezado2">
             <div class="foot-izq2">
