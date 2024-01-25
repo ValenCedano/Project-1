@@ -227,13 +227,155 @@ text-align: center;
 
 .image-section {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  margin-top: 11%;
+}
+
+.additional-content1 {
+  text-align: left;
+  margin-right: 25px;
+  margin-top: -4%;
+}
+
+.additional-content1 h2 {
+  font-family: "Cormorant Garamond";
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: 0em;
+  color: var(--primary-color);
+  width: 100%; /* Modificado para ocupar todo el ancho en pantallas pequeñas */
+  max-width: 400px; /* Ajusta el máximo ancho según sea necesario */
+}
+
+.button1:hover {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f3f3fa;
+  color: rgb(48, 60, 142);
+  border: none;
+  border-radius: 15px;
+  border-color: #0e0a7f;
+  cursor: pointer;
+}
+
+.image-section figure {
+  margin-right: 20px;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-section figcaption {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media only screen and (max-width: 768px) {
+  .image-section {
+      margin-top: 5%; /* Ajusta el margen superior para pantallas más pequeñas */
+  }
+
+  .additional-content1 {
+      margin-right: 0;
+      margin-top: 0;
+  }
+
+  .additional-content1 h2 {
+      font-size: 28px;
+      line-height: 40px;
+  }
+}
+
+   /* 
+/* //colección de imagenes */
+
+ 
+
+.collections {
+  text-align: center;
+  padding: 20px;
+}
+
+.collections-title {
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+/* Estilos para las tarjetas de colección */
+.collections-cards .image-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.collections-cards .image-row figure {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  position: relative; /* Añadido para posicionar de forma relativa */
+}
+
+.image-row img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+figcaption {
+  margin-top: -30px;
+  margin-left: 26px;
+  font-size: 16px;
+  color: var(--secundary-color);
+  position: absolute;
+}
+
+.external-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f3f3fa;
+  color: var(--primary-color);
+  border: var(--primary-color);
+  border-radius: 15px;
+  border-color: var(--primary-color);
+  cursor: pointer;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media only screen and (max-width: 768px) {
+  .collections-cards .image-row figure {
+      margin-right: 0; /* Eliminar el margen derecho en pantallas más pequeñas */
+  }
+
+  .external-button {
+      margin-top: 20px; /* Ajustar el margen superior del botón en pantallas más pequeñas */
+  }
+}
+
+   /* secound section      */
+ 
+.image-section2{
+  display: flex;
   justify-content: flex-end;
   align-items: center;
   margin-top: 11%;
   
 }
 
-.image-section {
+.image-section2 {
   display: flex;
   flex-wrap:wrap;
   justify-content: center;
@@ -241,25 +383,26 @@ text-align: center;
   height: 50vh;      
  }
 
-.additional-content1 {
+.additional-contenttwo {
     text-align: left; 
     margin-right: 25px;
     margin-top: -4%;
 }
 
-.additional-content1 h2{
+.additional-contenttwo h2{
   font-family: "Cormorant Garamond";
   font-size: 40px;
   font-weight: 600;
-  line-height: 56px;
+  line-height: 40px;
   letter-spacing: 0em;
   color:var(--primary-color);
   width: 30%;
-
-
+}
+.additional-contenttwo p{
+  font-family: var(--primary-color);
 }
 
-  .button1:hover {
+  .additional-contenttwo .buttonBelow:hover {
     padding: 10px 20px;
     font-size: 16px;
     background-color: #f3f3fa;
@@ -270,228 +413,16 @@ text-align: center;
     cursor: pointer;
   }
 
-  .image-section figure {
+  .image-section2 figure {
     margin-right: 20px; 
   }
 
-  .image-section img {
+  .image-section2 img {
     max-width: 100%;
     height: auto;
   }
 
-  .image-section figcaption {
-    text-align: center;
-    margin-top: 10px;
-  }
-  
-      
-
-   .image-container {
-            width: 30%; 
-            margin: 10px;
-            overflow: hidden;
-   }
-
-   .image-container img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-/* //colección de imagenes */
-
-  /* Our collections */
-
-  .collections {
-    text-align: center;
-    padding: 20px;
-}
-
-.collections-title {
-    font-size: 24px;
-    color: var(--primary-color);
-}
-
-.collections-cards .image-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.collections-cards .image-row figure{
-    display: flex;
-    align-items:flex-end;
-    flex-direction: row;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-}
-
-
-
-
-.image-row img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    display: block;
-    
-}
-
-figcaption {
-    margin-top: -30px;
-    margin-left: 26px;
-    font-size: 16px;
-    color:var(--secundary-color);
-    position: absolute;
-}
-
-.external-button {
-  display: block;
-  margin: 0 auto; 
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color:#f3f3fa;
-  color: var(--primary-color);
-  border: var(--primary-color);
-  border-radius: 15px;
-  border-color: var(--primary-color);
-  cursor: pointer;
-}
-
-   
-      
-      .image-section2 {
-          display: flex;
-          flex-wrap:wrap;
-          justify-content: center;
-          align-items: center;
-          height: 30vh;
-          
-      }
-      .image-section3 {
-        display: flex;
-        flex-wrap:wrap;
-        justify-content: center;
-        align-items: center;
-        height: 50vh;
-     
-    }
-
-      .image-container {
-          width: 15%;
-          margin: 10px;
-          overflow: hidden;
-      }
-
-      .image-container img {
-          width: 100%;
-          height: auto;
-          display: block;
-
-
-.additional-content2 {
-    text-align: center;
-    margin-top: 20px; 
-    margin-right: 25px;
-    margin-top: 30px;
-    margin-left: 50px;
-
-}
-
-  .additional-content2 h4, p {
-    margin-bottom: 10px;
-    
-  }
-
-  .button {
-    padding: 10px 20px;
-    font-size: 16px;
-    color:var(--primary-color);
-    border:#08312a;
-    border-radius: 15px;
-    border-color:var(--primary-color);
-    cursor: pointer;
-  }
-.image-section {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 20px;
-    
-  }
-
-  .image-section figure {
-    margin-right: 20px; 
-  }
-
-  .image-section img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .image-section figcaption {
-    text-align: center;
-    margin-top: 10px;
-  }
-  .center-button{
-    
-    padding: 10px 20px;
-    font-size: 16px;
-    color:var(--primary-color);
-    border:var(--primary-color);
-    border-radius: 15px;
-    border-color: var(--primary-color);    
-    cursor: pointer;
-    cursor: pointer;
-    margin-left: 100px;
-    margin-bottom: 10px;
-    
-    
-   
-  }
-  .additional-content2 {
-    text-align: center;
-    margin-top: 20px; 
-    margin-right: 25px;
-    margin-top: 10px;
-}
-
-  .additional-content2 h2, p {
-    margin-bottom: 10px;
-    color: #0D554A;
-  }
-
-  .button2 {
-    padding: 10px 20px;
-    font-size: 16px;
-    
-    color:#0D554A;
-    border:#0D554A;
-    border-radius: 15px;
-    border-color:#0D554A;
-    cursor: pointer;
-  }
-.image-section4 {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 20px;
-    
-  }
-
-  .image-section4 figure {
-    margin-right: 20px; 
-  }
-
-  .image-section4 img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .image-section4 figcaption {
+  .image-section2 figcaption {
     text-align: center;
     margin-top: 10px;
   }
