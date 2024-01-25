@@ -20,20 +20,17 @@
     padding-top: 8px;
   
   }
-  .encabezado-nav ul{
+  .encabezado-nav .menu-desplegable{
     display: flex;
-    text-align: end;
     flex-direction: row;
-    gap:10px;
     list-style: none;
-    margin-right: 100px;
+    margin-left: 245px;
     justify-content: flex-end;
+    margin-top: 10px;
   }
   .encabezado-nav{
     display:flex;
     justify-content: space-between;
-  
-  
   
   }
   
@@ -81,7 +78,7 @@
   .cart-section {
     display: flex;
     justify-content: space-between;
-    max-width: 800px;
+    max-width: 900px;
     margin: 20px auto;
 }
 
@@ -91,7 +88,7 @@
 
 .cart-item {
     display: flex;
-    
+    height: 7.9rem;
     align-items: center;
     border: 1px solid #ddd;
     padding: 10px;
@@ -99,7 +96,7 @@
 }
 
 .cart-item img {
-    width: 50px; /* Ajusta el tamaño de la imagen según sea necesario */
+    width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
     margin-right: 10px;
 }
 
@@ -125,30 +122,169 @@
     padding: 5px 10px;
     cursor: pointer;
 }
-
-.payment-details {
-    flex-grow: 1;
-    padding: 10px;
+.payment-container {
+    max-width: 300%;
+    margin-left: 15px;
+    padding: 20px;
     border: 1px solid #ddd;
-    background-color: #f9f9f9;
+    font-family: var(--tipografia-body);
 }
 
-.total-amount {
-    font-size: 18px;
-    margin-bottom: 10px;
+h2 {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
-.checkout-button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
+.credit-card-input {
+    margin-top: 20px;
+    
+   
+}
+
+.credit-card-input a {
+    font-family: var(--tipografia-body);
+    color: #379AE6;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.credit-card-placeholder {
+    display: flex;
+    align-items: center;
+    
+   
+}
+
+.credit-card-placeholder i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.credit-card-input input {
     padding: 10px;
-    cursor: pointer;
+    font-size: 12px;
     width: 100%;
+    box-sizing: border-box;
+    text-align: end;
+    background-color:  #F8F9FA;
 }
+
+.payment-container .voucher{
+    margin-top: 20px;
+    
+}
+.payment-container .voucher input{
+    margin-top: 8px;
+    font-size: 13px;
+    height: 34px;
+    width: 79%;
+    border-radius: 3px;
+
+}
+.payment-container .voucher button{
+    font-size:10px;
+    height: 34px;
+    width: 16%;
+    margin-left: 3px;
+    border-radius: 3px;
+    background-color: var(--third-color);
+
+}
+.payment-container .voucher .des{
+    border-radius: 12px;
+    margin-top: 5px;
+    width: 16%;
+    background-color: #f0d9a9;
+
+}
+
+.payment-container .sumary{
+    margin-top: 20px;
+    font-size: 1.125rem;
+}
+.payment-container .sumary .subtotal{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.payment-container .sumary .descount{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.payment-container .sumary .fee{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.payment-container .sumary .total-compra{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.payment-container .sumary .total-compra p{
+    color: rgb(230, 49, 40);
+}
+.payment-container .buton-payment{
+    text-align: center;
+    padding: 8px;
+    background-color: var(--primary-color);
+    color: var(--secundary-color);
+    border-radius: 15px;
+    margin-top: 15px;
+    font-size: 14px;
+
+}
+/* image productos */
+/* .collections-payment {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    width: 17.25rem;
+    height: 20rem;      
+   } */
+.collections-payment .title-payment h2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 11%;
+    padding-left: 20px;
+    font-family: var(--tipografia-body);
+    color: var(--primary-color);
+    font-size: 25px;
+    
+  }
+.collections-cards{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 0%;
+    padding-left: 20px;
+}
+.collections-cards figure {
+    margin-right: 10px; 
+  }
+
+.collections-cards img {
+    max-width: 100%;
+    height: auto;
+}
+
+.collections-cards figcaption {
+    text-align:left;
+    margin-top: 10px;
+}
+  
+      
+
 footer{
     background-color: var(--primary-color);
     width: 100%;
+    margin-top: 16%;
 }
 .foot-izq2{
     display: flex;
