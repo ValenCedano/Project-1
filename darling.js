@@ -143,3 +143,33 @@ const productos = [
     
     
 ];
+
+//Funciones
+
+// 1 Función. Filtra los accesiorios según el tipo que indique el usuario
+
+const filtroTipo = (lista,tipo) => {
+    tipo=tipo.toLowerCase();
+    const filtro = lista.filter(lista => lista.tipo_de_accesorio === tipo) 
+    return filtro;
+}
+
+console.log(filtroTipo(productos,'ANILLO'));
+
+// 2 Función.  Realiza busqueda de productos por Nombre
+function mayusculaPrimeraLetraDeOracion(oracion) {
+    let palabras = oracion.split(" ").map(palabra => {
+        return palabra[0].toUpperCase() + palabra.slice(1).toLowerCase();
+    })
+    return palabras.join(" ");
+}
+
+const busquedaNombre = (lista, nombreProducto) =>{
+    const filtro1 = lista.filter(lista => lista.nombre === nombreProducto);
+    return filtro1;
+}
+
+const nombreProducto = prompt("Ingrese el producto a buscar: ");
+
+console.log(busquedaNombre(productos,mayusculaPrimeraLetraDeOracion(nombreProducto)));
+
