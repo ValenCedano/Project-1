@@ -110,7 +110,7 @@
     flex-direction: column;
     
 }
-.galeria{
+#galeria{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -812,7 +812,7 @@ footer{
     .menu-chiquito{
         margin-left: 4.0%;
     }
-    .galeria{
+    #galeria{
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-evenly;

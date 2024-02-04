@@ -5,13 +5,13 @@
 
 const productos = [
    {
-      'id' : 1,
-      'nombre' : 'Luxury Gems Necklace',
-      'codigo' : '',
-      'precio_unitario' : '168.76',
-      'tipo_de_accesorio' : 'collar',
-      'imagen' :['assets\products\coleccion1.png'],
-      'descripcion' : 'collar de plata con diamante moissanite',
+      id : 1,
+      nombre : 'Luxury Gems Necklace',
+      codigo : '',
+      precio_unitario : '168.76',
+      tipo_de_accesorio : 'collar',
+      imagen :['/assets/products/coleccion1.png'],
+      descripcion : 'collar de plata con diamante moissanite',
       stock: [
          { color: 'plata', talla: 6, cantidad: 23 },
          { color: 'plata', talla: 7, cantidad: 18 },
@@ -19,13 +19,13 @@ const productos = [
      ]
    },
    {
-      'id' : 2,
-      'nombre' : 'Aurora Ring',
-      'codigo' : '',
-      'precio_unitario' : '125.28',
-      'tipo_de_accesorio' : 'gargantilla',
-      'imagen' :['assets\products\coleccion2.png'],
-      'descripcion' : 'gargantilla en oro laminado con mini cristales',
+      id : 2,
+      nombre : 'Aurora Ring',
+      codigo : '',
+      precio_unitario: '125.28',
+      tipo_de_accesorio : 'gargantilla',
+      imagen:['/assets/products/coleccion2.png'],
+      descripcion : 'gargantilla en oro laminado con mini cristales',
       stock: [
          { color: 'plata', cantidad: 54 },
          { color: 'oro', cantidad: 43 },
@@ -34,13 +34,13 @@ const productos = [
    },
    
    {
-      'id' : 3,
-      'nombre' : 'Reflections Necklace',
-      'codigo' : '',
-      'precio_unitario' : '620.73',
-      'tipo_de_accesorio' : 'brazalete',
-      'imagen' :['assets\products\coleccion3.png'],
-      'descripcion' : 'brazalete tejido en hilo',
+      id : 3,
+      nombre : 'Reflections Necklace',
+      codigo : '',
+      precio_unitario : '620.73',
+      tipo_de_accesorio : 'brazalete',
+      imagen :['/assets/products/coleccion3.png'],
+      descripcion : 'brazalete tejido en hilo',
       stock: [
          { color: 'plata', cantidad: 16 },
          { color: 'oro', cantidad: 24 },
@@ -49,13 +49,13 @@ const productos = [
    },
    
    {
-      'id' : 4,
-      'nombre' : 'Dreamy Infinity Ring',
-      'codigo' : '',
-      'precio_unitario' : '327.71',
-      'tipo_de_accesorio' : 'anillo',
-      'imagen' :['assets\products\coleccion4.png'],
-      'descripcion' : 'anillo con piedra amethist y mini cristales',
+      id : 4,
+      nombre : 'Dreamy Infinity Ring',
+      codigo : '',
+      precio_unitario : '327.71',
+      tipo_de_accesorio : 'anillo',
+      imagen :['/assets/products/coleccion4.png'],
+      descripcion : 'anillo con piedra amethist y mini cristales',
       stock: [
          { color: 'plata', talla: 6, cantidad: 23 },
          { color: 'plata', talla: 7, cantidad: 18 },
@@ -68,13 +68,13 @@ const productos = [
    },
    
    {
-      'id' : 5,
-      'nombre' : 'Opulent Jewels Ring',
-      'codigo' : '',
-      'precio_unitario' : '168.76',
-      'tipo_de_accesorio' : 'anillo',
-      'imagen' :['assets\products\coleccion5.png'],
-      'descripcion' : 'anillo en oro blanco y oro dorado',
+      id : 5,
+      nombre : 'Opulent Jewels Ring',
+      codigo : '',
+      precio_unitario : '168.76',
+      tipo_de_accesorio : 'anillo',
+      imagen :['/assets/products/coleccion5.png'],
+      descripcion : 'anillo en oro blanco y oro dorado',
       stock: [
          { color: 'plata', talla: 6, cantidad: 19 },
          { color: 'plata', talla: 7, cantidad: 21 },
@@ -87,13 +87,13 @@ const productos = [
    },
    
     {
-       'id' : 6,
-       'nombre' : 'Serene Solitaire Earrings',
-       'codigo' : '',
-       'precio_unitario' : '125.28',
-       'tipo_de_accesorio' : 'aretes',
-       'imagen' :['assets\products\coleccion6.png'],
-       'descripcion' : 'aretes con piedra azurite',
+       id : 6,
+       nombre : 'Serene Solitaire Earrings',
+       codigo : '',
+       precio_unitario : '125.28',
+       tipo_de_accesorio : 'aretes',
+       imagen :['/assets/products/coleccion6.png'],
+       descripcion : 'aretes con piedra azurite',
        stock: [
          { color: 'plata', cantidad: 29 },
          { color: 'oro', cantidad: 17 },
@@ -102,13 +102,13 @@ const productos = [
     },
    
     {
-       'id' : 7,
-       'nombre' : 'Timeless Halo Earrings',
-       'codigo' : '',
-       'precio_unitario' : '620.73',
-       'tipo_de_accesorio' : 'aretes',
-       'imagen' :['assets\products\coleccion7.png'],
-       'descripcion' : 'aretes con cristal',
+       id : 7,
+       nombre : 'Timeless Halo Earrings',
+       codigo : '',
+       precio_unitario : '620.73',
+       tipo_de_accesorio : 'aretes',
+       imagen :['/assets/products/coleccion7.png'],
+       descripcion : 'aretes con cristal',
        stock: [
          { color: 'plata', cantidad: 27 },
          { color: 'oro', cantidad: 34 },
@@ -117,13 +117,13 @@ const productos = [
     },
    
     {
-       'id' : 8,
-       'nombre' : 'Exquisite Earrings',
-       'codigo' : '',
-       'precio_unitario' : '327.71',
-       'tipo_de_accesorio' : 'aretes',
-       'imagen' :['assets\products\coleccion8.png'],
-       'descripcion' : 'aretes con cristal en gota',
+       id : 8,
+       nombre : 'Exquisite Earrings',
+       codigo : '',
+       precio_unitario : '327.71',
+       tipo_de_accesorio: 'aretes',
+       imagen :['/assets/products/coleccion8.png'],
+       descripcion : 'aretes con cristal en gota',
        stock: [
          { color: 'plata', cantidad: 27 },
          { color: 'oro', cantidad: 34 },
@@ -132,13 +132,13 @@ const productos = [
     },
    
     {
-       'id' : 9,
-       'nombre' : 'Timeless Elegance Ring',
-       'codigo' : '',
-       'precio_unitario' : '168.76',
-       'tipo_de_accesorio' : 'anillo',
-       'imagen' :['assets\products\prin-collection1.txt'],
-       'descripcion' : 'trio de anillos con piedras preciosas',
+       id : 9,
+       nombre: 'Timeless Elegance Ring',
+       codigo : '',
+       precio_unitario : '168.76',
+       tipo_de_accesorio : 'anillo',
+       imagen :['/assets/imagen_anillo_azul.png'],
+       descripcion : 'trio de anillos con piedras preciosas',
        stock: [
          { color: 'plata', talla: 6, cantidad: 22 },
          { color: 'plata', talla: 7, cantidad: 15 },
@@ -151,13 +151,13 @@ const productos = [
     },
    
     {
-       'id' : 10,
-       'nombre' : 'Luxury Charms Ring',
-       'codigo' : '',
-       'precio_unitario' : '620.73',
-       'tipo_de_accesorio' : 'anillo',
-       'imagen' :['assets\products\prin-collection2.txt'],
-       'descripcion' : 'anilo con piedra camellian',
+       id : 10,
+       nombre : 'Luxury Charms Ring',
+       codigo : '',
+       precio_unitario : '620.73',
+       tipo_de_accesorio : 'anillo',
+       imagen :['/assets/imagen_anillo_naranja.png'],
+       descripcion: 'anilo con piedra camellian',
        stock: [
          { color: 'plata', talla: 6, cantidad: 30 },
          { color: 'plata', talla: 7, cantidad: 15 },
@@ -170,13 +170,13 @@ const productos = [
     },
 
     {
-      'id' : 11,
-      'nombre' : 'Blissful Bloom Ring',
-      'codigo' : '',
-      'precio_unitario' : '620.73',
-      'tipo_de_accesorio' : 'anillo',
-      'imagen' :['assets\products\prin-collection3.txt'],
-      'descripcion' : 'anillo en hojas',
+      id : 11,
+      nombre : 'Blissful Bloom Ring',
+      codigo : '',
+      precio_unitario : '620.73',
+      tipo_de_accesorio : 'anillo',
+      imagen :['/assets/Blisfull.png'],
+      descripcion : 'anillo en hojas',
       stock: [
          { color: 'plata', talla: 6, cantidad: 30 },
          { color: 'plata', talla: 7, cantidad: 15 },
@@ -189,13 +189,13 @@ const productos = [
    },
 
    {
-      'id' : 12,
-      'nombre' : 'Sparkling Ring',
-      'codigo' : '',
-      'precio_unitario' : '620.73',
-      'tipo_de_accesorio' : 'anillo',
-      'imagen' :['assets\products\prin-collection4.txt'],
-      'descripcion' : 'anillo con micro cristales ',
+      id : 12,
+      nombre: 'Sparkling Ring',
+      codigo : '',
+      precio_unitario : '620.73',
+      tipo_de_accesorio : 'anillo',
+      imagen :['/assets/sparkgling.png'],
+      descripcion : 'anillo con micro cristales ',
       stock: [
          { color: 'plata', talla: 6, cantidad: 54 },
          { color: 'plata', talla: 7, cantidad: 43 },
@@ -204,13 +204,13 @@ const productos = [
    },
 
    {
-      'id' : 13,
-      'nombre' : 'Glimmering Ring',
-      'codigo' : '',
-      'precio_unitario' : '620.73',
-      'tipo_de_accesorio' : 'anillo',
-      'imagen' :['assets\products\prin-collection5.txt'],
-      'descripcion' : 'anillo delicado con murano ruso',
+      id : 13,
+      nombre : 'Glimmering Ring',
+      codigo : '',
+      precio_unitario : '620.73',
+      tipo_de_accesorio : 'anillo',
+      imagen :['/assets/glimme.png'],
+      descripcion : 'anillo delicado con murano ruso',
       stock: [
          { color: 'plata', talla: 6, cantidad: 30 },
          { color: 'plata', talla: 7, cantidad: 15 },
@@ -225,6 +225,7 @@ const productos = [
     
 ];
 
+/*
 
 
 // • Crear una función que ordene un array de productos por precios de manera ascendente
@@ -296,5 +297,5 @@ const busquedaNombre = (lista, nombreProducto) =>{
 const nombreProducto = prompt("Ingrese el producto a buscar: ");
 
 console.log(busquedaNombre(productos,mayusculaPrimeraLetraDeOracion(nombreProducto)));
-
+*/
 

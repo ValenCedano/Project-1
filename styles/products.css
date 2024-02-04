@@ -81,17 +81,15 @@ html,body{
     border-bottom: 2px solid var(--third-color);
 }
 /* input and search*/
-.container{
+.container1{
   display: flex;
   flex-wrap: wrap;
   background-color: var(--primary-color);
   width: 100%;
-  overflow-wrap:normal;
-  height: 300px;
-
-
+  height: 20em;
+ 
 }
-.container h1{
+.container1 h1{
   color: var(--third-color);
   font-family: 'Cormorant Garamond', serif;
   font-size: 45px;
@@ -102,7 +100,7 @@ html,body{
 
 
 }
-.search-section {
+.container1 .search-section {
   display:flex;
   flex-direction: column;
   align-items:center;
@@ -116,7 +114,7 @@ html,body{
 
 }
 
-.search-input {
+.container1 .search-input {
   padding: 10px;
   font-size: 16px;
   border: 1px solid #fff;
@@ -126,7 +124,7 @@ html,body{
   width: 350px; /* Espacio entre el input y el botón */
 }
 
-.search-button {
+.container1 .search-button {
   padding: 10px;
   background-color: #fff; /* Color de fondo del botón (puedes cambiarlo según tus preferencias) */
   color: #fff; /* Color del texto del botón */
@@ -142,7 +140,6 @@ html,body{
 .container-box {
   display: flex;
   max-width: 100%;
-  margin-top: 294px;
   flex-direction: column;
 
 }
@@ -225,45 +222,44 @@ html,body{
 }
 
 
-.image-collection {
-  text-align: center;
-  padding: 20px;
-}
-
-.image-row {
+#image-collection {
   display: flex;
+  /* text-align: center; */
+  /* width: 83%; */
   justify-content: center;
-  align-items: center;
+  flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 20px;
+  width: 100%;
+  margin: 2em 1em;
+  column-gap: 27px;
+  row-gap: 1em;
+  max-width: 1104px;
 }
 
-.image-collection .image-row figure {
-  margin-right: 10px;
+
+#image-collection  figure {
+  width: 17.25em;
+  height: 25.25em;
 }
 
-.image-collection .image-row img {
-  width: 150px;
-  height: 150px;
+#image-collection img {
+  width: 100%;
+  height: 20em;
   flex-shrink: 0;
 
 }
 
-figcaption {
+#image-collection span{
   margin-top: 10px;
   font-size: 16px;
   color:black;
   text-align: left;
 }
-.image-row h6{
+#image-collection h6{
   text-align: left;
 }
- .image-collection .image-row{
-  padding-left: 8.25rem;
-  padding-right: 8.25rem;
-  
 
- }
+
  .Collections-principal {
   display: flex;
   padding:8.25em;
@@ -271,11 +267,8 @@ figcaption {
   margin-left: 50px;
  
 
-  
-  
-
  }
- .Collections-principal .principal {
+ .principal {
   width: 370px;
   height: 420px;
  }
@@ -319,6 +312,8 @@ figcaption {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 100%;
+  max-width: 100%;
  
   padding: 10px;
 
