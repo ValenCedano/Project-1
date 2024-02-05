@@ -47,8 +47,8 @@ childNodes.forEach(figurata => {
     const primerhijo = hijosFigura[0].attributes;
     
     const link = primerhijo[0].value ;
-    location.href= '../pages/details.html';
-    insertarPrincipal("/assets/products/coleccion2.png")
+    window.location.href= '../pages/details.html';
+    insertarPrincipal(link);
   });
 });
 
