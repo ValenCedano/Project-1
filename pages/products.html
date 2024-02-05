@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/styles/products.css">
+    <link rel="stylesheet" href="../styles/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"> <!-- Importa Font Awesome -->
+    <link rel="stylesheet" href="../styles/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
 </head>
@@ -12,113 +14,144 @@
             <h4> Darling.</h4>
             <ul class="menu-desplegable">
                 <a href="/index.html">Home</a></li>
-                <a href="">Shop</a></li>
-                <a href="">Collections</a></li>
+                <a href="/pages/details.html">Shop</a></li>
+                <a href="/pages/products.html">Collections</a></li>
                 <a href="">About</a></li>
                 <a href="">Contact</a></li>
         
-                    <a href="">
+                    <a href="/pages/success.html">
                         <figure>
                             <img  src="/assets/Profile 1.png" alt="logo_usuario">
                         </figure> 
                     </a>
-                    <a href="#">
+                    <a href="/pages/payments.html">
                         <figure>
                             <img src="/assets/Shopping cart 1.png" alt="carrito">
                         </figure> 
                     </a>
             </ul>
             <figure class="header_mobilenav">
-                <img src="./assets/icon-hamburger.svg" alt=""navBar Mobile>
+                <img src="../assets/icon-hamburger.svg" alt=""navBar Mobile>
             </figure>
             <br>
            
             
         </nav>
-
         <!-- /* input con search  -->
-        <section class="container">
-            
+    </header>
+    <section class="container1">
         <section class="search-section">
             <h1>Our products</h1>
             <br>
-        <button class="search-button">
-            <img src="/assets/products/a58cb490-4d59-4459-b519-c8e81e0193ca.txt" alt="Icono de búsqueda">
-        <input type="text" class="search-input" placeholder="Find jewelry you like">
-
-        </button>
+            <button class="search-button">
+                <img src="/assets/products/a58cb490-4d59-4459-b519-c8e81e0193ca.txt" alt="Icono de búsqueda">
+                <input type="text" class="search-input" placeholder="Find jewelry you like">
+            </button>
         </section>
-        </section>
-    </header> 
-
-    <main class="container-box">
-            
+    </section> 
+    <section class="container-box">
         <!-- Menú horizontal -->
         <nav class="horizontal-menu">
-                <ul>
-                    <li><a href="#">All</a></li>
-                    <li><a href="#">Rings</a></li>
-                    <li><a href="#">Brazalets</a></li>
-                    <li><a href="#">Necklaces</a></li>
-                    <li><a href="#">Earrings</a></li>
-                </ul>
+            <ul>
+                <li><a href="#">All</a></li>
+                <li><a href="#">Rings</a></li>
+                <li><a href="#">Brazalets</a></li>
+                <li><a href="#">Necklaces</a></li>
+                <li><a href="#">Earrings</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Sort by price</a>
+                    <img src="/assets/products/iconboton.png" alt="">
+                    <div class="dropdown-content">
+                        <a href="#">Opción 1</a>
+                        <a href="#">Opción 2</a>
+                        <a href="#">Opción 3</a>
+                    </div>
+                </li>
+            </ul>
 
 
-            </nav>
+        </nav>
     
             <!-- Colección de imágenes -->
-            <section class="image-collection">
+        <section id="image-collection">
                 
-                <div class="image-row">
-                    <figure>
-                        <img src="/assets/products/coleccion1.png" alt="Imagen 1">
-                        <figcaption>Luxury Gems Necklace</figcaption>
-                        <h6>$168.76</h6>
-                    </figure>
-                    <figure>
-                        <img src="/assets/products/coleccion2.png" alt="Imagen 2">
-                        <figcaption>Aurora Ring</figcaption>
-                        <h6>$125.28</h6>
-                    </figure>
-                    <figure>
-                        <img src="/assets/products/coleccion3.png" alt="Imagen 3">
-                        <figcaption>Reflections Necklace</figcaption>
-                        <h6>$620.73</h6>
-                    </figure>
-                    <figure>
-                        <img src="/assets/products/coleccion4.png" alt="Imagen 1">
-                        <figcaption>Dreamy Infinity Ring</figcaption>
-                        <h6>$327.71</h6>
-                    </figure>
-                    
-                    <figure>
-                        <img src="/assets/products/coleccion5.png" alt="Imagen 2">
-                        <figcaption>Opulent Jewels Ring</figcaption>
-                        <h6>$168.76</h6>
-                    </figure>
-                    <figure>
-                        <img src="/assets/products/coleccion6.png" alt="Imagen 3">
-                        <figcaption>Serene Solitaire Earrings</figcaption>
-                        <h6>$125.28</h6>
-                    </figure>
-                    <figure>
-                        <img src="/assets/products/coleccion7.png" alt="Imagen 2">
-                        <figcaption>Timeless Halo Earrings</figcaption>
-                        <h6>$620.73</h6>
-                    </figure>
-                    <figure>
-                        <img src="/assets/products/coleccion8.png" alt="Imagen 3">
-                        <figcaption>Exquisite Earrings</figcaption>
-                        <h6>$327.71</h6>
-                    </figure>
-                </div>
                 <!-- Puedes agregar más filas de imágenes según sea necesario -->
-            </section>
         </section>
-    </main>
-    
+    </section>
 
+        
+    <section class="container-navigation">
+        <section class="navigation-section">
+            <button class="navigation-button"><i class="fas fa-chevron-left"></i></button>
+            <button class="navigation-button">1</button>
+            <button class="navigation-button">2</button>
+            <button class="navigation-button">3</button>
+            <button class="navigation-button"><i class="fas fa-ellipsis-h"></i></button>
+            <button class="navigation-button">10</button>
+            <button class="navigation-button"><i class="fas fa-chevron-right"></i></button>
+        </section>
+    </section>
+    <section class="container-contact">
+        <div class="icon1">
+            <img src="/assets/Delivery time 1.svg" alt="Delivery">
+            <h4>Delivery</h4>
+            <p>Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d </p>
+        </div>
+        <div class="icon2">
+            <img src="/assets/Love message 1.svg" alt="Customer care">
+            <h4>Customer care</h4>
+            <p>Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d </p>
+        </div>
+        <div class="icon3">
+            <img src="/assets/Lock landscape 1.svg" alt="Payment security">
+            <h4>Payment security</h4>
+            <p>Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d </p>
+        </div>
     
-    
+     
+    </section>
+    <footer>
+        <section class="footer-encabezado2">
+            <div class="foot-izq2">
+                <h4> Darling.</h4>
+                <div class="menu-footer"> 
+                    <div>
+                        <a href="">Shop</a>
+                        <a href="">Collections</a>
+                        <a href="">About</a>
+                    </div>
+                    <div>
+                        <a href="">Contact</a>
+                        <a href="">Privacy</a>
+                        <a href="">Terms</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="foot-der2">
+                <h5> Subscribe to our newsletter </h5>
+                <p>For product announcements and exclusive insights</p>
+                <img class="boton-input" src="../assets/Mail.png" >
+                <form action="">
+                    <input type="text" placeholder="Input your email" class="email-input">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+ 
+        </section>
+        <section class="Logos-redes">
+            <h6>&copy; 2022 Brand, Inc.</h6>
+            <div>
+                <figure><img src="../assets/Logo twitter 1.png"></figure>
+                <figure><img src="../assets/Logo facebook 1.png"></figure>
+                <figure><img src="../assets/Logo linkedin 1.png"></figure>
+                <figure><img src="../assets/Logo youtube 1.png"></figure>
+            </div>
+            
+        </section>
+    </footer>
+    <script src="../scripts/products.js" ></script>
+    <script src="../scripts/ourproducts.js" ></script>
+
 </body>
 </html>

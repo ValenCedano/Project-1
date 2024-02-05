@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="/styles/payments.css">
+    <title>Payments</title>
+</head>
+<body>
+    <header class="encabezado">
+        <nav class="encabezado-nav">
+            <h4> Darling.</h4>
+            <ul class="menu-desplegable">
+                <a href="/index.html">Home</a></li>
+                <a href="/pages/details.html">Shop</a></li>
+                <a href="/pages/products.html">Collections</a></li>
+                <a href="">About</a></li>
+                <a href="">Contact</a></li>
+        
+                    <a href="/pages/success.html">
+                        <figure>
+                            <img  src="/assets/Profile 1.png" alt="logo_usuario">
+                        </figure> 
+                    </a>
+                    <a href="/pages/payments.html">
+                        <figure>
+                            <img src="/assets/Shopping cart 1.png" alt="carrito">
+                        </figure> 
+                    </a>
+            </ul>
+            <figure class="header_mobilenav">
+                <img src="./assets/icon-hamburger.svg" alt=""navBar Mobile>
+            </figure>
+            <br>
+           
+            
+        </nav>
+    </header>
+        <section class="cart-section">
+            <div class="cart-items">
+                
+                <article class="cart-item" data-price="29.99">
+                    <img src="/assets/payments/shoppingcart1.png" alt="Producto 1">
+                    <div class="item-details">
+                        <h3>Luxury Charms Ring</h3>
+                        <p>Code: 78205</p>
+                    </div>
+                    <div class="item-price">
+                        <p>$620.73</p>
+                    </div>
+                    <button class="remove-item" onclick="">
+                        <i class="fas fa-trash-alt"></i> <!-- Icono de bote de basura -->
+                    </button>
+                </article>
+                        
+                <article class="cart-item" data-price="29.99">
+                    <img src="/assets/payments/shoppingcart2.png" alt="Producto 1">
+                    <div class="item-details">
+                        <h3>Exquisite Earrings</h3>
+                        <p>Code: 92701</p>
+                    </div>
+                    <div class="item-price">
+                        <p>$125.28</p>
+                    </div>
+                    <button class="remove-item" onclick="removeItem(this)">
+                        <i class="fas fa-trash-alt"></i> <!-- Icono de bote de basura -->
+                    </button>
+                </article>
+
+                        
+                <article class="cart-item" data-price="29.99">
+                    <img src="/assets/payments/shoppingcart3.png" alt="Producto 1">
+                    <div class="item-details">
+                        <h3>Delights Earrings</h3>
+                        <p>Code: 78201</p>
+                    </div>
+                    <div class="item-price">
+                        <p>$327.71</p>
+                    </div>
+                    <button class="remove-item" onclick="removeItem(this)">
+                        <i class="fas fa-trash-alt"></i> <!-- Icono de bote de basura -->
+                    </button>
+                </article>
+            </div>
+            <section class="payment-container">
+                <h2>Payments Method</h2>
+                <div class="credit-card-input">
+                    <a href="">Change payment methods</a>
+                    <div class="credit-card-placeholder">
+                        <i class="fab fa-cc-mastercard"></i>
+                        <input type="text" id="credit-card" name="credit-card" placeholder="**** 5987">
+                    </div>
+                </div>
+                <div class="voucher">
+                    <h4>Voucher</h4>
+                    <input type="text" id="descuento" name="descuento" placeholder="  $15 OFF">
+                    <button>Apply</button>
+                    <button class="des">$15OFF</button>
+
+                </div>
+                <div class="sumary">
+                    <h4>Summary</h4>
+                    <div class="subtotal">
+                        <div class="sub">
+                          <H5>Subtotal</H5>
+                        </div>
+                        <div class="price">
+                          <p>$1073.72</p>
+                        </div>
+                    </div>
+                    <div class="descount">
+                        <div class="des">
+                          <H5>Discount</H5>
+                        </div>
+                        <div class="price">
+                          <p>-$15</p>
+                        </div>
+                    </div>
+                    <div class="fee">
+                        <div class="feee">
+                          <H5>Fee</H5>
+                        </div>
+                        <div class="price">
+                          <p>0</p>
+                        </div>
+                    </div>
+                    <div class="total-compra">
+                        <div class="total">
+                          <H5>Total</H5>
+                        </div>
+                        <div class="price">
+                          <p>$1058.72</p>
+                        </div>
+                    </div>
+                    
+                    <div class="buton-payment">
+                        <ion-button (click)="onClick()" expand="block" fill="clear" shape="round">
+                            Proceed to payment
+                        </ion-button>
+                    </div>
+                    
+
+                </div>
+            </section>
+            
+            
+        </section>
+    
+        <section class="collections-payment">
+          <div class="title-payment">
+            <h2>You may also like</h2>
+          </div>
+        <section class="collections-cards">
+          <figure>
+            <img src="/assets/payments/collpay1.png" alt="Imagen 1">
+            <figcaption>Shimmering Stones</figcaption>
+            <p>$168.76</p>
+          </figure>
+      
+          <figure>
+            <img src="/assets/payments/collpay2.png" alt="Imagen 2">
+            <figcaption>Exquisite Ornaments</figcaption>
+            <p>$125.28</p>
+          </figure>
+      
+          <figure>
+            <img src="/assets/payments/collpay3.png" alt="Imagen 3">
+            <figcaption>Elegance and Grace</figcaption>
+            <p>$ 620.75</p>
+          </figure>
+  
+          <figure>
+              <img src="/assets/payments/collpay4.png" alt="Imagen 3">
+              <figcaption>Luxury Charms</figcaption>
+              <p>$327.71</p>
+          </figure>
+
+          <figure>
+            <img src="/assets/payments/collpay5.png" alt="Imagen 3">
+            <figcaption>Blissful Bloo</figcaption>
+            <p>$ 327.71</p>
+          </figure>
+        </section>
+    </section>
+    <footer>
+        <section class="footer-encabezado2">
+            <div class="foot-izq2">
+                <h4> Darling.</h4>
+                <div class="menu-footer"> 
+                    <div>
+                        <a href="">Shop</a>
+                        <a href="">Collections</a>
+                        <a href="">About</a>
+                    </div>
+                    <div>
+                        <a href="">Contact</a>
+                        <a href="">Privacy</a>
+                        <a href="">Terms</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="foot-der2">
+                <h5> Subscribe to our newsletter </h5>
+                <p>For product announcements and exclusive insights</p>
+                <img class="boton-input" src="../assets/Mail.png" >
+                <form action="">
+                    <input type="text" placeholder="Input your email" class="email-input">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+ 
+        </section>
+        <section class="Logos-redes">
+            <h6>&copy; 2022 Brand, Inc.</h6>
+            <div>
+                <figure><img src="../assets/Logo twitter 1.png"></figure>
+                <figure><img src="../assets/Logo facebook 1.png"></figure>
+                <figure><img src="../assets/Logo linkedin 1.png"></figure>
+                <figure><img src="../assets/Logo youtube 1.png"></figure>
+            </div>
+            
+        </section>
+    </footer>
+</body>
+</html>
+
+</body>
+</html>
+
