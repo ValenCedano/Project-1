@@ -163,6 +163,7 @@ html,body{
 .productosCarrito .producto{
   display: flex;
   flex-direction: row;
+  width: 400px;
   /* height: 94px; */
   gap: 58px;
   border-radius: 4px;
