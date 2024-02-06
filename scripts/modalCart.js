@@ -4,8 +4,9 @@ const closeButton = document.getElementById("closeModal")
 
 const toggleModal = (button, modal) => {
     button.addEventListener("click", () => {
-        modal.classList.toggle("hidden");
         modal.classList.toggle("show");
+        modal.classList.toggle("hidden");
+        
     });
 };
 
