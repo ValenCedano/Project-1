@@ -9,7 +9,7 @@ const nombreJoyeria = document.getElementsByClassName('menu-chiquito');
 let imagenGrandote;
 const insertarPrincipal = (imagen_ruta) =>{
     const imagenPrincipal = document.querySelector('.imagen-principal');
-    imagenPrincipal.innerHTML = '';
+    imagenPrincipal.innerHTML = "";
     const figura = document.createElement('figure');
     console.log(figura);
     
@@ -17,7 +17,7 @@ const insertarPrincipal = (imagen_ruta) =>{
     imagen.src = imagen_ruta;
     imagen.alt = 'Imagen principal';
     figura.appendChild(imagen);
-    const mu = imagenPrincipal.appendChild(figura);
+    imagenPrincipal.appendChild(figura);
 };
 
 

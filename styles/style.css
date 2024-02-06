@@ -82,8 +82,33 @@ html,body{
   margin-right: 2px;
   display: none;
 }
+#btnCard{
+  cursor: pointer;
+}
+.modalCart{
+  display:flex;
+  justify-content: flex-end;
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  background-color: #05050549;
+  visibility: hidden;
+}
+
+.show{
+  visibility: visible !important;
+}
+ 
 
 
+.modalCart section{
+  width: 440px;
+  height: 100%;
+  background-color: white;
+
+}
 .encabezado-secundario {
   display: flex;
   flex-wrap: wrap;
