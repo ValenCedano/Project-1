@@ -89,6 +89,8 @@ html,body{
 }
 .modalCart{
   display:flex;
+  overflow-y: scroll;
+  overflow-x: hidden;
   justify-content: flex-end;
   position: fixed;
   top:0;
@@ -100,16 +102,18 @@ html,body{
 }
 
 .modalCart section{
-  width: 440px;
-  overflow-y: scroll;
-  height: 100%;
+  width: 480px;
   background-color: white;
+  height: max-content;
+  align-content: center;
 }
 
 .contenidoModal .encabezadoModal{
   display: flex;
   flex-direction: row;
   justify-content:space-between;
+  
+  
 }
 
 
@@ -149,16 +153,17 @@ html,body{
   background-color:#f3f3fa00;
 }
 
-.productosCarrito{
+.contenidoModal .productosCarrito{
   display: flex;
   flex-direction: column;
-  width: auto;
+  /* width: 420px; */
+  max-width: 100%;
   height: max-content;
-  margin: 10px 28px;
   gap: 20px;
   margin-bottom: 91px;
-
+  align-items: center;
 }
+
 
 .productosCarrito .producto{
   display: flex;
@@ -242,6 +247,7 @@ html,body{
 }
 
 .contenidoModal .infoFinal{
+  
   display: flex;
   width: 386px;
   height: 100px;
