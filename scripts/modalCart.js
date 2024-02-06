@@ -4,12 +4,13 @@ const closeButton = document.getElementById("closeModal")
 
 const toggleModal = (button, modal) => {
     button.addEventListener("click", () => {
-        modal.classlist.toggle("hidden");
-        modal.classlist.toggle("show");
+        modal.classList.toggle("hidden");
+        modal.classList.toggle("show");
     });
 };
 
 toggleModal(cartButton,modal);
+toggleModal(closeButton,modal);
 
 
 
