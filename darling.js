@@ -189,8 +189,8 @@ const productos = [
    },
 
    {
-      'id' : 12,
-      'nombre' : 'Sparkling Ring',
+      id : 12,
+      nombre : 'Sparkling Ring',
       'codigo' : '',
       'precio_unitario' : '620.73',
       'tipo_de_accesorio' : 'anillo',
