@@ -24,9 +24,9 @@
                             <img  src="/assets/Profile 1.png" alt="logo_usuario">
                         </figure> 
                     </a>
-                    <a href="/pages/payments.html">
+                    <a href="#">
                         <figure>
-                            <img src="/assets/Shopping cart 1.png" alt="carrito">
+                            <img id="btnCard" src="/assets/Shopping cart 1.png" alt="carrito">
                         </figure> 
                     </a>
             </ul>
@@ -150,8 +150,89 @@
             
         </section>
     </footer>
+    <div class="modalCart hidden">
+        <section class="contenidoModal">
+            <div class="encabezadoModal">
+                <span> Your Cart</span>
+                <button id="closeModal"> x </button>
+            </div>
+
+            <section class="productosCarrito">
+                <div class="producto">
+                    <div class="producIzq">
+                        <img src="/assets/anillo-verdadero-success.png">
+                        <div class="caja-info">
+                            <h4>Luxury Charms Ring</h4>
+                            <p>Code: 78205</p>
+                            <p class="derecho">$620.73</p>
+                        </div>
+                    </div>
+
+                    <div class="edicion">
+                        <img src="/assets/Button6modal.png">
+                        <p class="circulox1" >
+                            x1
+                        </p>
+                        
+                    </div>
+                    
+                </div>
+                    
+        
+                <div class="producto">
+                    <div class="producIzq">
+                        <img src="/assets/imagen-arete.png">
+                        <div class="caja-info">
+                            <h4>Exquisite Earrings</h4>
+                            <p>Code: 92701</p>
+                            <p class="derecho"> $125.28</p>
+                        </div>                
+                    </div>
+                    <div class="edicion">
+                        <img src="/assets/Button6modal.png">
+                        <p class="circulox1" >
+                            x1
+                        </p>
+                        
+                    </div>
+                </div>
+                    
+                <div class="producto">
+                    <div class="producIzq">
+                        <img src="/assets/imagen-delfin.png">
+                        <div class="caja-info">
+                            <h4>Delights Earrings</h4>
+                            <p>Code: 78201</p>
+                            <p class="derecho">$327.71</p>  
+                            
+                        </div> 
+                    </div>
+                    <div class="edicion">
+                        <img src="/assets/Button6modal.png">
+                        <p class="circulox1" >
+                            x1
+                        </p>
+                        
+                    </div>
+                </div>
+                    
+            </section>
+            
+
+            <div class="infoFinal">
+                <div class="totalCompra">
+                    <p class="letra"> Total: </p>
+                    <p class="precio">$621.75 </p>
+                </div>
+                <button>Continue to check out</button>
+            </div>
+
+            
+        </section>
+    </div>
     <script src="../scripts/products.js" ></script>
     <script src="../scripts/ourproducts.js" ></script>
+    <script src="../scripts/modalCart.js"></script>
 
 </body>
 </html>
