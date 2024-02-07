@@ -9,7 +9,7 @@ const insertarProductos = (contenedor, listaProductos) => {
   listaProductos.forEach((producto) => {
     if(producto.id == 9){
       contenedor.innerHTML += 
-      `<figure style ="width:576px; height:826px" id="imagenes">
+      `<figure style ="width:576px; height:826px" id="${producto.id}">
       <img src=${producto.imagen[0]} style ="height:726px">
       <span>${producto.nombre}</span>
       <h6>${producto.precio_unitario}</h6>
@@ -17,7 +17,7 @@ const insertarProductos = (contenedor, listaProductos) => {
     }
     else{
       contenedor.innerHTML += `
-            <figure id="imagenes">
+            <figure id="${producto.id}">
                 <img src=${producto.imagen[0]} >
                 <span>${producto.nombre}</span>
                 <h6>${producto.precio_unitario}</h6>
@@ -30,32 +30,34 @@ const insertarProductos = (contenedor, listaProductos) => {
 
 
 insertarProductos(contenedorProductos,productos);
-const miau = document.querySelectorAll('#imagenes');
-console.log(miau[0].innerText);
-const muu = (miau[1].children);
-muu[1].style.textTransform = 'uppercase';
-
-console.log(muu[1].innerHTML)
-if(muu[1].innerHTML === 'Luxury Gems Necklace'){
-  console.log("YUJUUUU");
-}
 
 const hijitos = document.getElementsByTagName('figure');
-console.log(hijitos);
+
 const childNodes = [];
 for ( elemento of contenedorProductos.children){
   childNodes.push(elemento);
 
 }
+console.log(childNodes[0])
 
 console.log(childNodes);
 
+
 childNodes.forEach(figurata => {
   figurata.addEventListener("click", () =>{
-
+    const idProducto = figurata.id;
+    console.log(idProducto);
+    const hijosFigura= figurata.children;
+    const primerhijo = hijosFigura[0].attributes;
+    localStorage.setItem("idProducto",JSON.stringify(idProducto));
     location.href= '../pages/details.html';
-  })
+    
+  });
 });
+
+
+
+
 
 
 
