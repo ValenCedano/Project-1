@@ -79,18 +79,44 @@
                         <p>$327.71</p>
                     </div>
                     <button class="remove-item" onclick="removeItem(this)">
-                        <i class="fas fa-trash-alt"></i> <!-- Icono de bote de basura -->
+                        <i class="fas fa-trash-alt"></i> 
                     </button>
                 </article>
             </div>
             <section class="payment-container">
-                <h2>Payments Method</h2>
+                <h2>Payment</h2>
                 <div class="credit-card-input">
                     <a href="">Change payment methods</a>
-                    <div class="credit-card-placeholder">
-                        <i class="fab fa-cc-mastercard"></i>
-                        <input type="text" id="credit-card" name="credit-card" placeholder="**** 5987">
-                    </div>
+                    
+                    <form id="registroForm">
+                        <div>
+                          <label for="nombre">Name:</label>
+                          <input type="text" id="nombre" name="nombre" required>
+                          <span id="nombreError" class="error"></span>
+                        </div>
+                        <div>
+                          <label for="correo">Email:</label>
+                          <input type="email" id="correo" name="correo" required>
+                          <span id="correoError" class="error"></span>
+                        </div>
+                        <div>
+                          <label for="telefono">Phone Number:</label>
+                          <input type="text" id="telefono" name="telefono" required>
+                          <span id="telefonoError" class="error"></span>
+                        </div>
+                        <div>
+                          <label for="direccion">Address:</label>
+                          <input type="text" id="direccion" name="direccion" required>
+                          <span id="direccionError" class="error"></span>
+                        </div>
+                        <div>
+                            <label for="direccion">Banco:</label>
+                            <input type="text" id="banco" name="banco" required>
+                            <span id="direccionError" class="error"></span>
+                        </div>
+                
+                      </form>
+                      
                 </div>
                 <div class="voucher">
                     <h4>Voucher</h4>
@@ -135,8 +161,8 @@
                     </div>
                     
                     <div class="buton-payment">
-                        <ion-button (click)="onClick()" expand="block" fill="clear" shape="round">
-                            Proceed to payment
+                        <ion-button onclick="validarYMostrarDatos()" expand="block" fill="clear" shape="round">
+                          Proceed to payment
                         </ion-button>
                     </div>
                     
@@ -223,8 +249,7 @@
             
         </section>
     </footer>
-</body>
-</html>
+<script src="/scripts/payments.js"></script>
 
 </body>
 </html>
