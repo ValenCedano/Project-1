@@ -110,7 +110,7 @@
     flex-direction: column;
     
 }
-.galeria{
+#galeria{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,7 +129,7 @@
 }
 .imagenes-secundarias img:hover{
     cursor: pointer;
-    border: 0.09em solid #0D554A;
+    border: 0.09em solid imagen-#0D554A;
 
 }
 .imagen-principal{
@@ -138,6 +138,8 @@
 
 }
 .imagen-principal img{
+    width: 500px;
+
     max-width: 100%;
     height: auto;
     display: block;
@@ -406,7 +408,7 @@
     justify-content: flex-start;
     gap:1em;
     padding-left:1em;
-    
+    max-width: 100%
     
     
 }
@@ -812,7 +814,7 @@ footer{
     .menu-chiquito{
         margin-left: 4.0%;
     }
-    .galeria{
+    #galeria{
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-evenly;
