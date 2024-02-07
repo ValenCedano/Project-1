@@ -9,7 +9,7 @@ const productos = [
       nombre : 'Luxury Gems Necklace',
       codigo : '',
       precio_unitario : '168.76',
-      tipo_de_accesorio : 'collar',
+      tipo_de_accesorio :'Necklaces',
       imagen :['/assets/products/coleccion1.png'],
       descripcion : 'collar de plata con diamante moissanite',
       stock: [
@@ -23,7 +23,7 @@ const productos = [
       nombre : 'Aurora Ring',
       codigo : '',
       precio_unitario: '125.28',
-      tipo_de_accesorio : 'gargantilla',
+      tipo_de_accesorio : 'Brazalets',
       imagen:['/assets/products/coleccion2.png'],
       descripcion : 'gargantilla en oro laminado con mini cristales',
       stock: [
@@ -38,7 +38,7 @@ const productos = [
       nombre : 'Reflections Necklace',
       codigo : '',
       precio_unitario : '620.73',
-      tipo_de_accesorio : 'brazalete',
+      tipo_de_accesorio : 'Brazalets',
       imagen :['/assets/products/coleccion3.png'],
       descripcion : 'brazalete tejido en hilo',
       stock: [
@@ -53,7 +53,7 @@ const productos = [
       nombre : 'Dreamy Infinity Ring',
       codigo : '',
       precio_unitario : '327.71',
-      tipo_de_accesorio : 'anillo',
+      tipo_de_accesorio : 'Rings',
       imagen :['/assets/products/coleccion4.png'],
       descripcion : 'anillo con piedra amethist y mini cristales',
       stock: [
@@ -72,7 +72,7 @@ const productos = [
       nombre : 'Opulent Jewels Ring',
       codigo : '',
       precio_unitario : '168.76',
-      tipo_de_accesorio : 'anillo',
+      tipo_de_accesorio : 'Rings',
       imagen :['/assets/products/coleccion5.png'],
       descripcion : 'anillo en oro blanco y oro dorado',
       stock: [
@@ -91,7 +91,7 @@ const productos = [
        nombre : 'Serene Solitaire Earrings',
        codigo : '',
        precio_unitario : '125.28',
-       tipo_de_accesorio : 'aretes',
+       tipo_de_accesorio : 'Earrings',
        imagen :['/assets/products/coleccion6.png'],
        descripcion : 'aretes con piedra azurite',
        stock: [
@@ -106,7 +106,7 @@ const productos = [
        nombre : 'Timeless Halo Earrings',
        codigo : '',
        precio_unitario : '620.73',
-       tipo_de_accesorio : 'aretes',
+       tipo_de_accesorio : 'Earrings',
        imagen :['/assets/products/coleccion7.png'],
        descripcion : 'aretes con cristal',
        stock: [
@@ -121,7 +121,7 @@ const productos = [
        nombre : 'Exquisite Earrings',
        codigo : '',
        precio_unitario : '327.71',
-       tipo_de_accesorio: 'aretes',
+       tipo_de_accesorio: 'Earrings',
        imagen :['/assets/products/coleccion8.png'],
        descripcion : 'aretes con cristal en gota',
        stock: [
@@ -136,7 +136,7 @@ const productos = [
        nombre: 'Timeless Elegance Ring',
        codigo : '',
        precio_unitario : '168.76',
-       tipo_de_accesorio : 'anillo',
+       tipo_de_accesorio : 'Rings',
        imagen :['/assets/imagen_anillo_azul.png'],
        descripcion : 'trio de anillos con piedras preciosas',
        stock: [
@@ -155,7 +155,7 @@ const productos = [
        nombre : 'Luxury Charms Ring',
        codigo : '',
        precio_unitario : '620.73',
-       tipo_de_accesorio : 'anillo',
+       tipo_de_accesorio : 'Rings',
        imagen :['/assets/imagen_anillo_naranja.png'],
        descripcion: 'anilo con piedra camellian',
        stock: [
@@ -174,7 +174,7 @@ const productos = [
       nombre : 'Blissful Bloom Ring',
       codigo : '',
       precio_unitario : '620.73',
-      tipo_de_accesorio : 'anillo',
+      tipo_de_accesorio : 'Rings',
       imagen :['/assets/Blisfull.png'],
       descripcion : 'anillo en hojas',
       stock: [
@@ -193,7 +193,7 @@ const productos = [
       nombre: 'Sparkling Ring',
       codigo : '',
       precio_unitario : '620.73',
-      tipo_de_accesorio : 'anillo',
+      tipo_de_accesorio : 'Rings',
       imagen :['/assets/sparkgling.png'],
       descripcion : 'anillo con micro cristales ',
       stock: [
@@ -208,7 +208,7 @@ const productos = [
       nombre : 'Glimmering Ring',
       codigo : '',
       precio_unitario : '620.73',
-      tipo_de_accesorio : 'anillo',
+      tipo_de_accesorio : 'Rings',
       imagen :['/assets/glimme.png'],
       descripcion : 'anillo delicado con murano ruso',
       stock: [
