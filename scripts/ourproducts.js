@@ -89,8 +89,8 @@ listaNav.forEach(elemento => {
   });
 });
 
-const input = document.getElementById("search-input");
-
+const searchImput = document.getElementById("search-input");
+console.log("aqui va", searchImput)
 function searchByName(searchTerm, productsList) {
   const results = productsList.filter((productos) =>
     productos.tipo_de_accesorio.toLowerCase().includes(searchTerm.toLowerCase())
@@ -99,16 +99,17 @@ function searchByName(searchTerm, productsList) {
   return results;
 }
 
-onPressKey.addEventListener("search-input", (event) => {
+searchImput.addEventListener("keypress", (event) => {
+  console.log("hecho")
   const searchTerm = event.target.value;
   if (searchTerm.length > 3) {
     //Se ejecuta la función de busqueda: 
     const productsList = searchByName(searchTerm, productos);
-    printCharacters(container, productsList);
+    insertarProductos(contenedorProductos, productsList);
   }
 
   if (searchTerm.length === 0) {
-    printCharacters(container, productos);
+    insertarProductos(contenedorProductos, productos);
   }
 });
 
