@@ -115,11 +115,6 @@
     flex-direction: column;
     align-items: center;
 }
-.imagenes-secundarias img{
-    width: 64px;
-    height: 82px;
-    border-radius: 4px;
-}
 .imagenes-secundarias{
     display: flex;
     max-width: 100%;
@@ -127,6 +122,13 @@
     gap:3%;
     overflow-x: scroll;
 }
+
+.imagenes-secundarias img{
+    width: 64px;
+    height: 82px;
+    border-radius: 4px;
+}
+
 .imagenes-secundarias img:hover{
     cursor: pointer;
     border: 0.09em solid imagen-#0D554A;
