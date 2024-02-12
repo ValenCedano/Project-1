@@ -1,14 +1,14 @@
 {
   "name": "project-1",
   "version": "1.0.0",
-  "description": "y",
+  "description": "Sitio web de Accesorios",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "y"
+    "url": "git+https://github.com/ValenCedano/Project-1.git"
   },
   "author": "",
   "license": "ISC",

@@ -60,8 +60,6 @@ childNodes.forEach(figurata => {
     console.log(idProducto);
     const hijosFigura= figurata.children;
     const primerhijo = hijosFigura[0].attributes;
-    localStorage.setItem("idProducto",JSON.stringify(idProducto));
-    location.href= '../pages/details.html';
     
   });
 });
