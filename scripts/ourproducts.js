@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", async() =>{
 });
 
 
-/*
+
 const hijitos = document.getElementsByTagName('figure');
 
 const childNodes = [];
@@ -136,7 +136,7 @@ searchImput.addEventListener("keypress", (event) => {
 });
 
 
-*/
+
 
 
 
