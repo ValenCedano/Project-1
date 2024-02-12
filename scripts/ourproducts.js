@@ -30,9 +30,6 @@ const filtroTipo = (lista,tipo) => {
   return filtro;
 }
 
-
-
-
 const insertarProductos = (contenedor, listaProductos) => {
   contenedor.innerHTML = "";
   listaProductos.forEach((producto) => {
@@ -57,37 +54,33 @@ const insertarProductos = (contenedor, listaProductos) => {
  });
 };
 
+const pasarDeObjectArray = (objeto) =>{
+  let objetosArray = [];
+  for (let i=0 ; i<objeto.length; i++){
+    objetosArray.push(objeto[i]);
+  }
+
+  return objetosArray;
+}
 document.addEventListener("DOMContentLoaded", async() =>{
   const url= `${URL_BASE}productos`
   const productos = await getproducts(url);
-  console.log(productos);
+  
   insertarProductos(contenedorProductos,productos);
-});
+  const figuras = contenedorProductos.getElementsByTagName("figure");
+  const arrayProductos = pasarDeObjectArray(figuras);
+  
+  arrayProductos.forEach((elemento) =>{
+    elemento.addEventListener(("click"), ()=>{
+      const idProduct = elemento.id;
+      localStorage.setItem("idProduct", JSON.stringify(idProduct));
+      location.href= '../pages/details.html';
 
-
-
-const hijitos = document.getElementsByTagName('figure');
-
-const childNodes = [];
-for ( elemento of contenedorProductos.children){
-  childNodes.push(elemento);
-
-}
-console.log(childNodes[0])
-
-console.log(typeof childNodes);
-
-
-childNodes.forEach(figurata => {
-  figurata.addEventListener("click", () =>{
-    const idProducto = figurata.id;
-    console.log(idProducto);
-    const hijosFigura= figurata.children;
-    const primerhijo = hijosFigura[0].attributes;
-    
+    });
   });
+ 
+  
 });
-
 
 const listaNav =[];
 for (const elemento of filtroNavegador){
