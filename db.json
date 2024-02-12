@@ -150,7 +150,7 @@
     "codigo": "78205",
     "precio_unitario": "620.73",
     "tipo_de_accesorio": "Rings",
-    "imagen": [ "/assets/Image grande.png", "/assets/Imagen 2.png", "/assets/imagen 3.png", "assets/imagen 4.png", "/assets/imagen_anillo_naranja.png"],
+    "imagen": [ "assets/imagen_anillo_naranja.png", "/assets/Imagen 2.png", "/assets/imagen 3.png", "assets/imagen 4.png"],
     "descripcion": "anillo con piedra camellian",
     "stock": [
       { "color": "plata", "talla": 6, "cantidad": 30 },

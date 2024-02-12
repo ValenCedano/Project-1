@@ -1,3 +1,21 @@
+//Función que permita obtener los productos desde la API
+
+const URL_BASE= "https://project-1-dev-qqhq.1.us-1.fl0.io/";
+
+//Obtener los productos
+
+const getproducts = async (url) => {
+  try{
+    const response = await fetch(url);
+    const data = await response.json();
+    return data;
+  } catch(error){
+    console.log(error);
+    return [];
+  }
+}
+
+
 const filtroNavegador = document.getElementsByClassName("filtrar")
 console.log(filtroNavegador)
 
@@ -39,9 +57,15 @@ const insertarProductos = (contenedor, listaProductos) => {
  });
 };
 
+document.addEventListener("DOMContentLoaded", async() =>{
+  const url= `${URL_BASE}productos`
+  const productos = await getproducts(url);
+  console.log(productos);
+  insertarProductos(contenedorProductos,productos);
+});
 
-insertarProductos(contenedorProductos,productos);
 
+/*
 const hijitos = document.getElementsByTagName('figure');
 
 const childNodes = [];
@@ -112,7 +136,7 @@ searchImput.addEventListener("keypress", (event) => {
 });
 
 
-
+*/
 
 
 
