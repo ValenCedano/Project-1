@@ -208,10 +208,8 @@
           { "color": "gold", "talla": 7, "cantidad": 15 },
           { "color": "gold", "talla": 8, "cantidad": 18 }
         ]
-      };
+      }
     ],
 
-    "Carrito":[
-      
-    ]
+    "Carrito":[]
 }
