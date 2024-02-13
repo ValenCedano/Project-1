@@ -11,9 +11,9 @@
       ],
         "descripcion": "collar de plata con diamante moissanite",
         "stock": [
-          { "color": "plata", "talla": 6, "cantidad": 23 },
-          { "color": "plata", "talla": 7, "cantidad": 18 },
-          { "color": "plata", "talla": 8, "cantidad": 44 }
+          { "color": "silver", "talla": 6, "cantidad": 23 },
+          { "color": "silver", "talla": 7, "cantidad": 18 },
+          { "color": "silver", "talla": 8, "cantidad": 44 }
         ]
       },
       {
@@ -26,9 +26,9 @@
         "/assets/Imagenes chiquitas/Im 3 Aurora.jpeg"],
         "descripcion": "gargantilla en oro laminado con mini cristales",
         "stock": [
-          { "color": "plata", "cantidad": 54 },
-          { "color": "oro", "cantidad": 43 },
-          { "color": "acero", "cantidad": 20 }
+          { "color": "silver", "cantidad": 54 },
+          { "color": "gold", "cantidad": 43 },
+          { "color": "steel", "cantidad": 20 }
         ]
       },
       {
@@ -41,9 +41,9 @@
         "/assets/Imagenes chiquitas/Im 3 Reflection.jpeg"],
         "descripcion": "brazalete tejido en hilo",
         "stock": [
-          { "color": "plata", "cantidad": 16 },
-          { "color": "oro", "cantidad": 24 },
-          { "color": "acero", "cantidad": 31 }
+          { "color": "silver", "cantidad": 16 },
+          { "color": "gold", "cantidad": 24 },
+          { "color": "steel", "cantidad": 31 }
         ]
       },
       {
@@ -56,12 +56,12 @@
         "/assets/Imagenes chiquitas/Im 3 Infinity.jpeg"],
         "descripcion": "anillo con piedra amethist y mini cristales",
         "stock": [
-          { "color": "plata", "talla": 6, "cantidad": 23 },
-          { "color": "plata", "talla": 7, "cantidad": 18 },
-          { "color": "plata", "talla": 8, "cantidad": 44 },
-          { "color": "oro", "talla": 6, "cantidad": 43 },
-          { "color": "oro", "talla": 7, "cantidad": 25 },
-          { "color": "oro", "talla": 8, "cantidad": 12 }
+          { "color": "silver", "talla": 6, "cantidad": 23 },
+          { "color": "silver", "talla": 7, "cantidad": 18 },
+          { "color": "silver", "talla": 8, "cantidad": 44 },
+          { "color": "gold", "talla": 6, "cantidad": 43 },
+          { "color": "gold", "talla": 7, "cantidad": 25 },
+          { "color": "gold", "talla": 8, "cantidad": 12 }
         ]
       },
      {
@@ -73,9 +73,9 @@
       "imagen" :["/assets/products/coleccion5.png", "/assets/Imagenes chiquitas/Im 1 Opulent.jpeg", "/assets/Imagenes chiquitas/Im 2 Opulent.jpeg", "/assets/Imagenes chiquitas/Im 3 Opulent.jpeg"],
       "descripcion" : "anillo en oro blanco y oro dorado",
       "stock": [
-         { "color": "plata", "talla": 6, "cantidad": 19 },
-         { "color": "plata", "talla": 7, "cantidad": 21 },
-         { "color": "plata", "talla": 8, "cantidad": 45 },
+         { "color": "silver", "talla": 6, "cantidad": 19 },
+         { "color": "silver", "talla": 7, "cantidad": 21 },
+         { "color": "silver", "talla": 8, "cantidad": 45 },
          { "color": "'oro'", "talla": 6, "cantidad": 22 },
          { "color": "'oro'", "talla": 7, "cantidad": 18 },
          { "color": "'oro'", "talla": 8, "cantidad": 19 }
@@ -92,9 +92,9 @@
     "imagen": ["/assets/products/coleccion6.png", "/assets/Imagenes chiquitas/Im 1 Serene.jpeg", "/assets/Imagenes chiquitas/Im 2 Serene.jpeg", "/assets/Imagenes chiquitas/Im 3 Serene.jpeg"],
     "descripcion": "aretes con piedra azurite",
     "stock": [
-      { "color": "plata", "cantidad": 29 },
-      { "color": "oro", "cantidad": 17 },
-      { "color": "acero", "cantidad": 33 }
+      { "color": "silver", "cantidad": 29 },
+      { "color": "gold", "cantidad": 17 },
+      { "color": "steel", "cantidad": 33 }
     ]
   },
   {
@@ -106,9 +106,9 @@
     "imagen": ["/assets/products/coleccion7.png", "/assets/Imagenes chiquitas/Im 1 Halo.jpeg", "/assets/Imagenes chiquitas/Im 2 Halo.jpeg", "/assets/Imagenes chiquitas/Im 3 Halo.jpeg"],
     "descripcion": "aretes con cristal",
     "stock": [
-      { "color": "plata", "cantidad": 27 },
-      { "color": "oro", "cantidad": 34 },
-      { "color": "acero", "cantidad": 18 }
+      { "color": "silver", "cantidad": 27 },
+      { "color": "gold", "cantidad": 34 },
+      { "color": "steel", "cantidad": 18 }
     ]
   },
   {
@@ -120,9 +120,9 @@
     "imagen": ["/assets/products/coleccion8.png", "/assets/Imagenes chiquitas/Im 1 Exquisite.jpeg", "/assets/Imagenes chiquitas/Im 2 Esxquisite.jpeg", "/assets/Imagenes chiquitas/Im 3 Exquisite.jpeg"],
     "descripcion": "aretes con cristal en gota",
     "stock": [
-      { "color": "plata", "cantidad": 27 },
-      { "color": "oro", "cantidad": 34 },
-      { "color": "acero", "cantidad": 18 }
+      { "color": "silver", "cantidad": 27 },
+      { "color": "gold", "cantidad": 34 },
+      { "color": "steel", "cantidad": 18 }
     ]
   },
   
@@ -135,12 +135,12 @@
     "imagen": ["/assets/imagen_anillo_azul.png", "/assets/Imagenes chiquitas/Im 1 Elegance.jpeg", "/assets/Imagenes chiquitas/Im 2 Elegance.jpeg", "/assets/Imagenes chiquitas/Im 3 Elegance.jpeg"],
     "descripcion": "trio de anillos con piedras preciosas",
     "stock": [
-      { "color": "plata", "talla": 6, "cantidad": 22 },
-      { "color": "plata", "talla": 7, "cantidad": 15 },
-      { "color": "plata", "talla": 8, "cantidad": 32 },
-      { "color": "oro", "talla": 6, "cantidad": 21 },
-      { "color": "oro", "talla": 7, "cantidad": 21 },
-      { "color": "oro", "talla": 8, "cantidad": 19 }
+      { "color": "silver", "talla": 6, "cantidad": 22 },
+      { "color": "silver", "talla": 7, "cantidad": 15 },
+      { "color": "silver", "talla": 8, "cantidad": 32 },
+      { "color": "gold", "talla": 6, "cantidad": 21 },
+      { "color": "gold", "talla": 7, "cantidad": 21 },
+      { "color": "gold", "talla": 8, "cantidad": 19 }
     ]
   },
 
@@ -153,12 +153,12 @@
     "imagen": [ "/assets/imagen_anillo_naranja.png", "/assets/Imagen 2.png", "/assets/imagen 3.png", "/assets/imagen 4.png"],
     "descripcion": "anillo con piedra camellian",
     "stock": [
-      { "color": "plata", "talla": 6, "cantidad": 30 },
-      { "color": "plata", "talla": 7, "cantidad": 15 },
-      { "color": "plata", "talla": 8, "cantidad": 26 },
-      { "color": "oro", "talla": 6, "cantidad": 22 },
-      { "color": "oro", "talla": 7, "cantidad": 15 },
-      { "color": "oro", "talla": 8, "cantidad": 18 }
+      { "color": "silver", "talla": 6, "cantidad": 30 },
+      { "color": "silver", "talla": 7, "cantidad": 15 },
+      { "color": "silver", "talla": 8, "cantidad": 26 },
+      { "color": "gold", "talla": 6, "cantidad": 22 },
+      { "color": "gold", "talla": 7, "cantidad": 15 },
+      { "color": "gold", "talla": 8, "cantidad": 18 }
     ]
   },
 
@@ -171,12 +171,12 @@
     "imagen": ["/assets/Blisfull.png", "/assets/Imagenes chiquitas/Im 1 Blisfull.jpeg", "/assets/Imagenes chiquitas/Im 2 Blisfull.jpeg", "/assets/Imagenes chiquitas/Im 3 Blisfull.jpeg"],
     "descripcion": "anillo en hojas",
     "stock": [
-      { "color": "plata", "talla": 6, "cantidad": 30 },
-      { "color": "plata", "talla": 7, "cantidad": 15 },
-      { "color": "plata", "talla": 8, "cantidad": 26 },
-      { "color": "oro", "talla": 6, "cantidad": 22 },
-      { "color": "oro", "talla": 7, "cantidad": 15 },
-      { "color": "oro", "talla": 8, "cantidad": 18 }
+      { "color": "silver", "talla": 6, "cantidad": 30 },
+      { "color": "silver", "talla": 7, "cantidad": 15 },
+      { "color": "silver", "talla": 8, "cantidad": 26 },
+      { "color": "gold", "talla": 6, "cantidad": 22 },
+      { "color": "gold", "talla": 7, "cantidad": 15 },
+      { "color": "gold", "talla": 8, "cantidad": 18 }
     ]
   },
   {
@@ -188,9 +188,9 @@
     "imagen": ["/assets/sparkgling.png", "/assets/Imagenes chiquitas/Im 1 Sparkling.jpeg", "/assets/Imagenes chiquitas/Im 2 Sparkling.jpeg", "/assets/Imagenes chiquitas/Im 3 Sparkling.jpeg"],
     "descripcion": "anillo con micro cristales",
     "stock": [
-      { "color": "plata", "talla": 6, "cantidad": 54 },
-      { "color": "plata", "talla": 7, "cantidad": 43 },
-      { "color": "plata", "talla": 8, "cantidad": 20 }
+      { "color": "silver", "talla": 6, "cantidad": 54 },
+      { "color": "silver", "talla": 7, "cantidad": 43 },
+      { "color": "silver", "talla": 8, "cantidad": 20 }
     ]
   },
   {
@@ -202,12 +202,12 @@
     "imagen": ["/assets/glimme.png", "/assets/Imagenes chiquitas/Im 1 Glimerring.jpeg", "/assets/Imagenes chiquitas/Im 2 Glimerring.jpeg", "/assets/Imagenes chiquitas/Im 3 Sparkling.jpeg"],
     "descripcion": "anillo delicado con murano ruso",
     "stock": [
-      { "color": "plata", "talla": 6, "cantidad": 30 },
-      { "color": "plata", "talla": 7, "cantidad": 15 },
-      { "color": "plata", "talla": 8, "cantidad": 26 },
-      { "color": "oro", "talla": 6, "cantidad": 22 },
-      { "color": "oro", "talla": 7, "cantidad": 15 },
-      { "color": "oro", "talla": 8, "cantidad": 18 }
+      { "color": "silver", "talla": 6, "cantidad": 30 },
+      { "color": "silver", "talla": 7, "cantidad": 15 },
+      { "color": "silver", "talla": 8, "cantidad": 26 },
+      { "color": "gold", "talla": 6, "cantidad": 22 },
+      { "color": "gold", "talla": 7, "cantidad": 15 },
+      { "color": "gold", "talla": 8, "cantidad": 18 }
     ]
   }
 ]  
