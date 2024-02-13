@@ -64,153 +64,154 @@
           { "color": "gold", "talla": 8, "cantidad": 12 }
         ]
       },
-     {
-      "id" : 5,
-      "nombre" : "Opulent Jewels Ring",
-      "codigo" : "47986",
-      "precio_unitario" : "168.76",
-      "tipo_de_accesorio" : "Rings",
-      "imagen" :["/assets/products/coleccion5.png", "/assets/Imagenes chiquitas/Im 1 Opulent.jpeg", "/assets/Imagenes chiquitas/Im 2 Opulent.jpeg", "/assets/Imagenes chiquitas/Im 3 Opulent.jpeg"],
-      "descripcion" : "anillo en oro blanco y oro dorado",
-      "stock": [
-         { "color": "silver", "talla": 6, "cantidad": 19 },
-         { "color": "silver", "talla": 7, "cantidad": 21 },
-         { "color": "silver", "talla": 8, "cantidad": 45 },
-         { "color": "'oro'", "talla": 6, "cantidad": 22 },
-         { "color": "'oro'", "talla": 7, "cantidad": 18 },
-         { "color": "'oro'", "talla": 8, "cantidad": 19 }
+      {
+       "id" : 5,
+       "nombre" : "Opulent Jewels Ring",
+       "codigo" : "47986",
+       "precio_unitario" : "168.76",
+       "tipo_de_accesorio" : "Rings",
+       "imagen" :["/assets/products/coleccion5.png", "/assets/Imagenes chiquitas/Im 1 Opulent.jpeg", "/assets/Imagenes chiquitas/Im 2 Opulent.jpeg", "/assets/Imagenes chiquitas/Im 3 Opulent.jpeg"],
+       "descripcion" : "anillo en oro blanco y oro dorado",
+       "stock": [
+          { "color": "silver", "talla": 6, "cantidad": 19 },
+          { "color": "silver", "talla": 7, "cantidad": 21 },
+          { "color": "silver", "talla": 8, "cantidad": 45 },
+          { "color": "'oro'", "talla": 6, "cantidad": 22 },
+          { "color": "'oro'", "talla": 7, "cantidad": 18 },
+          { "color": "'oro'", "talla": 8, "cantidad": 19 }
+        ]
+      },
 
-     ]
-   },
-
-   {
-    "id": 6,
-    "nombre": "Serene Solitaire Earrings",
-    "codigo": "56346",
-    "precio_unitario": "125.28",
-    "tipo_de_accesorio": "Earrings",
-    "imagen": ["/assets/products/coleccion6.png", "/assets/Imagenes chiquitas/Im 1 Serene.jpeg", "/assets/Imagenes chiquitas/Im 2 Serene.jpeg", "/assets/Imagenes chiquitas/Im 3 Serene.jpeg"],
-    "descripcion": "aretes con piedra azurite",
-    "stock": [
-      { "color": "silver", "cantidad": 29 },
-      { "color": "gold", "cantidad": 17 },
-      { "color": "steel", "cantidad": 33 }
-    ]
-  },
-  {
-    "id": 7,
-    "nombre": "Timeless Halo Earrings",
-    "codigo": "24560",
-    "precio_unitario": "620.73",
-    "tipo_de_accesorio": "Earrings",
-    "imagen": ["/assets/products/coleccion7.png", "/assets/Imagenes chiquitas/Im 1 Halo.jpeg", "/assets/Imagenes chiquitas/Im 2 Halo.jpeg", "/assets/Imagenes chiquitas/Im 3 Halo.jpeg"],
-    "descripcion": "aretes con cristal",
-    "stock": [
-      { "color": "silver", "cantidad": 27 },
-      { "color": "gold", "cantidad": 34 },
-      { "color": "steel", "cantidad": 18 }
-    ]
-  },
-  {
-    "id": 8,
-    "nombre": "Exquisite Earrings",
-    "codigo": "92701",
-    "precio_unitario": "327.71",
-    "tipo_de_accesorio": "Earrings",
-    "imagen": ["/assets/products/coleccion8.png", "/assets/Imagenes chiquitas/Im 1 Exquisite.jpeg", "/assets/Imagenes chiquitas/Im 2 Esxquisite.jpeg", "/assets/Imagenes chiquitas/Im 3 Exquisite.jpeg"],
-    "descripcion": "aretes con cristal en gota",
-    "stock": [
-      { "color": "silver", "cantidad": 27 },
-      { "color": "gold", "cantidad": 34 },
-      { "color": "steel", "cantidad": 18 }
-    ]
-  },
+      {
+        "id": 6,
+        "nombre": "Serene Solitaire Earrings",
+        "codigo": "56346",
+        "precio_unitario": "125.28",
+        "tipo_de_accesorio": "Earrings",
+        "imagen": ["/assets/products/coleccion6.png", "/assets/Imagenes chiquitas/Im 1 Serene.jpeg", "/assets/Imagenes chiquitas/Im 2 Serene.jpeg", "/assets/Imagenes chiquitas/Im 3 Serene.jpeg"],
+        "descripcion": "aretes con piedra azurite",
+        "stock": [
+          { "color": "silver", "cantidad": 29 },
+          { "color": "gold", "cantidad": 17 },
+          { "color": "steel", "cantidad": 33 }
+        ]
+      },
+      {
+        "id": 7,
+        "nombre": "Timeless Halo Earrings",
+        "codigo": "24560",
+        "precio_unitario": "620.73",
+        "tipo_de_accesorio": "Earrings",
+        "imagen": ["/assets/products/coleccion7.png", "/assets/Imagenes chiquitas/Im 1 Halo.jpeg", "/assets/Imagenes chiquitas/Im 2 Halo.jpeg", "/assets/Imagenes chiquitas/Im 3 Halo.jpeg"],
+        "descripcion": "aretes con cristal",
+        "stock": [
+          { "color": "silver", "cantidad": 27 },
+          { "color": "gold", "cantidad": 34 },
+          { "color": "steel", "cantidad": 18 }
+        ]
+      },
+      {
+        "id": 8,
+        "nombre": "Exquisite Earrings",
+        "codigo": "92701",
+        "precio_unitario": "327.71",
+        "tipo_de_accesorio": "Earrings",
+        "imagen": ["/assets/products/coleccion8.png", "/assets/Imagenes chiquitas/Im 1 Exquisite.jpeg", "/assets/Imagenes chiquitas/Im 2 Esxquisite.jpeg", "/assets/Imagenes chiquitas/Im 3 Exquisite.jpeg"],
+        "descripcion": "aretes con cristal en gota",
+        "stock": [
+          { "color": "silver", "cantidad": 27 },
+          { "color": "gold", "cantidad": 34 },
+          { "color": "steel", "cantidad": 18 }
+        ]
+      },
   
-  {
-    "id": 9,
-    "nombre": "Timeless Elegance Ring",
-    "codigo": "87906",
-    "precio_unitario": "168.76",
-    "tipo_de_accesorio": "Rings",
-    "imagen": ["/assets/imagen_anillo_azul.png", "/assets/Imagenes chiquitas/Im 1 Elegance.jpeg", "/assets/Imagenes chiquitas/Im 2 Elegance.jpeg", "/assets/Imagenes chiquitas/Im 3 Elegance.jpeg"],
-    "descripcion": "trio de anillos con piedras preciosas",
-    "stock": [
-      { "color": "silver", "talla": 6, "cantidad": 22 },
-      { "color": "silver", "talla": 7, "cantidad": 15 },
-      { "color": "silver", "talla": 8, "cantidad": 32 },
-      { "color": "gold", "talla": 6, "cantidad": 21 },
-      { "color": "gold", "talla": 7, "cantidad": 21 },
-      { "color": "gold", "talla": 8, "cantidad": 19 }
-    ]
-  },
+      {
+        "id": 9,
+        "nombre": "Timeless Elegance Ring",
+        "codigo": "87906",
+        "precio_unitario": "168.76",
+        "tipo_de_accesorio": "Rings",
+        "imagen": ["/assets/imagen_anillo_azul.png", "/assets/Imagenes chiquitas/Im 1 Elegance.jpeg", "/assets/Imagenes chiquitas/Im 2 Elegance.jpeg", "/assets/Imagenes chiquitas/Im 3 Elegance.jpeg"],
+        "descripcion": "trio de anillos con piedras preciosas",
+        "stock": [
+          { "color": "silver", "talla": 6, "cantidad": 22 },
+          { "color": "silver", "talla": 7, "cantidad": 15 },
+          { "color": "silver", "talla": 8, "cantidad": 32 },
+          { "color": "gold", "talla": 6, "cantidad": 21 },
+          { "color": "gold", "talla": 7, "cantidad": 21 },
+          { "color": "gold", "talla": 8, "cantidad": 19 }
+        ]
+      },
 
-  {
-    "id": 10,
-    "nombre": "Luxury Charms Ring",
-    "codigo": "78205",
-    "precio_unitario": "620.73",
-    "tipo_de_accesorio": "Rings",
-    "imagen": [ "/assets/imagen_anillo_naranja.png", "/assets/Imagen 2.png", "/assets/imagen 3.png", "/assets/imagen 4.png"],
-    "descripcion": "anillo con piedra camellian",
-    "stock": [
-      { "color": "silver", "talla": 6, "cantidad": 30 },
-      { "color": "silver", "talla": 7, "cantidad": 15 },
-      { "color": "silver", "talla": 8, "cantidad": 26 },
-      { "color": "gold", "talla": 6, "cantidad": 22 },
-      { "color": "gold", "talla": 7, "cantidad": 15 },
-      { "color": "gold", "talla": 8, "cantidad": 18 }
-    ]
-  },
-
-  {
-    "id": 11,
-    "nombre": "Blissful Bloom Ring",
-    "codigo": "65890",
-    "precio_unitario": "620.73",
-    "tipo_de_accesorio": "Rings",
-    "imagen": ["/assets/Blisfull.png", "/assets/Imagenes chiquitas/Im 1 Blisfull.jpeg", "/assets/Imagenes chiquitas/Im 2 Blisfull.jpeg", "/assets/Imagenes chiquitas/Im 3 Blisfull.jpeg"],
-    "descripcion": "anillo en hojas",
-    "stock": [
-      { "color": "silver", "talla": 6, "cantidad": 30 },
-      { "color": "silver", "talla": 7, "cantidad": 15 },
-      { "color": "silver", "talla": 8, "cantidad": 26 },
-      { "color": "gold", "talla": 6, "cantidad": 22 },
-      { "color": "gold", "talla": 7, "cantidad": 15 },
-      { "color": "gold", "talla": 8, "cantidad": 18 }
-    ]
-  },
-  {
-    "id": 12,
-    "nombre": "Sparkling Ring",
-    "codigo": "56490",
-    "precio_unitario": "620.73",
-    "tipo_de_accesorio": "Rings",
-    "imagen": ["/assets/sparkgling.png", "/assets/Imagenes chiquitas/Im 1 Sparkling.jpeg", "/assets/Imagenes chiquitas/Im 2 Sparkling.jpeg", "/assets/Imagenes chiquitas/Im 3 Sparkling.jpeg"],
-    "descripcion": "anillo con micro cristales",
-    "stock": [
-      { "color": "silver", "talla": 6, "cantidad": 54 },
-      { "color": "silver", "talla": 7, "cantidad": 43 },
-      { "color": "silver", "talla": 8, "cantidad": 20 }
-    ]
-  },
-  {
-    "id": 13,
-    "nombre": "Glimmering Ring",
-    "codigo": "65793",
-    "precio_unitario": "620.73",
-    "tipo_de_accesorio": "Rings",
-    "imagen": ["/assets/glimme.png", "/assets/Imagenes chiquitas/Im 1 Glimerring.jpeg", "/assets/Imagenes chiquitas/Im 2 Glimerring.jpeg", "/assets/Imagenes chiquitas/Im 3 Sparkling.jpeg"],
-    "descripcion": "anillo delicado con murano ruso",
-    "stock": [
-      { "color": "silver", "talla": 6, "cantidad": 30 },
-      { "color": "silver", "talla": 7, "cantidad": 15 },
-      { "color": "silver", "talla": 8, "cantidad": 26 },
-      { "color": "gold", "talla": 6, "cantidad": 22 },
-      { "color": "gold", "talla": 7, "cantidad": 15 },
-      { "color": "gold", "talla": 8, "cantidad": 18 }
-    ]
-  }
-]  
-
+      {
+        "id": 10,
+        "nombre": "Luxury Charms Ring",
+        "codigo": "78205",
+        "precio_unitario": "620.73",
+        "tipo_de_accesorio": "Rings",
+        "imagen": [ "/assets/imagen_anillo_naranja.png", "/assets/Imagen 2.png", "/assets/imagen 3.png", "/assets/imagen 4.png"],
+        "descripcion": "anillo con piedra camellian",
+        "stock": [
+          { "color": "silver", "talla": 6, "cantidad": 30 },
+          { "color": "silver", "talla": 7, "cantidad": 15 },
+          { "color": "silver", "talla": 8, "cantidad": 26 },
+          { "color": "gold", "talla": 6, "cantidad": 22 },
+          { "color": "gold", "talla": 7, "cantidad": 15 },
+          { "color": "gold", "talla": 8, "cantidad": 18 }
+        ]
+      },
     
+      {
+        "id": 11,
+        "nombre": "Blissful Bloom Ring",
+        "codigo": "65890",
+        "precio_unitario": "620.73",
+        "tipo_de_accesorio": "Rings",
+        "imagen": ["/assets/Blisfull.png", "/assets/Imagenes chiquitas/Im 1 Blisfull.jpeg", "/assets/Imagenes chiquitas/Im 2 Blisfull.jpeg", "/assets/Imagenes chiquitas/Im 3 Blisfull.jpeg"],
+        "descripcion": "anillo en hojas",
+        "stock": [
+          { "color": "silver", "talla": 6, "cantidad": 30 },
+          { "color": "silver", "talla": 7, "cantidad": 15 },
+          { "color": "silver", "talla": 8, "cantidad": 26 },
+          { "color": "gold", "talla": 6, "cantidad": 22 },
+          { "color": "gold", "talla": 7, "cantidad": 15 },
+          { "color": "gold", "talla": 8, "cantidad": 18 }
+        ]
+      },
+      {
+        "id": 12,
+        "nombre": "Sparkling Ring",
+        "codigo": "56490",
+        "precio_unitario": "620.73",
+        "tipo_de_accesorio": "Rings",
+        "imagen": ["/assets/sparkgling.png", "/assets/Imagenes chiquitas/Im 1 Sparkling.jpeg", "/assets/Imagenes chiquitas/Im 2 Sparkling.jpeg", "/assets/Imagenes chiquitas/Im 3 Sparkling.jpeg"],
+        "descripcion": "anillo con micro cristales",
+        "stock": [
+          { "color": "silver", "talla": 6, "cantidad": 54 },
+          { "color": "silver", "talla": 7, "cantidad": 43 },
+          { "color": "silver", "talla": 8, "cantidad": 20 }
+        ]
+      },
+      {
+        "id": 13,
+        "nombre": "Glimmering Ring",
+        "codigo": "65793",
+        "precio_unitario": "620.73",
+        "tipo_de_accesorio": "Rings",
+        "imagen": ["/assets/glimme.png", "/assets/Imagenes chiquitas/Im 1 Glimerring.jpeg", "/assets/Imagenes chiquitas/Im 2 Glimerring.jpeg", "/assets/Imagenes chiquitas/Im 3 Sparkling.jpeg"],
+        "descripcion": "anillo delicado con murano ruso",
+        "stock": [
+          { "color": "silver", "talla": 6, "cantidad": 30 },
+          { "color": "silver", "talla": 7, "cantidad": 15 },
+          { "color": "silver", "talla": 8, "cantidad": 26 },
+          { "color": "gold", "talla": 6, "cantidad": 22 },
+          { "color": "gold", "talla": 7, "cantidad": 15 },
+          { "color": "gold", "talla": 8, "cantidad": 18 }
+        ]
+      };
+    ],
+
+    "Carrito":[
+      
+    ]
 }

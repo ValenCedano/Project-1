@@ -233,15 +233,24 @@
    
 }
 
+.cantidad button{
+    width: 41px;
+    height: 44px;
+    border: 0.5px solid #F3F4F6;
+    border-radius: 4px;
+    color:black;
+    background-color: #F3F4F6;
+    align-self: center;
+
+}
 .cantidad p{
-    width: 39px;
-    height: 5vh;
+    width: 41px;
+    height: 35px;
     border-radius: 4px;
     color:black;
     background-color: #F3F4F6;
     padding-top: 7%;
     text-align: center;
-
 }
 
 .Section-botones p{
