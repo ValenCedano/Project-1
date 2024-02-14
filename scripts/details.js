@@ -5,16 +5,20 @@ console.log(idProducto);
 const contenedorImagen = document.getElementById('galeria');
 console.log(contenedorImagen);
 
-
 const imagenPrincipal = document.querySelector('.imagen-principal');
 const imagenSecundaria = document.querySelector('.imagenes-secundarias'); // Utiliza querySelector para seleccionar por clase
 const nombreJoyeria = document.getElementsByClassName('menu-chiquito');
 const circulos = document.querySelector('.circles');
+console.log(circulos.children);
 const tallas = document.getElementsByClassName("Tallas");
-
+const enviarInfo = document.getElementsByClassName('boton-img');
 const titulo = document.getElementsByClassName('title');
 const code = document.getElementsByClassName('code');
 const precio = document.getElementsByClassName('price');
+const colores = document.getElementsByClassName('color');
+const apiUrl = 'https://project-1-dev-qqhq.1.us-1.fl0.io/Carrito';
+console.log(colores);
+
 
 
 const cambiarNombre = (nombre) => {
@@ -23,9 +27,9 @@ const cambiarNombre = (nombre) => {
     hijosMenu[2].innerText = nombre;
 }
 
-const getproducts = async (url) => {
+const getproducts = async (url,id) => {
     try {
-        const response = await fetch(url);
+        const response = await fetch(`${url}/${id}`);
         const data = await response.json();
         return data;
     } catch (error) {
@@ -71,72 +75,83 @@ const insertarCirculos = (objetocolor) => {
     circulos.innerHTML += "";
     const circulo = document.createElement('p');
     circulo.className = 'circle';
+    circulo.setAttribute("name", objetocolor);
     circulo.style.backgroundColor = objetocolor;
     circulos.appendChild(circulo);
 };
-
-const text= document.querySelector('#numero');
-let contador = 0;
-text.innerHTML = contador;
-
-const sumar = () => {
-    contador++;
-    text.innerHTML= contador;
-}
-
-const restar = () => {
-    if(contador > 0){
-        contador--;
-        text.innerHTML= contador;
-    }
-}
 
 const cambiarDetalles = (contenedor,texto) => {
     contenedor[0].textContent = texto;
 }
 
-const guardarProductoAlCarrito = () => {
-    const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-    const condicion1 = productoSeleccionado.tipoAccesorio == "anillo" && productoAComprar.cantidad && productoAComprar.color && productoAComprar.talla
-    const condicion2 = productoSeleccionado !== "anillo" && productoAComprar.cantidad && productoAComprar.color
-    if (condicion1 || condicion2) {
-      carrito.push(productoAComprar);
-      localStorage.setItem("carrito", JSON.stringify(carrito));
-    } else {
-      alert("No se ha escogido un color, cantidad o talla")
-    }
-}
   
 
+let producto;
 
+const productoAlCarrito = { }
+
+async function guardarProductoAlCarrito() {
+    const url = "https://project-1-dev-qqhq.1.us-1.fl0.io/Carrito"; // Reemplaza 'URL_DE_TU_API' con la URL de tu API
+    try {
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(productoAlCarrito)
+        });
+        if (response.ok) {
+            console.log('Producto guardado en el carrito:', productoAlCarrito);
+        } else {
+            console.error('Error al guardar el producto en el carrito:', response.status);
+        }
+    } catch (error) {
+        console.error('Error al realizar la solicitud HTTP POST:', error);
+    }
+}
 
 document.addEventListener("DOMContentLoaded", async () => {
     const url = `${URL_BASE}productos`;
-    const productos = await getproducts(url);
+    producto = await getproducts(url,idProducto);
     // Cambiando para el producto especifico //
     
-    const menuChiquito = cambiarNombre(productos[idProducto - 1].nombre);
-    const tituloNuevo = cambiarDetalles(titulo, productos[idProducto - 1].nombre);
-    const codeNuevo = cambiarDetalles(code, productos[idProducto - 1].codigo);
-    const precioNuevo = cambiarDetalles(precio, productos[idProducto - 1].precio_unitario);
-    const stock = productos[idProducto - 1].stock;
-    
-    let coloresInsertados = new Set();
-    
-    // Iterar sobre el objeto stock
-    for (let i = 0; i < stock.length; i++) {
-        console.log(stock[i].color);
-        // Verificar si el color ya ha sido insertado
-        if (!coloresInsertados.has(stock[i].color)) {
-            // Insertar el círculo del color si no se ha insertado antes
-            insertarCirculos(stock[i].color);
-            // Agregar el color al conjunto
-            coloresInsertados.add(stock[i].color);
-        }
-    }
+    const menuChiquito = cambiarNombre(producto.nombre);
+    const tituloNuevo = cambiarDetalles(titulo, producto.nombre);
+    const codeNuevo = cambiarDetalles(code, producto.codigo);
+    const precioNuevo = cambiarDetalles(precio, producto.precio_unitario);
 
+    const stock = producto.stock;
+    const buton = document.getElementsByClassName('boton')
+    let palabra = document.getElementById('numero');
+    palabra.innerHTML= 0;
+    const botones = Array.from(buton);
+    let numeroFinal=0;
+    botones.forEach((elemento) => {
+        elemento.addEventListener("click", () => {
+            const accion = elemento.getAttribute('operacion');
+            if (accion === "sumar") {
+                numeroFinal = numeroFinal + 1;
+            } else if (accion === "restar" & numeroFinal>0) {
+                numeroFinal = numeroFinal- 1 ;
+            }
+            
+            console.log("Número final del contador:", numeroFinal);
+            palabra.innerText = numeroFinal;
+            productoAlCarrito.cantidad = numeroFinal;
+
+            console.log(productoAlCarrito);
+            guardarProductoAlCarrito();
+
+    
+        });
+        
+    });
+
+    console.log(productoAlCarrito);
+    
+    
     //Ingresando imagenes según el producto especificado
-    const imagenesPequeñas = productos[idProducto - 1].imagen;
+    const imagenesPequeñas = producto.imagen;
     const imgArray = pasarDeObjectArray(imagenesPequeñas);
 
     imgArray.forEach((elemento) => {
@@ -153,33 +168,48 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
     insertarPrincipal(imgArray[0]);
-    //cierre
-   
+    
+    
+    
+    
+    let coloresInsertados = new Set();
+    // Iterar sobre el objeto stock
+    for (let i = 0; i < stock.length; i++) {
+        console.log(stock[i].color);
+        if (!coloresInsertados.has(stock[i].color)) {
+            insertarCirculos(stock[i].color);
+            coloresInsertados.add(stock[i].color);
+        }
+    }
+    
+    const coloresButtom = Array.from(circulos.children);
+    coloresButtom.forEach((elemento) => {
+        elemento.addEventListener(("click"), ()=> {
+            productoAlCarrito.color = elemento.getAttribute("name");
+            console.log(productoAlCarrito);
+        });
+    });
 
+    const tallasButtom = Array.from(tallas[0].children)
     for (let i = 0; i < stock.length; i++) {
         // Verificar si el objeto en el stock tiene el atributo 'tallas'
         if (stock[i].hasOwnProperty('talla')) {
-           return tallas;
+            tallasButtom.forEach((elemento) => {
+                elemento.addEventListener(("click"), ()=> {
+                    productoAlCarrito.talla = elemento.getAttribute("text");
+                    console.log(productoAlCarrito);
+                });
+            });
+            return tallas[0];
         } else {
             return tallas[0].remove();
         }
-    };
-
-
-
-    
-
-    
-   
         
+    };
     
-    //Terminacion
-
-
-
-    //Detalles ciruclos
-
 });
+
+
 
 
 
