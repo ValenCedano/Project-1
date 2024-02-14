@@ -11,14 +11,13 @@ const nombreJoyeria = document.getElementsByClassName('menu-chiquito');
 const circulos = document.querySelector('.circles');
 console.log(circulos.children);
 const tallas = document.getElementsByClassName("Tallas");
-const enviarInfo = document.getElementsByClassName('boton-img');
 const titulo = document.getElementsByClassName('title');
 const code = document.getElementsByClassName('code');
 const precio = document.getElementsByClassName('price');
 const colores = document.getElementsByClassName('color');
+const enviarInfo = document.getElementsByClassName('boton-img');
 const apiUrl = 'https://project-1-dev-qqhq.1.us-1.fl0.io/Carrito';
-console.log(colores);
-
+console.log(enviarInfo[0]);
 
 
 const cambiarNombre = (nombre) => {
@@ -88,10 +87,9 @@ const cambiarDetalles = (contenedor,texto) => {
 
 let producto;
 
-const productoAlCarrito = { }
-
-async function guardarProductoAlCarrito() {
-    const url = "https://project-1-dev-qqhq.1.us-1.fl0.io/Carrito"; // URL de tu API
+const productoAlCarrito = {};
+/*
+const guardarProductoAlCarrito = async(url) => {// URL de tu API
     try {
         const response = await fetch(url, {
             method: 'POST',
@@ -101,22 +99,55 @@ async function guardarProductoAlCarrito() {
             body: JSON.stringify(productoAlCarrito)
         });
         const data = await response.json();
-        console.log('Producto guardado en el carrito:', data);
         return data;
     } catch (error) {
-        console.error('Error al realizar la solicitud HTTP POST:', error);
+        console.log(error);
+        return [];
     }
 };
+*/
 
+function guardarProductoAlCarrito() {
+    let productosAlCarrito = localStorage.getItem('productosAlCarrito');
+
+    // If there are existing products in the cart, parse them from JSON
+    if (productosAlCarrito) {
+        productosAlCarrito = JSON.parse(productosAlCarrito);
+        
+        // Check if the current product already exists in the cart
+        const existingProductIndex = productosAlCarrito.findIndex(item => 
+            item.producto.nombre === productoAlCarrito.producto.nombre &&
+            item.color === productoAlCarrito.color &&
+            item.talla === productoAlCarrito.talla
+        );
+
+        // If the product already exists, update its quantity
+        if (existingProductIndex !== -1) {
+            productosAlCarrito[existingProductIndex].cantidad = productoAlCarrito.cantidad;
+        } else {
+            // If the product doesn't exist, add it to the cart
+            productosAlCarrito.push(productoAlCarrito);
+        }
+    } else {
+        // If there are no existing products, initialize the array with the current product
+        productosAlCarrito = [productoAlCarrito];
+    }
+
+    // Save the updated array back to localStorage
+    localStorage.setItem('productosAlCarrito', JSON.stringify(productosAlCarrito));
+}
 document.addEventListener("DOMContentLoaded", async () => {
+    
     const url = `${URL_BASE}productos`;
     producto = await getproducts(url,idProducto);
     // Cambiando para el producto especifico //
     productoAlCarrito.producto = {
         nombre: producto.nombre,
+        imagen: producto.imagen,
         codigo: producto.codigo,
         precio: producto.precio_unitario
     }
+    
     const menuChiquito = cambiarNombre(producto.nombre);
     const tituloNuevo = cambiarDetalles(titulo, producto.nombre);
     const codeNuevo = cambiarDetalles(code, producto.codigo);
@@ -128,8 +159,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     palabra.innerHTML= 0;
     const botones = Array.from(buton);
     let numeroFinal=0;
+    
     botones.forEach((elemento) => {
-        elemento.addEventListener("click", () => {
+        elemento.addEventListener("click", async() => {
             const accion = elemento.getAttribute('operacion');
             if (accion === "sumar") {
                 numeroFinal = numeroFinal + 1;
@@ -139,18 +171,19 @@ document.addEventListener("DOMContentLoaded", async () => {
             
             console.log("Número final del contador:", numeroFinal);
             palabra.innerText = numeroFinal;
-            productoAlCarrito.cantidad = numeroFinal;
 
-            console.log(productoAlCarrito);
+            
+            productoAlCarrito.cantidad =numeroFinal;
             guardarProductoAlCarrito();
-
-    
+            
+            
         });
+        
         
     });
 
-    console.log(productoAlCarrito);
     
+
     
     //Ingresando imagenes según el producto especificado
     const imagenesPequeñas = producto.imagen;
@@ -192,6 +225,10 @@ document.addEventListener("DOMContentLoaded", async () => {
         });
     });
 
+    
+    enviarInfo[0].addEventListener(("click"), ()=> {
+        location.href= '../pages/payments.html';
+    });
     const tallasButtom = Array.from(tallas[0].children)
     for (let i = 0; i < stock.length; i++) {
         // Verificar si el objeto en el stock tiene el atributo 'tallas'
@@ -206,9 +243,14 @@ document.addEventListener("DOMContentLoaded", async () => {
         } else {
             return tallas[0].remove();
         }
-        
+    
     };
     
+    
+    
+    
+
+
 });
 
 
