@@ -62,14 +62,41 @@ const pasarDeObjectArray = (objeto) =>{
 
   return objetosArray;
 }
+/////
+
+function searchByName(searchTerm, productsList) {
+  const filtro = productsList.filter(producto =>
+    producto.nombre.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+  return filtro;
+};
+
 document.addEventListener("DOMContentLoaded", async() =>{
   const url= `${URL_BASE}productos`
   const productos = await getproducts(url);
-  
+  console.log(productos)
+
+  const searchImput = document.getElementById("search-input");
+  console.log("aqui va", searchImput)
+
   insertarProductos(contenedorProductos,productos);
   const figuras = contenedorProductos.getElementsByTagName("figure");
   const arrayProductos = pasarDeObjectArray(figuras);
+
+
+  searchImput.addEventListener("keypress", (event) => {
+    const searchTerm = event.target.value;
+    if (searchTerm.length > 3) {
+      //Se ejecuta la función de busqueda: 
+      const productsList = searchByName(searchTerm, productos);
+      console.log(productsList)
+      insertarProductos(contenedorProductos, productsList);
+    }
   
+    if (searchTerm.length === 0) {
+      insertarProductos(contenedorProductos, productos);
+    }
+  });
   arrayProductos.forEach((elemento) =>{
     elemento.addEventListener(("click"), ()=>{
       const idProduct = elemento.id;
@@ -78,55 +105,34 @@ document.addEventListener("DOMContentLoaded", async() =>{
 
     });
   });
- 
-  
-});
-
-const listaNav =[];
-for (const elemento of filtroNavegador){
-  listaNav.push(elemento);
-}
 
 
-// Agregar un eventListener a cada elemento HTML en listaNav
-listaNav.forEach(elemento => {
-  elemento.addEventListener("click", () =>{
-    let nombreFiltrar = elemento.innerHTML;
-    if (elemento.innerHTML == "All"){
-      insertarProductos(contenedorProductos,productos); 
-    }
-    else{
-      const productosFiltro = filtroTipo(productos,nombreFiltrar);
-      console.log(productosFiltro);
-      insertarProductos(contenedorProductos,productosFiltro);
-    }
-    
+  const listaNav =[];
+  for (const elemento of filtroNavegador){
+    listaNav.push(elemento);
+  }
+  // Agregar un eventListener a cada elemento HTML en listaNav
+  listaNav.forEach(elemento => {
+    elemento.addEventListener("click", () =>{
+      let nombreFiltrar = elemento.innerHTML;
+      if (elemento.innerHTML == "All"){
+        insertarProductos(contenedorProductos,productos); 
+      }
+      else{
+        const productosFiltro = filtroTipo(productos,nombreFiltrar);
+        console.log(productosFiltro);
+        insertarProductos(contenedorProductos,productosFiltro);
+      }  
+    });
   });
+
+
 });
 
-const searchImput = document.getElementById("search-input");
-console.log("aqui va", searchImput)
-function searchByName(searchTerm, productsList) {
-  const results = productsList.filter((productos) =>
-    productos.tipo_de_accesorio.toLowerCase().includes(searchTerm.toLowerCase())
-  );
 
-  return results;
-}
 
-searchImput.addEventListener("keypress", (event) => {
-  console.log("hecho")
-  const searchTerm = event.target.value;
-  if (searchTerm.length > 3) {
-    //Se ejecuta la función de busqueda: 
-    const productsList = searchByName(searchTerm, productos);
-    insertarProductos(contenedorProductos, productsList);
-  }
 
-  if (searchTerm.length === 0) {
-    insertarProductos(contenedorProductos, productos);
-  }
-});
+
 
 
 
