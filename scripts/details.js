@@ -91,7 +91,7 @@ let producto;
 const productoAlCarrito = { }
 
 async function guardarProductoAlCarrito() {
-    const url = "https://project-1-dev-qqhq.1.us-1.fl0.io/Carrito"; // Reemplaza 'URL_DE_TU_API' con la URL de tu API
+    const url = "https://project-1-dev-qqhq.1.us-1.fl0.io/Carrito"; // URL de tu API
     try {
         const response = await fetch(url, {
             method: 'POST',
@@ -100,21 +100,23 @@ async function guardarProductoAlCarrito() {
             },
             body: JSON.stringify(productoAlCarrito)
         });
-        if (response.ok) {
-            console.log('Producto guardado en el carrito:', productoAlCarrito);
-        } else {
-            console.error('Error al guardar el producto en el carrito:', response.status);
-        }
+        const data = await response.json();
+        console.log('Producto guardado en el carrito:', data);
+        return data;
     } catch (error) {
         console.error('Error al realizar la solicitud HTTP POST:', error);
     }
-}
+};
 
 document.addEventListener("DOMContentLoaded", async () => {
     const url = `${URL_BASE}productos`;
     producto = await getproducts(url,idProducto);
     // Cambiando para el producto especifico //
-    
+    productoAlCarrito.producto = {
+        nombre: producto.nombre,
+        codigo: producto.codigo,
+        precio: producto.precio_unitario
+    }
     const menuChiquito = cambiarNombre(producto.nombre);
     const tituloNuevo = cambiarDetalles(titulo, producto.nombre);
     const codeNuevo = cambiarDetalles(code, producto.codigo);
