@@ -184,7 +184,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 
             }else{
 
-                guardarProductoAlCarrito()
+                guardarProductoAlCarrito();
                
             }
             
