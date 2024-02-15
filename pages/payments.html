@@ -15,8 +15,8 @@
                 <a href="/index.html">Home</a></li>
                 <a href="/pages/details.html">Shop</a></li>
                 <a href="/pages/products.html">Collections</a></li>
-                <a href="">About</a></li>
-                <a href="">Contact</a></li>
+                <a href="/pages/payments.html">Payment</a></li>
+                <a href="/pages/success.html">Success</a></li>
         
                     <a href="/pages/success.html">
                         <figure>
@@ -40,7 +40,7 @@
         <section class="cart-section">
             <div class="cart-items">
                 
-                <article class="cart-item" data-price="29.99">
+                <!-- <article class="cart-item" data-price="29.99">
                     <img src="/assets/payments/shoppingcart1.png" alt="Producto 1">
                     <div class="item-details">
                         <h3>Luxury Charms Ring</h3>
@@ -50,7 +50,7 @@
                         <p>$620.73</p>
                     </div>
                     <button class="remove-item" onclick="">
-                        <i class="fas fa-trash-alt"></i> <!-- Icono de bote de basura -->
+                        <i class="fas fa-trash-alt"></i> Icono de bote de basura 
                     </button>
                 </article>
                         
@@ -64,7 +64,7 @@
                         <p>$125.28</p>
                     </div>
                     <button class="remove-item" onclick="removeItem(this)">
-                        <i class="fas fa-trash-alt"></i> <!-- Icono de bote de basura -->
+                        <i class="fas fa-trash-alt"></i>  Icono de bote de basura 
                     </button>
                 </article>
 
@@ -81,7 +81,13 @@
                     <button class="remove-item" onclick="removeItem(this)">
                         <i class="fas fa-trash-alt"></i> 
                     </button>
-                </article>
+                </article> -->
+                <div id="carrito-container">
+                  <!-- Aquí se mostrarán los productos del carrito -->
+                </div>
+              </div>
+            <div id="carrito-container">
+              <!-- Aquí se mostrarán los productos del carrito -->
             </div>
             <section class="payment-container">
                 <h2>Payment</h2>
@@ -110,9 +116,14 @@
                           <span id="direccionError" class="error"></span>
                         </div>
                         <div>
-                            <label for="direccion">Banco:</label>
-                            <input type="text" id="banco" name="banco" required>
-                            <span id="direccionError" class="error"></span>
+                          <label for="tarjeta">Número de Tarjeta:</label>
+                          <input type="text" id="tarjeta" name="tarjeta" required>
+                          <span id="tarjetaError" class="error"></span>
+                        </div>
+                        <div>
+                          <label for="cvc">Código de Seguridad (CVC):</label>
+                          <input type="text" id="cvc" name="cvc" required>
+                          <span id="cvcError" class="error"></span>
                         </div>
                 
                       </form>
@@ -125,7 +136,7 @@
                     <button class="des">$15OFF</button>
 
                 </div>
-                <div class="sumary">
+                <!-- <div class="sumary">
                     <h4>Summary</h4>
                     <div class="subtotal">
                         <div class="sub">
@@ -158,6 +169,11 @@
                         <div class="price">
                           <p>$1058.72</p>
                         </div>
+                    </div> -->
+
+                    <div id="detalle-carrito">
+                      <p>Total de productos en el carrito: <span id="total-productos"></span></p>
+                      <p>Total a pagar: <span id="total-pagar"></span></p>
                     </div>
                     
                     <div class="buton-payment">
