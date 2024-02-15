@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/details.css">
+    
     <title>Shop</title>
 </head>
 <body>
@@ -19,15 +20,12 @@
                 <a href="/pages/success.html">Success</a></li>
                 <a href="">
                     <figure>
-                        <img  src="../assets/Profile 1.png" alt="logo_usuario">
+                        <img  src="/assets/Profile 1.png" alt="logo_usuario">
                     </figure> 
                 </a>
-                
-
-                
                 <a href="#">
                     <figure>
-                        <img src="../assets/Shopping cart 1.png" alt="carrito">
+                        <img id="btnCard" src="/assets/Shopping cart 1.png" alt="carrito">
                     </figure> 
                 </a>
             </ul>
@@ -95,18 +93,18 @@
                 </div>
                 <div class="botones-informacion">
                     <div class="column1">
-                        <p class="caja-info">Delivery
+                        <p class="caja-info1">Delivery
                             <img src="../assets/Chevron down large.png" alt="icono">
                         </p>
-                        <p class="caja-info">Warranty
+                        <p class="caja-info1">Warranty
                             <img src="../assets/Chevron down large.png" alt="icono">
                         </p>
                     </div>
                     <div class="column2">
-                        <p class="caja-info">Payment
+                        <p class="caja-info1">Payment
                             <img src="../assets/Chevron down large.png" alt="icono">
                         </p>
-                        <p class="caja-info">Care
+                        <p class="caja-info1">Care
                             <img src="../assets/Chevron down large.png" alt="icono">
                         </p>
                     </div>
@@ -259,7 +257,27 @@
             
         </section>  
     </footer>
+    <div class="modalCart hidden">
+        <section class="contenidoModal">
+            <div class="encabezadoModal">
+                <span> Your Cart</span>
+                <button id="closeModal"> x </button>
+            </div>
+
+            <section class="productosCarrito">
+                
+            </section>
+            
+
+            <div class="infoFinal">
+            </div>
+
+            
+        </section>
+    </div>
     <script src="../scripts/details.js" ></script>
+    <script src="../scripts/modalCart.js"></script>
+ 
     
 </body>
 
