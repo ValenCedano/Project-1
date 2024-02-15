@@ -120,7 +120,8 @@ function guardarProductoAlCarrito() {
             item.color === productoAlCarrito.color &&
             item.talla === productoAlCarrito.talla
         );
-
+        
+        
         // If the product already exists, update its quantity
         if (existingProductIndex !== -1) {
             productosAlCarrito[existingProductIndex].cantidad = productoAlCarrito.cantidad;
@@ -129,7 +130,6 @@ function guardarProductoAlCarrito() {
             productosAlCarrito.push(productoAlCarrito);
         }
     } else {
-        // If there are no existing products, initialize the array with the current product
         productosAlCarrito = [productoAlCarrito];
     }
 
@@ -148,6 +148,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         precio: producto.precio_unitario
     }
     
+    
     const menuChiquito = cambiarNombre(producto.nombre);
     const tituloNuevo = cambiarDetalles(titulo, producto.nombre);
     const codeNuevo = cambiarDetalles(code, producto.codigo);
@@ -156,11 +157,14 @@ document.addEventListener("DOMContentLoaded", async () => {
     const stock = producto.stock;
     const buton = document.getElementsByClassName('boton')
     let palabra = document.getElementById('numero');
+
+    
     palabra.innerHTML= 0;
     const botones = Array.from(buton);
     let numeroFinal=0;
     
     botones.forEach((elemento) => {
+        
         elemento.addEventListener("click", async() => {
             const accion = elemento.getAttribute('operacion');
             if (accion === "sumar") {
@@ -171,10 +175,22 @@ document.addEventListener("DOMContentLoaded", async () => {
             
             console.log("Número final del contador:", numeroFinal);
             palabra.innerText = numeroFinal;
-
-            
             productoAlCarrito.cantidad =numeroFinal;
-            guardarProductoAlCarrito();
+    
+            
+            const index = stock.findIndex(((stock) => stock.talla == productoAlCarrito.talla && stock.color == productoAlCarrito.color))
+            if(productoAlCarrito.cantidad >= stock[index].cantidad) {
+                console.log("La cantidad que ingreso no se encuentra en stock");
+                
+            }else{
+
+                guardarProductoAlCarrito()
+               
+            }
+            
+            
+            //guardarProductoAlCarrito();
+            
             
             
         });
