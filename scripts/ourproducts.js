@@ -61,7 +61,7 @@ const pasarDeObjectArray = (objeto) =>{
   }
 
   return objetosArray;
-}
+};
 /////
 
 function searchByName(searchTerm, productsList) {

@@ -38,7 +38,7 @@ function mostrarProductosEnCarrito() {
           productoElement.classList.add('producto');
 
           const imagenElement = document.createElement('img');
-          imagenElement.src = producto.imagen;
+          imagenElement.src = producto.producto.imagen[0];
           imagenElement.alt = producto.producto.nombre;
           productoElement.appendChild(imagenElement);
 
