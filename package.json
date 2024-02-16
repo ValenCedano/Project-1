@@ -5,15 +5,21 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js" 
+    "start": "node index.js",
+    "build": "webpack --config webpack.config.js" // Agregar script de construcción con webpack
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ValenCedano/Project-1.git"
+    "url": "git+https://valencedano.github.io/Project-1/"
   },
   "author": "Valentinas",
   "license": "ISC",
   "dependencies": {
     "json-server": "^0.17.4"
+  },
+  "devDependencies": {
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0"
   }
 }
+
