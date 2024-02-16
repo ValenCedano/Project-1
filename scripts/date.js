@@ -1,5 +1,5 @@
 
-const URL_BASE = "https://project-1-dev-kxpm.1.us-1.fl0.io/";
+const URL_BASE = "https://project-1-dev-fnbg.3.us-1.fl0.io/";
 const nombrePersona = document.getElementById("persona");
 const sectionDetallesProducto = document.getElementsByClassName("registroUnidad");
 const botonSeguirComprando = document.getElementsByClassName("botonShop");
