@@ -77,7 +77,7 @@ function obtenerProductosDelCarrito() {
 }
 // Llama a la función para mostrar los productos en el carrito cuando la página se carga
 mostrarProductosEnCarrito();
-const urlServidor = "http://localhost:3000/orden"; 
+const urlServidor = "https://project-1-dev-kxpm.1.us-1.fl0.io/orden"; 
 
 const nombreRegex = /^[a-zA-Z\s]+$/; // Solo letras y espacios
 const correoRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Formato de correo electrónico
