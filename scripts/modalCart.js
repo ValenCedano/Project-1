@@ -93,10 +93,15 @@ const toggleModal = (button, modal) => {
         console.log(edicionProducto);
         console.log(numeroEditado)
         const numeroEditado2 = Array.from(numeroEditado);
+        
         if (!datosLocalStorage || datosLocalStorage.length === 0) {
             // El localStorage está vacío o no contiene datos bajo la clave "productosAlCarrito"
             console.log("No hay productos en el carrito");
             sectionModal.textContent = "Carrito vacío";
+
+            cartButton.addEventListener("click", () => {
+                toggleModal(cartButton, modal);
+            });
         
             clickBoton[0].addEventListener("click", () => {
                 alert("No hay ningún producto agregado");
