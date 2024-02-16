@@ -1,5 +1,5 @@
 
-const URL_BASE = "https://project-1-dev-kxpm.1.us-1.fl0.io/";
+const URL_BASE ="https://project-1-dev-fnbg.3.us-1.fl0.io/";
 const idProducto = JSON.parse(localStorage.getItem("idProduct"))
 console.log(idProducto);
 const contenedorImagen = document.getElementById('galeria');
