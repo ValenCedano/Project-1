@@ -1,6 +1,6 @@
 //Función que permita obtener los productos desde la API
 
-const URL_BASE= "https://project-1-dev-qqhq.1.us-1.fl0.io/";
+const URL_BASE= "https://project-1-dev-kxpm.1.us-1.fl0.io/";
 
 //Obtener los productos
 

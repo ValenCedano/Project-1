@@ -1,10 +1,9 @@
 
-const URL_BASE = "https://project-1-dev-qqhq.1.us-1.fl0.io/";
+const URL_BASE = "https://project-1-dev-kxpm.1.us-1.fl0.io/";
 const idProducto = JSON.parse(localStorage.getItem("idProduct"))
 console.log(idProducto);
 const contenedorImagen = document.getElementById('galeria');
 console.log(contenedorImagen);
-
 const imagenPrincipal = document.querySelector('.imagen-principal');
 const imagenSecundaria = document.querySelector('.imagenes-secundarias'); // Utiliza querySelector para seleccionar por clase
 const nombreJoyeria = document.getElementsByClassName('menu-chiquito');
