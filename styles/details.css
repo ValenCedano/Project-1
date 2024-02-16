@@ -766,7 +766,7 @@ footer{
   .modalCart section{
     width: 480px;
     background-color: white;
-    height: max-content;
+    /*height: max-content;*/
     align-content: center;
   }
   
@@ -1074,7 +1074,7 @@ footer{
         max-width: 100%;
        
     }
-
+    
     
     .all-product{
         margin-top: 7vh;

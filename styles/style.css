@@ -392,7 +392,7 @@ html,body{
     
 }
 
-.button1{
+.encabezado-izquierdo .buttonShop{
     font-family: 'Manrope';
     font-weight: 400;   
     font-size: 18px;
@@ -408,10 +408,12 @@ html,body{
 }
 
 
-.button1:hover{
+.buttonShop:hover{
   cursor: pointer;
   background-color: #f3f3fa4f;
 }
+
+
 .container{
     display: flex;
     text-align: center;
@@ -993,11 +995,31 @@ text-align:left;
   .encabezado-derecho{
     display:flex;
     
+    height:100%;   
+
+  }
+  .encabezado-derecho .imagen{
+    height: 500px;
+    position: relative;
   }
 
   .encabezado-derecho .imagen2{
-    width:57%;
-    height:40%;
+    position: relative;
+    width:241px;
+    height:321px;
+    top:-22em;
+    left: 17em;
+    
+
+    
+  }
+
+  .encabezado-derecho .imagen3{
+   position: relative;
+   top:-14em;
+   width: 41px;
+   height: 41px;
+       
   }
   .encabezado-derecho div{
     display:flex;
@@ -1055,7 +1077,7 @@ text-align:left;
 
 
 /*Pantala de 895 pa atras*/
-@media screen and (max-width:946px)
+@media screen and (max-width:980px)
 {
   .container p{
     font-size: small;
