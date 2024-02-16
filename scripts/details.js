@@ -17,6 +17,10 @@ const colores = document.getElementsByClassName('color');
 const enviarInfo = document.getElementsByClassName('boton-img');
 const apiUrl = 'https://project-1-dev-qqhq.1.us-1.fl0.io/Carrito';
 console.log(enviarInfo[0]);
+const description = document.getElementsByClassName("parrafo-info");
+const tituloDescripcion = document.getElementsByClassName("title");
+const Botonverde = document.getElementsByClassName("Boton-verde");
+console.log(tituloDescripcion[1]);
 
 
 const cambiarNombre = (nombre) => {
@@ -146,7 +150,12 @@ document.addEventListener("DOMContentLoaded", async () => {
         codigo: producto.codigo,
         precio: producto.precio_unitario
     }
+
+    const accesoTitulo = tituloDescripcion[1];
+    accesoTitulo.innerHTML = producto.nombre;
+
     
+    const descripcionProducto = cambiarDetalles(description, producto.descripcion);
     
     const menuChiquito = cambiarNombre(producto.nombre);
     const tituloNuevo = cambiarDetalles(titulo, producto.nombre);
@@ -240,7 +249,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         });
     });
 
-    
+    Botonverde[0].addEventListener(("click"), () =>{
+        location.href= '../pages/payments.html';
+    });
     enviarInfo[0].addEventListener(("click"), ()=> {
         location.href= '../pages/payments.html';
     });
@@ -262,9 +273,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     };
     
     
-    
-    
-
 
 });
 

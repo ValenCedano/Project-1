@@ -7,11 +7,11 @@ const totali = document.getElementsByClassName("precio");
 const infoFinal = document.getElementsByClassName("infoFinal");
 const precioTotalArray = Array.from(precioTotal);
 // Obtener los datos del Local Storage
-
+//const datosLocalStorage = [];
 const datosLocalStorage = JSON.parse(localStorage.getItem("productosAlCarrito"));
 const precioFijo = [];
 
-let insertarProductosModal = (contenedor, listaProductos) => {
+const insertarProductosModal = (contenedor, listaProductos) => {
     contenedor.innerHTML = "";
     let numero=0;
     listaProductos.forEach((producto) => {
@@ -40,16 +40,22 @@ let insertarProductosModal = (contenedor, listaProductos) => {
         numero++;
          
     });
+
     let contador=0;
-    listaProductos.forEach((elemento) => {
+    listaProductos.forEach((producto) => {
         
-        const produss= Number(elemento.producto.precio);
-
-        contador = contador +produss;
-
+        let  priceProducto= Number(producto.producto.precio);
+        console.log(priceProducto);
+        let cantidad = Number(producto.cantidad);
+        console.log(cantidad)
+        const totalPrice = (priceProducto) * (cantidad);
+        console.log(totalPrice);
+        contador = contador + totalPrice ;
+        
+        
     });
-    console.log(contador)
-    precioFijo.push(contador);
+    precioFijo.push(contador.toFixed(2));
+ 
     
 
 };
@@ -69,6 +75,7 @@ const insertarFinal = (contenedor,price) =>{
     `
 };
 
+
 const precioProduct = document.getElementsByClassName("derecho");
 const clickBoton = document.getElementsByClassName("onclick");
 const editarCantidad = document.getElementsByClassName("editar");
@@ -76,6 +83,7 @@ const numeroEditado = document.getElementsByClassName("circulox1");
 const toggleModal = (button, modal) => {
 
     button.addEventListener("click", () => {
+    
         insertarProductosModal(sectionModal, datosLocalStorage);
         insertarFinal(infoFinal[0],precioFijo[0]);
         modal.classList.toggle("show");
@@ -85,6 +93,21 @@ const toggleModal = (button, modal) => {
         console.log(edicionProducto);
         console.log(numeroEditado)
         const numeroEditado2 = Array.from(numeroEditado);
+        if (!datosLocalStorage || datosLocalStorage.length === 0) {
+            // El localStorage está vacío o no contiene datos bajo la clave "productosAlCarrito"
+            console.log("No hay productos en el carrito");
+            sectionModal.textContent = "Carrito vacío";
+        
+            clickBoton[0].addEventListener("click", () => {
+                alert("No hay ningún producto agregado");
+                location.href= '../pages/details.html';
+            });
+        } else {
+            toggleModal(cartButton, modal);
+            
+            
+        };
+        
 
         edicionProducto.forEach((elemento) => {
             elemento.addEventListener("click", ()=>{
@@ -103,14 +126,14 @@ const toggleModal = (button, modal) => {
             });
             
         });
-        
+
        
+        
 
         botonEnviar.addEventListener(("click"), ()=>{
             localStorage.setItem("productosAlCarrito", JSON.stringify(datosLocalStorage));
             location.href= '../pages/payments.html';
         });
-
 
         
     });
